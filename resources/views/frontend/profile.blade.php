@@ -75,13 +75,13 @@
             @endif
             {{-- flash back message end--}}
             <fieldset disabled>
-                <form action="/profile" method="POST" enctype="multipart/form-data">
-                    {{-- @method('PUT') --}}
+                <form action="{{ route('user.update',$user->id) }}" method="POST" enctype="multipart/form-data">
+                    @method('PUT')
                     @csrf
                     <input name="oldphoto" type="hidden" value="{{Auth::user()->photo}}">
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <input name="newphoto" type='file' id="imageUpload" accept=".png, .jpg, .jpeg" disabled="" data-user_id = "" multiple />
+                            <input name="photo" type='file' id="imageUpload" accept=".png, .jpg, .jpeg" disabled="" data-user_id = "" multiple />
                             <label for="imageUpload"></label>
                         </div>
                         <div class="col-md-6">

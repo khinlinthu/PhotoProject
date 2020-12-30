@@ -63,7 +63,7 @@ Route::delete('/image/{id}', 'ImageController@destory');
 // Route::get('login','AuthController@login')->name('login');
 // Route::get('profile','AuthController@profile')->name('profile');
 
-Route::get('/profile', 'FrontendController@profile');
+Route::get('/profile', 'FrontendController@profile')->name('profile');
 
 // Route::get('edit_profile/{Auth::user()->id}','AuthController@edit_profile')->name('edit_profile');
 
