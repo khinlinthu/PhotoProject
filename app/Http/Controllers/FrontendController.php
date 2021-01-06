@@ -8,6 +8,8 @@ use App\PhotoContest;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use App\User;
+use App\Vote;
+use App\Image;
 
 class FrontendController extends Controller
 {
@@ -43,4 +45,55 @@ class FrontendController extends Controller
         $user = User::find($user_id);
         return view('frontend.profile', compact('user'));
     }
+
+
+    public function photo()
+    {
+        $image=DB::table('images')
+        ->join('users','users.id','=','images.user_id')
+        ->join('model_has_roles','model_has_roles.model_id','=','users.id')
+        ->join('roles','roles.id','=','model_has_roles.role_id')
+        ->join('votes','votes.image_id','=','images.id')
+        ->select('images.*','votes.count')
+        ->where('roles.id','=',4)
+        ->get();
+        $count=DB::table('votes')
+        ->join('images','images.id','=','votes.image_id')
+        ->select('votes.*')
+        ->get();
+          
+        return view('frontend.vote',compact('image'));
+    }
+    public function vt($id,$name)
+    {
+        
+        $user_id = DB::select('select user_id from votes');
+
+        $image_id=DB::select('select image_id from votes');
+            if ($user_id == $name && $image_id == $id) {
+        
+            $vote=DB::table('votes')->increment('count',5);
+
+    }
+    
+        
+    }
+
+    public function live()
+    {
+    
+        $live=DB::table('votes')
+        ->select('users.name','images.image',DB::raw('sum(votes.count)as user_count'))
+        ->join('users','users.id','=','votes.user_id')
+        ->join('images','images.id','=','votes.image_id')
+        ->groupBy('votes.image_id')
+        ->get();
+        
+        return view('frontend.live',compact('live'));
+
+    }
+
+
+
+    
 }

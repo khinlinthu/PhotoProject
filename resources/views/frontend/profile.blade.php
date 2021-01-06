@@ -8,6 +8,8 @@
         object-fit: cover;
     }
 </style>
+
+<div class="inner-page-header">
 <!-- Breadcrumb -->
 <div class="breadcrumb-bar">
     <div class="container-fluid">
@@ -15,7 +17,7 @@
             <div class="col-md-12 col-12">
                 <nav aria-label="breadcrumb" class="page-breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('photo_contest')}}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">User Profile</li>
                     </ol>
                 </nav>
@@ -40,19 +42,20 @@
                                 </a>
                             </div>
                             <div class="col ml-md-n2 profile-user-info">
-                                <h4 class="user-name mb-0">{{Auth::user()->name}}</h4>
+                                <h4 class="user-name ">{{Auth::user()->name}}</h4>
                                 <h6 class="text-muted">{{Auth::user()->email}}</h6>
                                 <h6 class="text-muted">{{Auth::user()->phone}}</h6>
+                                {{-- <h6 class="text-muted">{{Auth::user()->role}}</h6> --}}
                                 
                             </div>
                             <div class="col-auto profile-btn">
                                 <div class="col-xl-1 col-lg-1 col-md-12 col-sm-12 col-12 order-xl-3 order-lg-3 order-md-2 order-sm-2 order-2">
                                     <button class="btn btn-info float-right profile_editBtn" type="button"> 
-                                        <i class="fas fa-edit"></i>
+                                        Edit Profile
                                     </button>
-                                    <button class="btn btn-danger float-right profile_cancelBtn" type="button"> 
+                                    {{-- <button class="btn btn-danger float-right profile_cancelBtn" type="button"> 
                                         <i class="fas fa-window-close"></i>
-                                    </button>
+                                    </button> --}}
                                 </div>
                             </div>
                         </div>
@@ -63,7 +66,7 @@
         {{-- profile card --}}
 
         {{-- edit profile  --}}
-        <div class="col-md-10 offset-md-1">
+        <div class="col-md-10 offset-md-1 mt-5">
             {{-- flash back message start--}}
             @if (!empty(session()->get('success')))
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -116,6 +119,8 @@
     </div>
 </div>
 <!-- /Page Content -->
+
+</div>
 @endsection
 @section('script')
 <script>

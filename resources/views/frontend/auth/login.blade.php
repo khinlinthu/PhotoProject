@@ -2,10 +2,16 @@
 
 @section('content')
 
+<style >
+    .reg{
+        margin-left: 330px;
+    }
+</style>
+
 <div class="loginregistration-area pt-100 pb-100">
             <div class="container">
                 <div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-12 mb-sm-30">
+					<div class="col-lg-6 col-md-6 col-sm-12 mb-sm-30 reg">
                         <div class="login-area">
                             <h2>Login</h2>
                             <form method="post" action="{{ route('login') }}">
@@ -36,14 +42,6 @@
 
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <div class="connected-area">
-                                                <p>Connect With:</p>
-                                                <div class="social-media">
-                                                    <ul>
-                                                        <li><img src="{{asset('frontend_asset/images/facebook.png')}}" alt=""></li>
-                                                        <li><img src="{{asset('frontend_asset/images/google.png')}}" alt=""></li>
-                                                    </ul>
-                                                </div>
                                                 <div class="checkbox">
                                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
@@ -51,7 +49,6 @@
                                                         {{ __('Remember Me') }}
                                                     </label>
                                                 </div>
-                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-12">

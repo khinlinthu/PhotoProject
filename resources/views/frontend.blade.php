@@ -3,7 +3,7 @@
     <head>
         <!-- meta tag -->
         <meta charset="utf-8">
-        <title>photo contest</title>
+        <title>SCW Myanmar Co., LTD</title>
         <meta name="description" content="">
         <!-- responsive tag -->
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -57,8 +57,8 @@
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="header-top-left">
                                 <ul>
-                                    <li><i class="fa fa-phone"></i><a href="tel:+985-2356-14566">+985-2356-14566</a></li>
-                                    <li><i class="fa fa-envelope-o"></i><a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></li>
+                                    <li><i class="fa fa-phone"></i><a href="tel:+959-899 3333 87">+959-899 3333 87</a></li>
+                                    <li><i class="fa fa-envelope-o"></i><a href="mailto:yourmail@gmail.com">zinlinn@scwmyanmar.com.mm</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -67,19 +67,19 @@
                             <div class="right-side-tool text-right">
                                 <div class="social-media-area">
                                     <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://www.facebook.com/scwtravel"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-rss"></i></a></li>
                                         <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://www.instagram.com/scw_travel/?fbclid=IwAR3NGM9ACOnGq0-Al3EM-yL77282rMM8ucBb1jPw7rkNZD9-ccxhAILX3dw"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
 
                                 <div class="header-top-right">
                                     <ul>
                                         @auth
-                                        <li>Login Successful!!</li>
+                                        <li style="color: #fff;">Login Successful!</li>
                                         
                                         @else
 
@@ -99,7 +99,7 @@
                     <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-12">
                             <div class="logo-area">
-                                <a href="index.html"><img src="{{asset('frontend_asset/images/scwlogo.jpg')}}" alt="logo"></a>
+                                <a href="index.html"><img src="{{asset('frontend_asset/images/scw myanmar.png')}}" alt="logo"></a>
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-12">
@@ -112,29 +112,31 @@
                                                 <li><a href="index2.html">Home Two</a></li>
                                             </ul>
                                         </li> --}}
-                                         <li class="{{ Request::is('photo') ? 'active' : '' }}"><a href="/photo">Photos <i class="fa fa-angle-down"></i></a> 
+                                         <li class="{{ Request::is('photo') ? 'active' : '' }}"><a href="/photo">Photos </a> 
                                             {{-- <ul>
                                                 <li><a href="about.html">About Us</a> 
                                                 <li><a href="about-me.html">About Me</a></li>
                                             </ul> --}}
                                         </li>
-                                        <li class="{{ Request::is('vote') ? 'active' : '' }}"><a href="#">Vote {{-- <i class="fa fa-angle-down"></i></a>
+                                        <li class="{{ Request::is('vote') ? 'active' : '' }}"><a href="@auth {{route('vote')}} @else {{route('user.signin')}}  @endauth">Vote {{-- <i class="fa fa-angle-down"></i></a>
                                             <ul>
                                                 <li><a href="portfolio1.html">Portfolio 1</a></li>
                                                 <li><a href="portfolio2.html">Portfolio 2</a></li>
                                                 <li><a href="single-portfolio.html">Portfolio Details</a></li>
                                             </ul> --}}
                                         </li>
-                                        <li class="{{ Request::is('upload') ? 'active' : '' }}"><a href="{{route('uploadpage')}}">+UPLOAD  {{-- <i class="fa fa-angle-down"></i></a>
-                                             <ul>
+                                        <li class="{{ Request::is('upload') ? 'active' : '' }}">
+                                            <a href="@auth {{route('uploadpage')}} @else {{route('user.signin')}}  @endauth">+UPLOAD  {{-- <i class="fa fa-angle-down"></i> --}}</a>
+                                            
+                                             {{-- <ul>
                                                 <li><a href="gallery.html">Gallery One</a></li>
                                                 <li><a href="gallery1.html">Gallery Two</a></li>
                                                 <li><a href="gallery2.html">Gallery Three</a></li>
-                                            </ul> --}}
+                                            </ul>  --}}
                                         </li>
                                         <li class="{{ Request::is('new') ? 'active' : '' }} "><a href="#">News & Announcements <i class="fa fa-angle-down"></i></a>
                                             <ul>
-                                                <li><a href="shop.html">Live Score</a></li>
+                                                <li><a href="{{route('live')}}">Live Score</a></li>
                                                 <li><a href="product-details.html">Prize</a></li>
                                             </ul>
                                         </li>
@@ -161,7 +163,7 @@
                                 <nav>
                                     <ul>
                                         <li >
-                                            <a href="#"><img src="{{Auth::user()->photo}}" class="rounded-circle"">{{-- {{Auth::user()->name}} --}}<i class="fa fa-angle-down"></i></a>
+                                            <a href="#"><img src="{{Auth::user()->photo}}" class="rounded-circle"">{{-- {{Auth::user()->name}} --}}{{-- <i class="fa fa-angle-down"></i> --}}</a>
                                             <ul>
                                                 <li><a href="/profile">Profile</a></li>
                                                 <li><a  href="{{ route('logout') }}"
@@ -193,35 +195,36 @@
                             <div class="mobile-menu">
                                 <nav id="dropdown">
                                     <ul>
-                                        <li class="active"><a href="index.html">Photo Contests {{-- <i class="fa fa-angle-down"> --}}</i></a>
+                                        <li class="{{ Request::is('/') ? 'active' : '' }}""><a href="{{route('photo_contest')}}">Photo Contests {{-- <i class="fa fa-angle-down"> --}}</i></a>
                                             {{-- <ul>
                                                 <li><a href="index.html">Home One</a></li>
                                                 <li><a href="index2.html">Home Two</a></li>
                                             </ul> --}}
                                         </li>
-                                        <li><a href="/photo">Photos {{-- <i class="fa fa-angle-down"> --}}</i></a> 
+                                        <li class="{{ Request::is('photo') ? 'active' : '' }}"><a href="/photo">Photos {{-- <i class="fa fa-angle-down"> --}}</i></a> 
                                             {{-- <ul>
                                                 <li><a href="about.html">About Us</a> 
                                                 <li><a href="about-me.html">About Me</a></li>
                                             </ul> --}}
                                         </li>
-                                        <li><a href="#">Vote {{-- <i class="fa fa-angle-down"></i> --}}</a>
+                                        <li class="{{ Request::is('vote') ? 'active' : '' }}"><a href="@auth {{route('vote')}} @else {{route('user.signin')}}  @endauth">Vote {{-- <i class="fa fa-angle-down"></i> --}}</a>
                                             {{-- <ul>
                                                 <li><a href="portfolio1.html">Portfolio 1</a></li>
                                                 <li><a href="portfolio2.html">Portfolio 2</a></li>
                                                 <li><a href="single-portfolio.html">Portfolio Details</a></li>
                                             </ul> --}}
                                         </li>
-                                        <li><a href="{{route('uploadpage')}}">+UPLOAD  {{-- <i class="fa fa-angle-down"></i> --}}</a>
+                                        <li class="{{ Request::is('upload') ? 'active' : '' }}">
+                                            <a href="@auth {{route('uploadpage')}} @else {{route('user.signin')}}  @endauth">+UPLOAD  {{-- <i class="fa fa-angle-down"></i> --}}</a>
                                             {{-- <ul>
                                                 <li><a href="gallery.html">Gallery One</a></li>
                                                 <li><a href="gallery1.html">Gallery Two</a></li>
                                                 <li><a href="gallery2.html">Gallery Three</a></li>
                                             </ul> --}}
                                         </li>
-                                        <li><a href="#">News & Announcements <i class="fa fa-angle-down"></i></a>
+                                        <li class="{{ Request::is('new') ? 'active' : '' }}"><a href="#">News & Announcements <i class="fa fa-angle-down"></i></a>
                                             <ul>
-                                                <li><a href="shop.html">Live Score</a></li>
+                                                <li><a href="{{route('live')}}">Live Score</a></li>
                                                 <li><a href="product-details.html">Prize</a></li>
                                                 
                                             </ul>
@@ -251,12 +254,12 @@
                                 <div class="footer-social-media-area">
                                     <nav>
                                         <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="https://www.facebook.com/scwtravel"><i class="fa fa-facebook"></i></a></li>
                                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                             <li><a href="#"><i class="fa fa-rss"></i></a></li>
                                             <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
                                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                            <li><a href="https://www.instagram.com/scw_travel/?fbclid=IwAR3NGM9ACOnGq0-Al3EM-yL77282rMM8ucBb1jPw7rkNZD9-ccxhAILX3dw"><i class="fa fa-instagram"></i></a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -307,10 +310,11 @@
                                 <h3>Corporate Office</h3>
                                 <nav>
                                     <ul>
-                                        <li><i class="fa fa-paper-plane-o"></i> 44 New Design Street, rne 00 USA</li>
-                                        <li><i class="fa fa-phone"></i> <a href="tel:+985-2356-14566">+985-2356-14566</a></li>
-                                        <li><i class="fa fa-envelope-o"></i> <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></li>
-                                        <li><i class="fa fa-fax"></i> Fax: (123) 4589761</li>
+                                        <li><i class="fa fa-paper-plane-o"></i> No.25, Ivory Court Villa Pun Hlaing Goft Estate, Haling Thar Yar Tsp, Yangon. (Head Office) </li>
+                                        <li><i class="fa fa-paper-plane-o"></i> No.22/B. 1st Floor, Thiri Myaing 4th Street, Hlaing Tsp, Yangon. (Branch Office) </li>
+                                        <li><i class="fa fa-phone"></i> <a href="tel:+959-899 3333 87">+959-799 3333 87</a></li>
+                                        <li><i class="fa fa-envelope-o"></i> <a href="mailto:yourmail@gmail.com">zinlinn@scwmyanmar.com.mm</a></li>
+                                        {{-- <li><i class="fa fa-fax"></i> Fax: (123) 4589761</li> --}}
                                     </ul>
                                 </nav>
                             </div>

@@ -47,6 +47,7 @@ class LoginController extends Controller
     public function redirectTo()
     {
         $roles = auth()->user()->getRoleNames()[0];
+        // dd($roles);
         //checking user roles
         switch ($roles) {
             case 'admin':
@@ -54,7 +55,11 @@ class LoginController extends Controller
                 break;
 
             case 'player':
-                return '/photo';
+                return '/';
+                break;
+
+            case 'member':
+                return '/';
                 break;
 
             default:

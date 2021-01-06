@@ -102,6 +102,9 @@
         <li><a class="app-menu__item {{ Request::is('photocontest*') ? 'active' : '' }}" href="{{route('photocontest.index')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Photo Contest</span></a></li>
         <li><a class="app-menu__item {{ Request::is('aboutphoto*') ? 'active' : '' }}" href="{{route('aboutphoto.index')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">About Photo Contest</span></a></li>
         <li><a class="app-menu__item {{ Request::is('vote*') ? 'active' : '' }}" href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">vote</span></a></li>
+        <li >
+            <a href="{{ route('user.index') }}" class="app-menu__item {{ Request::is('user*') ? 'active' : '' }}"><i class="app-menu__icon fa fa-pie-chart"></i> <span class="app-menu__label"> Users </span></a>
+        </li>
                 
       </ul>
     </aside>

@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Image;
 use Session;
 use Auth;
+use App\Vote;
 
 class ImageController extends Controller
 {
@@ -31,7 +33,7 @@ class ImageController extends Controller
     		$post->save();
     	}
     	Session::flash('success', 'Images uploaded');
-    	return redirect('/');
+    	return redirect('/photo');
     }
     public function destory($id)
     {
@@ -40,5 +42,101 @@ class ImageController extends Controller
         Session::flash('success', 'Images Deleted');
         return redirect('/photo');
 
+    }
+
+    public function userdetail($id)
+    {
+        
+        $test=DB::table('users')
+
+        ->select('users.*')
+        ->where('users.id','=',$id)
+        ->get();
+        $images=DB::table('images')
+        ->join('users','users.id','=','images.user_id')
+        ->select('images.*')
+        ->where('images.user_id','=',$id)
+        ->get();
+        
+
+        return view('frontend.userdetail',compact('test','images'));
+    }
+
+    public function vt($id,$clicker)
+    {
+    
+        /*$query=DB::table('votes')
+        ->select('user_id','image_id')
+        ->where('user_id','!=',$clicker)
+        ->where('image_id','!=',$id)
+        ->get();
+
+        $query1=DB::table('votes')
+        ->select('user_id','image_id')
+        ->where('image_id','=',$id)
+        ->where('user_id','!=',$clicker)
+        ->get();
+        $query2=DB::table('votes')
+        ->select('user_id','image_id')
+        ->where('user_id','=',$clicker)
+        ->where('image_id','=',$id)
+        ->get();*/
+
+        
+        /*if ($query->isEmpty()){
+
+            $vote= new Vote();
+            $vote->user_id= $clicker;
+            $vote->image_id= $id;
+            $vote->count=1;
+            $vote->save();
+            
+            return redirect('/vote');
+        }*/
+        /*if ($query1->isNotEmpty()) {
+            DB::table('votes')
+            ->increment('count');
+            return redirect('/vote');
+
+        }if ($query2->isNotEmpty()) {
+            return redirect('/vote');
+        }*/
+        
+        $user_id=$clicker;
+        $img_id=$id;
+
+        $query=DB::table('votes')
+        ->select('image_id')
+        
+        ->where('image_id','=',$img_id)
+        ->get();
+        /*$query2=DB::table('votes')
+        ->select('user_id','image_id')
+        ->where('user_id' ,'!=',$user_id)
+        ->where('image_id','=',$img_id)
+        ->get();
+        dd($query2);*/
+        if ($query->isEmpty()) {
+            $vote= new Vote();
+            $vote->user_id= $clicker;
+            $vote->image_id= $id;
+            $vote->count=1;
+            $vote->save();
+        }elseif ($query->isNotEmpty()) {
+           DB::table('votes')
+           ->where('user_id','!=',$clicker)
+           ->where('image_id','=',$id)
+
+           ->increment('count');
+
+           Vote::where('image_id',$id)->update(array('user_id'=>$clicker));
+        }
+
+        $count=DB::table('votes')
+            ->select('count')
+            ->where('image_id','=',$id)
+            ->get();
+        
+         return redirect()->route('vote',compact('count'));                  
     }
 }

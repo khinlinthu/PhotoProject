@@ -15,7 +15,8 @@ class UserController extends Controller
 {
     public function index()
     {
-       
+       $users = User::all();
+        return view('user.index', compact('users'));
     }
 
     public function login()
@@ -39,7 +40,7 @@ class UserController extends Controller
 
         $request->validate([
             'name' => 'required|min:2',
-            'phone' => 'required|unique:users,phone',
+            'phone' => 'required|min:10|unique:users,phone',
             "photo" => "required|mimes:jpeg,bmp,png",
             'email' => 'required|unique:users,email',
             'password' => 'required',
@@ -84,7 +85,7 @@ class UserController extends Controller
 
         $request->validate([
             'name' => 'required|min:2',
-            'phone' => 'required|unique:users,phone',
+            'phone' => 'required|min:10 |unique:users,phone',
             "photo" => "required|mimes:jpeg,bmp,png",
             'email' => 'required|unique:users,email',
             'password' => 'required',
@@ -158,5 +159,30 @@ class UserController extends Controller
       
     }
 
+     public function show($id)
+    {
+        $user = User::find($id);
+        return view('user.show', compact('user'));
+    }
+
+    public function role($id)
+    {
+        $user = User::find($id);
+        $roles = Role::all();
+        return view('user.role', compact('user', 'roles'));
+    }
+
+    public function roleUpdate(Request $request, $id)
+    {
+        DB::table('model_has_roles')->where('model_id', $id)->update(['role_id' => $request->role]);
+        return redirect()->back()->with('success', 'Role has been successfully updated');
+    }
+
+    public function destroy($id)
+    {
+        $user = User::find($id);
+        $user->delete();
+        return redirect()->route('user.index');
+    }
 
 }

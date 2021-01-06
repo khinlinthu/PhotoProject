@@ -2,15 +2,23 @@
 
 @section('content')
 
+<style >
+    .image{
+        /*width: 500px;*/
+        height: 400px;
+    }
+    .bgcolour{
+        background: #B6B6B4;
+    }
+</style>
+
+<div class="inner-page-header bgcolour">
 <div class="container">
-    <a href="/photo" class="btn btn-warning">Upload</a>
-</div>
-<div class="container mt-2">
     <div class="row">
         @forelse($images as $image)
-        <div class="col-xl-4 col-lg-4 col-md-g col-xs-12">
-            <div class="card mb-3">
-                <img src="{{asset($image->image)}}" class="card-img-top" alt="Broken" height="300px">
+        <div class="col-xl-4 col-lg-3 col-md-g col-xs-12">
+            <div class="card mb-2">
+                <a href="{{route('userdetail',$image->user_id)}}"><img src="{{asset($image->image)}}" class="image" alt="Broken" ></a>
                 {{-- @if(Auth::check())
                 @if($image->user_id == Auth::user()->id)
                 <div class="card-body">
@@ -31,6 +39,7 @@
     <div class="row justify-content-center">
         {{ $images->links()}}
     </div>
+</div>
 </div>
 
 @endsection

@@ -20,16 +20,24 @@
     font-size: 20px;
     font-weight: bolder;
 }
+
+.uploadcard{
+    background-color: #D8DBBA;
+}
+
+.bgcolour{
+        background: #B6B6B4;
+    }
  
 
 </style>
 
 
-    <div class="inner-page-header">
+    <div class="inner-page-header bgcolour">
         <div class="container pb-5">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <div class="card w-100" style="height: 350px">
+                    <div class="card w-100 uploadcard" style="height: 350px">
                         <div class="card-header text">{{ __('Upload Photo') }}</div>
 
                         <div class="card-body">

@@ -2,33 +2,18 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 
+//Admin
 Route::get('/', 'FrontendController@home')->name('photo_contest');
 
 Route::get('photodetail/{id}','FrontendController@photodetail')->name('photodetail');
-
-// Route::get('signin','FrontendController@signin')->name('registration');
 
 Route::resource('photocontest', 'PhotoContestController');
 
 Route::resource('aboutphoto', 'AboutphotoController');
 
-
+//frontend user
 Route::resource('user', 'UserController');
 Route::get('/signin', 'UserController@login')->name('user.signin');
 Route::get('/player/register', 'UserController@playerCreate')->name('user.player');
@@ -38,11 +23,6 @@ Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-
-
-
-
 Route::get('upload', 'FrontendController@upload')->name('uploadpage');
 
 Route::get('/photo', 'ImageController@photo');
@@ -51,26 +31,21 @@ Route::post('/image', 'ImageController@post');
 
 Route::delete('/image/{id}', 'ImageController@destory');
 
-
-//Auth::routes();
-
-
-//Auth::routes(['verify' => true]);
-
-//Route::get('/home', 'AuthController@home')->name('home');
-
-// Route::get('register','AuthController@register')->name('register');
-// Route::get('login','AuthController@login')->name('login');
-// Route::get('profile','AuthController@profile')->name('profile');
-
 Route::get('/profile', 'FrontendController@profile')->name('profile');
 
-// Route::get('edit_profile/{Auth::user()->id}','AuthController@edit_profile')->name('edit_profile');
+Route::get('userdetail/{id}','ImageController@userdetail')->name('userdetail');
 
-// Route::get('logout','\App\Http\Controllers\Auth\LoginController@logout');
+Route::get('vote','FrontendController@photo')->name('vote');
 
-// Route::get('photo','AuthController@photo')->name('photo');
+Route::get('voting/{id}/{clicker}','ImageController@vt')->name('vot');
 
-// Route::get('vote',function(){
-//    return view('vote');
-// });
+Route::get('live','FrontendController@live')->name('live');
+
+
+
+
+//backend
+
+Route::get('/role/{id}', 'UserController@role')->name('user.role');
+
+Route::put('/role/{id}', 'UserController@roleUpdate')->name('user.roleUpdate');

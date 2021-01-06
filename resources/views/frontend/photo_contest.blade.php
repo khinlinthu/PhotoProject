@@ -62,7 +62,7 @@
                                 <div class="overley">
                                     <div class="winners-details">
                                         <ul class="product-info">
-                                           <a href="{{route('photodetail',$photocontest->id)}}"> <li>{{$photocontest->name}}</li></a>
+                                          <li> <a href="{{route('photodetail',$photocontest->id)}}"> {{$photocontest->name}}</a></li>
                                             
                                         </ul>
                                     </div>
@@ -95,8 +95,8 @@
                         <div class="about-content-area">
                             <div class="about-content-area">
                                 <h2>{{$aboutphoto->name}}</h2>
-                                <p>{{$aboutphoto->description}}</p>
-                                <p class="hidden-sm">{{$aboutphoto->note}}</p>
+                                <p>{{$aboutphoto->description}}</p><br>
+                                <h5 class="hidden-sm">{{$aboutphoto->note}}</h5>
                                 {{-- <div class="botton-area">
                                     <a class="radius-0" href="about.html">About Us   <i class="fa fa-angle-right"></i> </a>
                                 </div> --}}

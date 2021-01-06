@@ -15,6 +15,7 @@ class AddColumnToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->text('photo');
+            $table->string('phone')->unique();
             $table->integer('status')->default(0);
         });
     }
@@ -28,6 +29,7 @@ class AddColumnToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('photo');
+            $table->dropColumn('phone');
             $table->dropColumn('status');
         });
     }
