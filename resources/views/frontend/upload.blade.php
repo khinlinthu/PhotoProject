@@ -26,7 +26,7 @@
 }
 
 .bgcolour{
-        background: #B6B6B4;
+        background: #f5f5f5;
     }
  
 

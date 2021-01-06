@@ -42,7 +42,7 @@
         <!-- Slider Area End Here-->
 
         <!-- Home Page Shop Start Here -->
-        <div class="related-winners-area home-shop pt-90 pb-90 white-bg">
+        <div class="related-winners-area home-shop pt-90 pb-90 gray-bg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
@@ -53,8 +53,10 @@
                     </div>
                 </div>
 
+                
                 <div class="home-ralated">
                     <div class="single-shop-area">
+                        @php $i=1; @endphp
                         @foreach($photoconests as $photocontest)
                         <div class="single-winners">
                             <div class="images">
@@ -62,7 +64,7 @@
                                 <div class="overley">
                                     <div class="winners-details">
                                         <ul class="product-info">
-                                          <li> <a href="{{route('photodetail',$photocontest->id)}}"> {{$photocontest->name}}</a></li>
+                                           <a href="{{route('photodetail',$photocontest->id)}}"> <li>{{$photocontest->name}}</li></a>
                                             
                                         </ul>
                                     </div>
@@ -105,7 +107,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <div class="about-featured-image">
-                            <a href="about.html"><img src="{{asset($aboutphoto->photo)}}" alt="image"></a>
+                            <a href="#"><img src="{{asset($aboutphoto->photo)}}" alt="image"></a>
                         </div>
                     </div>
                     @endforeach

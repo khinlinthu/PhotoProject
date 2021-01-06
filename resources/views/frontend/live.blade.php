@@ -8,12 +8,17 @@
   }
 
   .colname{
-    color: #FDD835;
+    color: #ffffff;
     font-weight: bolder;
     font-size: 20px;
   }
+
+  .bgcolour{
+        background: #f5f5f5;
+  }
+
 </style>
- <div class="inner-page-header">
+ <div class="inner-page-header bgcolour">
   <div class="container">
    <table class="table table-striped pt-90 pb-100 tlive">
   <thead>
@@ -24,7 +29,7 @@
       <th scope="col">No</th>
       <th scope="col">Player Name</th>
       <th scope="col">Photo</th>
-      <th scope="col">Count</th>
+      <th scope="col">Counts</th>
     </tr>
   </thead>
   <tbody>

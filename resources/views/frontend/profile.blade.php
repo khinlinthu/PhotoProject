@@ -7,9 +7,14 @@
         height: 120px!important;
         object-fit: cover;
     }
+
+    .bgcolour{
+        background: #f5f5f5;
+    }
+
 </style>
 
-<div class="inner-page-header">
+<div class="inner-page-header bgcolour">
 <!-- Breadcrumb -->
 <div class="breadcrumb-bar">
     <div class="container-fluid">

@@ -13,7 +13,7 @@ class ImageController extends Controller
 {
 	public function photo()
     {
-    	$images = Image::paginate(9);
+    	$images = Image::paginate(30);
     	return view('frontend.photos')->with('images', $images);
     }
     	

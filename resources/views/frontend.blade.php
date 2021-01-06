@@ -79,7 +79,7 @@
                                 <div class="header-top-right">
                                     <ul>
                                         @auth
-                                        <li style="color: #fff;">Login Successful!</li>
+                                        <li style="color: #fff; ">Login Successful!</li>
                                         
                                         @else
 
@@ -137,7 +137,7 @@
                                         <li class="{{ Request::is('new') ? 'active' : '' }} "><a href="#">News & Announcements <i class="fa fa-angle-down"></i></a>
                                             <ul>
                                                 <li><a href="{{route('live')}}">Live Score</a></li>
-                                                <li><a href="product-details.html">Prize</a></li>
+                                                <li><a href="#">Prize</a></li>
                                             </ul>
                                         </li>
                                         
@@ -163,7 +163,7 @@
                                 <nav>
                                     <ul>
                                         <li >
-                                            <a href="#"><img src="{{Auth::user()->photo}}" class="rounded-circle"">{{-- {{Auth::user()->name}} --}}{{-- <i class="fa fa-angle-down"></i> --}}</a>
+                                            <a href="#"><img src="{{Auth::user()->photo}}" class="rounded-circle">{{-- {{Auth::user()->name}} --}}{{-- <i class="fa fa-angle-down"></i> --}}</a>
                                             <ul>
                                                 <li><a href="/profile">Profile</a></li>
                                                 <li><a  href="{{ route('logout') }}"
@@ -195,7 +195,7 @@
                             <div class="mobile-menu">
                                 <nav id="dropdown">
                                     <ul>
-                                        <li class="{{ Request::is('/') ? 'active' : '' }}""><a href="{{route('photo_contest')}}">Photo Contests {{-- <i class="fa fa-angle-down"> --}}</i></a>
+                                        <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{route('photo_contest')}}">Photo Contests {{-- <i class="fa fa-angle-down"> --}}</i></a>
                                             {{-- <ul>
                                                 <li><a href="index.html">Home One</a></li>
                                                 <li><a href="index2.html">Home Two</a></li>
@@ -327,7 +327,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="footer-bottom">
-                                <p> &copy; Copyrights 2018. All rights reserved.</p>
+                                <p> &copy; 2021 SCW Myanmar Co., LTD. All rights reserved.</p>
                             </div>
                         </div>
                     </div>

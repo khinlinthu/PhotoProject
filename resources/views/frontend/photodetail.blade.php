@@ -42,7 +42,7 @@
         <!-- Slider Area End Here-->
 
         <!-- Home Page Shop Start Here -->
-        <div class="related-winners-area home-shop pt-90 pb-90 white-bg">
+        <div class="related-winners-area home-shop pt-90 pb-90 gray-bg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">

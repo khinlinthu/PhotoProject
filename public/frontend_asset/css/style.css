@@ -349,7 +349,7 @@ ul {
   text-decoration: none;
 }
 .header-top-area .social-media-area ul li a:hover {
-  color: #e6e6e6;
+  color: #F1C40F;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -378,7 +378,7 @@ ul {
   transition: all 0.5s ease 0s;
 }
 .header-top-area .header-top-right ul li a:hover {
-  color: #e6e6e6;
+  color: #F1C40F;
 }
 .header-top-area .header-top-right ul li i {
   font-weight: 600;
@@ -438,25 +438,25 @@ ul {
   color: #444444;
 }
 .header-middle-area .main-menu ul li.active a {
-  color: #FDD835;
+  color: #F1C40F;
 }
 .header-middle-area .main-menu ul li.active a i {
   margin-left: 10px;
-  color: #FDD835;
+  color: #F1C40F;
 }
 .header-middle-area .main-menu ul li.active a:hover a {
-  color: #FDD835;
+  color: #F1C40F;
 }
 .header-middle-area .main-menu ul li.active a:hover a i {
   margin-left: 10px;
-  color: #FDD835;
+  color: #F1C40F;
 }
 .header-middle-area .main-menu ul li:hover a {
-  color: #FDD835;
+  color: #F1C40F;
 }
 .header-middle-area .main-menu ul li:hover a i {
   margin-left: 10px;
-  color: #FDD835;
+  color: #F1C40F;
 }
 .header-middle-area .main-menu ul li ul {
   background: #ffffff;
@@ -493,7 +493,7 @@ ul {
 }
 .header-middle-area .main-menu ul li ul li a:hover {
   padding-left: 30px;
-  color: #FDD835 !important;
+  color: #F1C40F !important;
 }
 .header-middle-area .main-menu ul li:hover ul {
   opacity: 1;
@@ -1313,7 +1313,7 @@ ul {
   text-transform: uppercase;
 }
 .winner-area .single-winners h3 a:hover {
-  color: #FDD835;
+  color: #F1C40F;
 }
 .winner-area .view-more {
   margin-top: 30px;
@@ -1584,12 +1584,12 @@ ul {
   height: 35px;
   border-radius: 0;
   border-radius: 50%;
-  border: 1px dashed #FDD835;
+  border: 1px dashed #F1C40F;
 }
 .client-logo-area .owl-buttons div i {
   font-size: 30px;
   line-height: 30px;
-  color: #FDD835;
+  color: #463E3F;
 }
 .client-logo-area .owl-buttons div.owl-prev {
   position: absolute;
@@ -1601,7 +1601,7 @@ ul {
   transform: translateY(-50%);
 }
 .client-logo-area .owl-buttons div.owl-prev:hover {
-  background: #FDD835 !important;
+  background: #463E3F !important;
   color: #ffffff;
 }
 .client-logo-area .owl-buttons div.owl-prev:hover i {
@@ -1617,7 +1617,7 @@ ul {
   transform: translateY(-50%);
 }
 .client-logo-area .owl-buttons div.owl-next:hover {
-  background: #FDD835 !important;
+  background: #463E3F !important;
   color: #ffffff;
 }
 .client-logo-area .owl-buttons div.owl-next:hover i {
@@ -1655,7 +1655,7 @@ ul {
   line-height: 28px;
   color: #dddddd;
   background: #000000;
-  border: 1px solid #d32f2f;
+  border: 1px solid #F1C40F;
   transition: all 0.5s ease 0s;
   text-decoration: none;
   text-align: center;
@@ -1664,8 +1664,8 @@ ul {
   -webkit-border-radius: 50%;
 }
 .footer-top-area .single-footer .footer-social-media-area ul li a:hover {
-  background: #d32f2f;
-  border: 1px solid #d32f2f;
+  background: #F1C40F;
+  border: 1px solid #463E3F;
 }
 .footer-top-area .footer-two ul li {
   color: #999999;
@@ -1675,7 +1675,7 @@ ul {
   transition: all 0.5s ease 0s;
 }
 .footer-top-area .footer-two ul li a:hover {
-  color: #d32f2f;
+  color: #F1C40F;
 }
 .footer-top-area .footer-two ul li i {
   color: #2aacff;
@@ -1720,11 +1720,11 @@ ul {
   transition: all 0.5s ease 0s;
 }
 .footer-top-area .footer-four ul li a:hover {
-  color: #d32f2f;
+  color: #F1C40F;
 }
 .footer-top-area .footer-four ul li i {
   margin: 5px;
-  color: #d32f2f;
+  color: #F1C40F;
 }
 .footer-bottom-area {
   background: #000000;
@@ -1737,7 +1737,7 @@ ul {
   font-weight: 300;
 }
 #scrollUp {
-  background: #FDD835;
+  background: #463E3F;
   bottom: 100px;
   color: #ffffff !important;
   display: block;
@@ -1768,11 +1768,11 @@ ul {
   border-radius: 30px;
 }
 #scrollUp:hover {
-  background: #FDD835;
+  background: #463E3F;
 }
 .preview-2 .nivo-directionNav a.nivo-prevNav:before,
 .preview-2 .nivo-directionNav a.nivo-nextNav:before {
-  border: 1px dashed #FDD835 !important;
+  border: 1px dashed #F1C40F !important;
   color: #ffffff !important;
   background: transparent;
   border-radius: 50% !important;
@@ -1780,8 +1780,8 @@ ul {
   font-weight: 300 !important;
 }
 .preview-2 .nivo-directionNav a.nivo-prevNav:hover:before,
-.preview-2 .nivo-directionNav a.nivo-prevNav:hover:before {
-  background: #FDD835 !important;
+.preview-2 .nivo-directionNav a.nivo-nextNav:hover:before {
+  background: #463E3F !important;
 }
 /* ------------------------------------
 13.Portfolio One Start Here 
@@ -4813,7 +4813,8 @@ ul {
   text-align: center;
   width: 100%;
   height: 100%;
-  background: rgba(211, 47, 47, 0.9);
+  /*background: rgba(211, 47, 47, 0.9);*/
+  background: rgba(1, 0, 0, 0.2);
   top: 0;
   transform: scaleY(0);
   transform-origin: 0 1 0;
@@ -4861,8 +4862,9 @@ ul {
   transition: all 0.5s ease 0s;
 }
 .home-shop .home-ralated .single-winners .images .overley .winners-details .product-info li a:hover {
-  background: #b52929;
-  border: 1px solid #b52929;
+  /*background: #b52929;*/
+  background: rgba(1, 0, 0, 0.2);
+  border: 1px solid rgba(1, 0, 0, 0.2);
   color: #ffffff;
 }
 .home-shop .home-ralated .single-winners .images .overley .winners-details .product-info li a i {
@@ -4932,7 +4934,7 @@ ul {
   margin-bottom: 30px;
 }
 .home-shop .single-shop-area .single-winners .images:hover h3 a {
-  color: #d32f2f;
+  color: #F1C40F;
 }
 .home-shop .single-shop-area .single-winners .images:hover .overley {
   opacity: 1;
@@ -4951,7 +4953,8 @@ ul {
   text-align: left;
   width: 100%;
   height: 100%;
-  background: rgba(211, 47, 47, 0.9);
+  /*background: rgba(211, 47, 47, 0.9);*/
+  background: rgba(1, 0, 0, 0.2);
   top: 0;
   transform: scaleY(0);
   transform-origin: 0 1 0;
@@ -5022,7 +5025,7 @@ ul {
   text-transform: uppercase;
 }
 .home-shop .single-shop-area .single-winners h3 a:hover {
-  color: #d32f2f;
+  color: #463E3F;
 }
 .home-shop .single-shop-area .owl-buttons .owl-next {
   background: transparent;
@@ -5035,10 +5038,10 @@ ul {
   position: absolute;
   top: 35%;
   border-radius: 50%;
-  border: 1px dashed #d32f2f;
+  border: 1px dashed #F1C40F;
 }
 .home-shop .single-shop-area .owl-buttons .owl-next:hover {
-  background: #d32f2f;
+  background: #463E3F;
   color: #ffffff;
 }
 .home-shop .single-shop-area .owl-buttons .owl-next:hover i {
@@ -5048,7 +5051,7 @@ ul {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  color: #d32f2f;
+  color: #463E3F;
 }
 .home-shop .single-shop-area .owl-buttons .owl-prev {
   background: transparent;
@@ -5061,10 +5064,10 @@ ul {
   position: absolute;
   top: 35%;
   border-radius: 50%;
-  border: 1px dashed #d32f2f;
+  border: 1px dashed #F1C40F;
 }
 .home-shop .single-shop-area .owl-buttons .owl-prev:hover {
-  background: #d32f2f;
+  background: #463E3F;
   color: #ffffff;
 }
 .home-shop .single-shop-area .owl-buttons .owl-prev:hover i {
@@ -5074,7 +5077,7 @@ ul {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  color: #d32f2f;
+  color: #463E3F;
 }
 /*-------------------------------------
 29.Slider Bottom area start  here 
@@ -5703,9 +5706,9 @@ ul {
   overflow: hidden;
   margin-bottom: 30px;
 }
-.shop-page-area .single-details .images:hover h3 a {
+/*.shop-page-area .single-details .images:hover h3 a {
   color: #d32f2f;
-}
+}*/
 .shop-page-area .single-details .images:hover .overley {
   opacity: 1;
   transform: scaleY(1);
@@ -5724,7 +5727,7 @@ ul {
   text-align: center;
   width: 100%;
   height: 100%;
-  background: rgba(211, 47, 47, 0.9);
+  /*background: rgba(211, 47, 47, 0.9);*/
   top: 0;
   transform: scaleY(0);
   transform-origin: 0 1 0;
@@ -5771,11 +5774,11 @@ ul {
   text-align: center;
   transition: all 0.5s ease 0s;
 }
-.shop-page-area .single-details .images .overley .winners-details .product-info li a:hover {
+/*.shop-page-area .single-details .images .overley .winners-details .product-info li a:hover {
   background: #b52929;
   border: 1px solid #b52929;
   color: #ffffff;
-}
+}*/
 .shop-page-area .single-details .images .overley .winners-details .product-info li a i {
   font-size: 16px;
   color: #ffffff;
@@ -5801,9 +5804,9 @@ ul {
   text-transform: uppercase;
   margin: 0;
 }
-.shop-page-area .single-details h3 a:hover {
+/*.shop-page-area .single-details h3 a:hover {
   color: #d32f2f;
-}
+}*/
 .shop-page-area .single-details .price-details ul {
   margin: 0;
   padding: 0;
