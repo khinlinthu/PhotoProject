@@ -10,7 +10,7 @@ class Vote extends Model
     
     'image_id',
     'user_id',
-    'count'
+    'count',
 
     ];
     public function photo()

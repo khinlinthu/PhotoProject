@@ -9,7 +9,8 @@ class Image extends Model
     protected $fillable=[
     
     'image',
-    'user_id'
+    'user_id',
+    'vote_id'
 
     ];
 

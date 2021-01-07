@@ -14,46 +14,32 @@
     <div class="home-gellary-area pt-90 pb-100 bgcolour">
             <div class="container">
                 <div class="row mt-3">
-                   
+
                     @foreach($image as $image)
+                    
                     
                     <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
                         <div class="single-gellary">
                             <div class="image">
                                 <img src="{{$image->image}}" alt="" class="size">
-                                
+                                <div class="overley">
+                                    @if(Auth::user()->getRoleNames()[0]=="member")
+                                    <ul>
+                                        <li><a href="{{route('vot',['id'=>$image->id,'clicker'=>Auth::user()->id])}}"><i class="fa fa-heart"></i></a></li>
+                                    
+                                        <li>{{$image->count}}</li>
+                                        
+
+                                        
+                                    </ul>
+                                    @endif
+                                </div>
                             </div>
                             
                         </div>
                     </div>
                     
                     @endforeach
-                  <div class="overley">
-                                    @if(Auth::user()->getRoleNames()[0]=="member")
-                                     @if (Session::has('back'))
-                                      {{--  @foreach($back_image as $bi) --}}
-                                         <ul>{{-- 
-                                        <li><a href="{{route('vot',['id'=>$bi->id,'clicker'=>Auth::user()->id])}}"><i class="fa fa-heart"></i></a></li> --}}
-                                    
-                                          <li>{{Session::get('back')}}</li>
-                                        </ul>
-                                       {{-- @endforeach --}}
-
-                                     @else
-                                    <ul>
-                                        <li><a href="{{route('vot',['id'=>$image->id,'clicker'=>Auth::user()->id])}}"><i class="fa fa-heart"></i></a></li>
-                                    
-                                         {{-- <li>{{$image->count}}</li> --}}
-                                    </ul>
-                                    @endif
-                                    @else
-                                        <ul>
-                                        <li><i class="fa fa-heart"></i></li>
-                                    
-                                         {{-- <li>{{$image->count}}</li> --}}
-                                    </ul>
-                                    @endif
-                                </div>
                 </div>
                 
             </div>

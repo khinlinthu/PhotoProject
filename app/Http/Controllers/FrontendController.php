@@ -53,17 +53,21 @@ class FrontendController extends Controller
         ->join('users','users.id','=','images.user_id')
         ->join('model_has_roles','model_has_roles.model_id','=','users.id')
         ->join('roles','roles.id','=','model_has_roles.role_id')
-        ->join('votes','votes.image_id','=','images.id')
-        ->select('images.*','votes.count')
+        
+        ->select('images.*')
         ->where('roles.id','=',4)
         ->get();
-        $count=DB::table('votes')
+        // dd($image);
+
+        $back_image=DB::table('votes')
         ->join('images','images.id','=','votes.image_id')
-        ->select('votes.*')
+        ->select('votes.count')
+        
         ->get();
           
-        return view('frontend.vote',compact('image'));
+        return view('frontend.vote',compact('image','back_image'));
     }
+    
     public function vt($id,$name)
     {
         
@@ -86,9 +90,11 @@ class FrontendController extends Controller
         ->select('users.name','images.image',DB::raw('sum(votes.count)as user_count'))
         ->join('users','users.id','=','votes.user_id')
         ->join('images','images.id','=','votes.image_id')
-        ->groupBy('votes.image_id')
+        ->groupBy('images.id')
+        ->orderBy('votes.count','DESC')
         ->get();
         
+
         return view('frontend.live',compact('live'));
 
     }
