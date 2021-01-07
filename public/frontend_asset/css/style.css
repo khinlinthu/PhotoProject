@@ -219,7 +219,7 @@ ul {
   background: #f8f8f8;
 }
 .gray-bg {
-  background: #f5f5f5;
+  background: #d3d3d3;
 }
 .mean-container .mean-nav {
   position: absolute;
@@ -388,6 +388,7 @@ ul {
 }
 .header-middle-area {
   background: #ffffff;
+  /*background: rgba(1, 0, 0, 0.2);*/
   position: absolute;
   left: 0;
   right: 0;
@@ -399,6 +400,7 @@ ul {
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
+
 .header-middle-area .logo-area {
   padding: 27px 0 0;
 }
@@ -433,6 +435,7 @@ ul {
   transition: all 0.5s ease 0s;
   font-family: 'Poppins', sans-serif;
 }
+
 .header-middle-area .main-menu ul li a i {
   margin-left: 10px;
   color: #444444;

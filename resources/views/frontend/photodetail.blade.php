@@ -88,7 +88,7 @@
         <!-- Home Page Shop End Here -->            
 
         <!-- Home About Start Here -->
-        <div class="home-about-area pt-100 pb-100 gray-bg">
+        <div class="home-about-area pt-100 pb-100" style="background-color: #d3d3d3;">
             <div class="container {{-- @if($loop->first) {{'show'}} @endif --}}">
                 <div class="row">
                     {{-- {{$photodetail}} --}}
@@ -118,7 +118,7 @@
         <!-- Home About End Here -->
 
         <!-- Partner Logo Area Start Here -->
-        <div class="fix client-logo-area pt-90 pb-90">
+        <div class="fix client-logo-area pt-90 pb-90 gray-bg">
             <div class="container">
                 <div class="client-logo">
                     <div class="single-logo">
