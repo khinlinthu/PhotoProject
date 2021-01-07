@@ -55,11 +55,11 @@ class LoginController extends Controller
                 break;
 
             case 'player':
-                return '/';
+                return '/upload';
                 break;
 
             case 'member':
-                return '/';
+                return '/upload';
                 break;
 
             default:

@@ -79,8 +79,16 @@
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
             <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
             <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-            <li><a class="dropdown-item" href="" >
-              <i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+            <li><a class="dropdown-item" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();"><i class="fa fa-sign-out fa-lg"></i>
+                            {{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+              </li>
                    
           </ul>
         </li>
@@ -101,6 +109,7 @@
       <ul class="app-menu">
         <li><a class="app-menu__item {{ Request::is('photocontest*') ? 'active' : '' }}" href="{{route('photocontest.index')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Photo Contest</span></a></li>
         <li><a class="app-menu__item {{ Request::is('aboutphoto*') ? 'active' : '' }}" href="{{route('aboutphoto.index')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">About Photo Contest</span></a></li>
+        <li><a class="app-menu__item {{ Request::is('image*') ? 'active' : '' }}" href="{{route('image.index')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Images</span></a></li>
         <li><a class="app-menu__item {{ Request::is('vote*') ? 'active' : '' }}" href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">vote</span></a></li>
         <li >
             <a href="{{ route('user.index') }}" class="app-menu__item {{ Request::is('user*') ? 'active' : '' }}"><i class="app-menu__icon fa fa-pie-chart"></i> <span class="app-menu__label"> Users </span></a>

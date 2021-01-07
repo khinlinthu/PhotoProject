@@ -16,14 +16,13 @@
     <div class="row">
       <div class="col-md-12">
         <div class="tile">
-          <h2 class="d-inline-block">Photo Contest List</h2>
-          <a href="{{route('photocontest.create')}}" class="btn btn-info float-right">Add New</a>
+          <h2 class="d-inline-block">Images</h2>
+          {{-- <a href="{{route('aboutphoto.create')}}" class="btn btn-info float-right">Add New</a> --}}
           <table class="table mt-3 table-bordered dataTable">
             <thead>
               <tr>
                 <th>No</th>
-                <th>Name</th>
-                <th>photo</th>
+                <th>Photo</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -31,18 +30,17 @@
               @php 
                 $i=1;
               @endphp
-              @foreach($photocontests as $row)
+              @foreach($images as $row)
               <tr>
                 <td>{{$i++}}</td>
-                <td>{{$row->name}}</td>
-                <td><img src="{{asset($row->photo)}}" class="img-fluid" style="width: 55px;"></td>
+                <td><img src="{{asset($row->image)}}" class="img-fluid" style="width: 55px;"></td>
                 <td>
-                  <a href="{{route('photocontest.edit',$row->id)}}" class="btn btn-warning">Edit</a>
-                  <a href="{{route('photocontest.show',$row->id)}}" class="btn btn-info">Show</a>
-                  <form method="post" action="{{route('photocontest.destroy',$row->id)}}" class="d-inline-block" onsubmit="return confirm('Are you Sure to Delete?')">
+                  {{-- <a href="{{route('aboutphoto.edit',$row->id)}}" class="btn btn-warning">Edit</a>
+                  <a href="{{route('aboutphoto.show',$row->id)}}" class="btn btn-info">Show</a> --}}
+                  <form method="post" action="{{route('image.destroy',$row->id)}}" class="d-inline-block" onsubmit="return confirm('Are you Sure to Delete?')">
                     @csrf
                     @method('DELETE')
-                    <input type="submit" name="btnsubmit" value="Delete" class="btn btn-danger"> 
+                    <input type="submit" name="btnsubmit" value="Delete" class="btn btn-danger">
                   </form>
                 </td>
               </tr>

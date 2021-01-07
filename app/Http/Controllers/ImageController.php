@@ -11,6 +11,24 @@ use App\Vote;
 
 class ImageController extends Controller
 {
+    public function index()
+    {
+         $images = Image::all();
+        return view('Images.index',compact('images'));
+    }
+
+    public function create()
+    {
+        //
+    }
+
+
+    public function show($id)
+    {
+        // 
+    }
+
+
 	public function photo()
     {
     	$images = Image::paginate(30);
@@ -35,12 +53,11 @@ class ImageController extends Controller
     	Session::flash('success', 'Images uploaded');
     	return redirect('/photo');
     }
-    public function destory($id)
+    public function destroy($id)
     {
         $image = Image::find($id);
-        $image->delete;
-        Session::flash('success', 'Images Deleted');
-        return redirect('/photo');
+        $image->delete();
+        return redirect()->route('images.index');
 
     }
 
@@ -136,7 +153,15 @@ class ImageController extends Controller
             ->select('count')
             ->where('image_id','=',$id)
             ->get();
+
+        $back_image=DB::table('votes')
+        ->join('images','images.id','=','votes.image_id')
+        ->select('votes.count')
         
-         return redirect()->route('vote',compact('count'));                  
+        ->get();
+ 
+        Session::put('back', $back_image);
+         return redirect()->route('vote')/*->with('message',$back_image)*/;   
+        /* return view('frontend.vote2',compact('image'));*/             
     }
 }

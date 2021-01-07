@@ -20,7 +20,7 @@
 </style>
  <div class="inner-page-header bgcolour">
   <div class="container">
-   <table class="table table-striped pt-90 pb-100 tlive">
+   <table class="table table-striped pt-90 pb-100 tlive ">
   <thead>
     @php
        $num = 1;

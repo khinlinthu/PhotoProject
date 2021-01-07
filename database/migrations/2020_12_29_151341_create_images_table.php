@@ -17,6 +17,7 @@ class CreateImagesTable extends Migration
             $table->id();
             $table->integer('user_id')->unsigned();
             $table->string('image');
+            $table->integer('vote_id')->unsigned();
             $table->timestamps();
         });
     }
