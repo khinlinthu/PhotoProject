@@ -15,7 +15,7 @@
     }
 
     .bgcolour{
-        background: #B6B6B4;
+        background: #d3d3d3;
     }
 </style>
     <div class="inner-page-header bgcolour">

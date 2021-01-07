@@ -14,7 +14,7 @@
   }
 
   .bgcolour{
-        background: #f5f5f5;
+        background: #d3d3d3;
   }
 
 </style>
