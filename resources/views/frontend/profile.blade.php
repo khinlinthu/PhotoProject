@@ -38,7 +38,7 @@
         {{-- profile card --}}
         <div class="row">
             <div class="col-md-12 col-lg-12">
-                <div class="card">
+                <div class="card" style="background-color: #606060;">
                     <div class="card-body">                                                           
                         <div class="row align-items-center">
                             <div class="col-auto profile-image">
@@ -48,8 +48,8 @@
                             </div>
                             <div class="col ml-md-n2 profile-user-info">
                                 <h4 class="user-name ">{{Auth::user()->name}}</h4>
-                                <h6 class="text-muted">{{Auth::user()->email}}</h6>
-                                <h6 class="text-muted">{{Auth::user()->phone}}</h6>
+                                <h6 class="">{{Auth::user()->email}}</h6>
+                                <h6 class="">{{Auth::user()->phone}}</h6>
                                 {{-- <h6 class="text-muted">{{Auth::user()->role}}</h6> --}}
                                 
                             </div>

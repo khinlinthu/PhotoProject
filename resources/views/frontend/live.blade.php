@@ -5,12 +5,24 @@
   .tlive{
     background-color: #696C6D;
     color: #ffffff;
+    border-radius: 15px;
+    border-collapse: collapse;
+    color: #000000;
+    font-size: 20px;
   }
 
+  tr:hover {background-color: #EDEADF ;}
+  /*tr:nth-child(even) {background-color: #f2f2f2;}*/
+
+  th {
+  background-color: #1F1B0D;
+  color: white;
+}
+
   .colname{
-    color: #ffffff;
+    color: #000000;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .bgcolour{

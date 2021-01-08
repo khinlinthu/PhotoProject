@@ -50,22 +50,30 @@ class FrontendController extends Controller
     public function photo()
     {
         $image=DB::table('images')
+        /*->join('images','images.id','=','votes.image_id')*/
         ->join('users','users.id','=','images.user_id')
         ->join('model_has_roles','model_has_roles.model_id','=','users.id')
         ->join('roles','roles.id','=','model_has_roles.role_id')
         
-        ->select('images.*')
+        /*->select('images.*','votes.count')
+        ->join('images','images.id','=','votes.image_id')*/
         ->where('roles.id','=',4)
+        
+        /*->where('votes.image_id','=',NULL)*/
+        
+        ->select('images.*')
+        
+        /*sss*/
         ->get();
-        // dd($image);
-
+         
+         
         $back_image=DB::table('votes')
         ->join('images','images.id','=','votes.image_id')
         ->select('votes.count')
         
         ->get();
           
-        return view('frontend.vote',compact('image','back_image'));
+        return view('frontend.vote',compact('image'));
     }
     
     public function vt($id,$name)

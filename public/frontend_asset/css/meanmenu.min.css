@@ -91,7 +91,7 @@ a.meanmenu-reveal{display:none}
 .mean-container .mean-bar,.mean-container .mean-bar *{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
 .mean-remove{display:none!important}
 .mean-container .mean-bar::after {
-  background: transparent url("../images/mob-logo.png") no-repeat scroll 0 0;
+  background: transparent url("../images/scw myanmar.png") no-repeat scroll 0 0;
   color: #ffffff;
   content: ".";
   font-size: 21px;
@@ -99,6 +99,6 @@ a.meanmenu-reveal{display:none}
   position: absolute;
   text-indent: -999px;
   top: 10px;
-  width: 180px;
-  height: 50px;
+  width: 80px;
+  height: 20px;
 }

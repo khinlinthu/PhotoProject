@@ -81,7 +81,7 @@ class ImageController extends Controller
 
     public function vt($id,$clicker)
     {
-    
+        
         /*$query=DB::table('votes')
         ->select('user_id','image_id')
         ->where('user_id','!=',$clicker)
@@ -161,7 +161,7 @@ class ImageController extends Controller
         ->get();
  
         Session::put('back', $back_image);
-         return redirect()->route('vote')/*->with('message',$back_image)*/;   
+         return redirect()->route('vote')->with('message',"save count data");   
         /* return view('frontend.vote2',compact('image'));*/             
     }
 }

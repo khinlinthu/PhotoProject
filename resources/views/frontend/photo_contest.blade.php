@@ -48,7 +48,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="section-title">
                             <h2>Our <span>Contests</span></h2>
-                            <p>An opportunity for of prefessional photographers to introduce of the best beautiful of the landscape and other valuable natures of Myanmar to the world. We will be donate of the members fees to medical organizations and other organizations working to prevent COVID-19. All of the contestants must be use our service such as transportation and accomandation. Above that our company will also offer a 50% discount on individual trips of this contest. All of the contestants must be tested for covid-19 </p>
+                            <p>An opportunity for of prefessional photographers to introduce of the best beautiful of the landscape and other valuable natures of Myanmar to the world. We will be donate of the members fees to medical organizations and other organizations working to prevent COVID-19. All of the contestants must be use our service such as transportation and accomandation. Above that our company will also offer a 50% discount on individual trips of this contest. All of the contestants must be tested for covid-19. </p>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                             <div class="about-content-area">
                                 <h2>{{$aboutphoto->name}}</h2>
                                 <p>{{$aboutphoto->description}}</p><br>
-                                <h5 class="hidden-sm">{{$aboutphoto->note}}</h5>
+                                <h5 class="hidden-sm">Start Date : &nbsp{{$aboutphoto->note}}</h5>
                                 {{-- <div class="botton-area">
                                     <a class="radius-0" href="about.html">About Us   <i class="fa fa-angle-right"></i> </a>
                                 </div> --}}

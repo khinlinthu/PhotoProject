@@ -6,10 +6,13 @@
     .reg{
         margin-left: 330px;
     }
+    .bgcolour{
+        background: #d3d3d3;
+    }
 </style>
 
 <!-- Page Content -->
-<div class="loginregistration-area pt-100 pb-100">
+<div class="loginregistration-area pt-100 pb-100 bgcolour">
         <div class="container">
                 <div class="row">
     				<div class="col-lg-6 col-md-6 col-sm-12 reg">
