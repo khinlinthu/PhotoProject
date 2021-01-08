@@ -17,10 +17,11 @@ Route::resource('aboutphoto', 'AboutphotoController');
 
 Route::resource('image', 'ImageController');
 
+});
+
 //frontend user
 Route::resource('user', 'UserController');
 
-});
 Route::get('/signin', 'UserController@login')->name('user.signin');
 Route::get('/player/register', 'UserController@playerCreate')->name('user.player');
 Route::post('/player/store', 'UserController@playerstore')->name('user.playerstore');
