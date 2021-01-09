@@ -11,10 +11,11 @@ use App\Vote;
 
 class ImageController extends Controller
 {
-    public function index()
+
+     public function index()
     {
          $images = Image::all();
-        return view('images.index',compact('images'));
+        return view('image.index',compact('images'));
     }
 
     public function create()
@@ -22,8 +23,25 @@ class ImageController extends Controller
         //
     }
 
+    public function store(Request $request)
+    {
+         // 
+    }
+
+
 
     public function show($id)
+    {
+        $images = Image::find($id);
+        return view('image.show',compact('images'));
+    }
+
+    public function edit($id)
+    {
+        // 
+    }
+
+    public function update(Request $request, $id)
     {
         // 
     }
@@ -57,7 +75,7 @@ class ImageController extends Controller
     {
         $image = Image::find($id);
         $image->delete();
-        return redirect()->route('images.index');
+        return redirect()->route('image.index');
 
     }
 
@@ -121,12 +139,14 @@ class ImageController extends Controller
         
         $user_id=$clicker;
         $img_id=$id;
-
+         
+         
         $query=DB::table('votes')
         ->select('image_id')
         
         ->where('image_id','=',$img_id)
         ->get();
+        
         /*$query2=DB::table('votes')
         ->select('user_id','image_id')
         ->where('user_id' ,'!=',$user_id)
@@ -156,12 +176,12 @@ class ImageController extends Controller
 
         $back_image=DB::table('votes')
         ->join('images','images.id','=','votes.image_id')
-        ->select('votes.count')
+        ->select('votes.image_id')
         
         ->get();
  
         Session::put('back', $back_image);
-         return redirect()->route('vote')->with('message',"save count data");   
+         return redirect()->route('vote')->with('message',$back_image);   
         /* return view('frontend.vote2',compact('image'));*/             
-    }
+    } 
 }

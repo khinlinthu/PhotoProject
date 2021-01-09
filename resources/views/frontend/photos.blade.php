@@ -99,31 +99,9 @@
 
     <div class="inner-page-header bgcolour">
         <div class="container">
-        <!-- <div class="row">
-            @forelse($images as $image)
-            <div class="col-xl-4 col-lg-3 col-md-g col-xs-12">
-                <div class="card mb-2">
-                    <a href="{{route('userdetail',$image->user_id)}}"><img src="{{asset($image->image)}}" class="image" alt="Broken" ></a>
-                     @if(Auth::check())
-                    @if($image->user_id == Auth::user()->id)
-                    <div class="card-body">
-                        <form action="/image/{{ $image->id }}" method="POST">
-                            @method('DELETE')
-                            @csrf
-                            <input type="submit" value="Delete" class="btn btn-danger" name="">
-                        </form>
-                    </div>
-                    @endif
-                    @endif 
-                </div>
-            </div>
-            @empty
-            <h1 class="text-danger">There is no uploads</h1>
-            @endforelse
-        </div> -->
             <div class="row">
                 @forelse($images as $image)
-                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 mb-3">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-3">
                     <div class="hovereffect">
                         <img src="{{asset($image->image)}}" class="image img-responsive" alt="Broken" >
                             <div class="overlay">

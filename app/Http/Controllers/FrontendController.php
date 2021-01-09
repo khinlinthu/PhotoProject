@@ -68,12 +68,12 @@ class FrontendController extends Controller
          
          
         $back_image=DB::table('votes')
-        ->join('images','images.id','=','votes.image_id')
-        ->select('votes.count')
+        /*->join('images','images.id','=','votes.image_id')*/
+        ->select('votes.image_id','votes.user_id')
         
         ->get();
-          
-        return view('frontend.vote',compact('image'));
+        
+        return view('frontend.vote',compact('image','back_image'));
     }
     
     public function vt($id,$name)
@@ -94,13 +94,23 @@ class FrontendController extends Controller
     public function live()
     {
     
-        $live=DB::table('votes')
+        /*$live=DB::table('votes')
         ->select('users.name','images.image',DB::raw('sum(votes.count)as user_count'))
-        ->join('users','users.id','=','votes.user_id')
+        ->join('users','users.id','=','images.user_id')
         ->join('images','images.id','=','votes.image_id')
         ->groupBy('images.id')
         ->orderBy('votes.count','DESC')
+        ->get();*/
+        $live=DB::table('images')
+        ->select('users.name','images.image',DB::raw('sum(votes.count)as user_count'))
+        ->join('users','users.id','=','images.user_id')
+        ->join('votes','votes.image_id','=','images.id')
+        ->groupBy('images.id')
+        ->orderBy('votes.count','DESC')
         ->get();
+
+
+
         
 
         return view('frontend.live',compact('live'));

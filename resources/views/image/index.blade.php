@@ -35,8 +35,8 @@
                 <td>{{$i++}}</td>
                 <td><img src="{{asset($row->image)}}" class="img-fluid" style="width: 55px;"></td>
                 <td>
-                  {{-- <a href="{{route('aboutphoto.edit',$row->id)}}" class="btn btn-warning">Edit</a>
-                  <a href="{{route('aboutphoto.show',$row->id)}}" class="btn btn-info">Show</a> --}}
+                  {{-- <a href="{{route('aboutphoto.edit',$row->id)}}" class="btn btn-warning">Edit</a> --}}
+                  <a href="{{route('image.show',$row->id)}}" class="btn btn-info">Show</a>
                   <form method="post" action="{{route('image.destroy',$row->id)}}" class="d-inline-block" onsubmit="return confirm('Are you Sure to Delete?')">
                     @csrf
                     @method('DELETE')
