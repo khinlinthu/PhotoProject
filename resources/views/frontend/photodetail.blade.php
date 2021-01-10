@@ -48,7 +48,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="section-title">
                             <h2>Our <span>Contests</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius.Photograhy HTML is very </p>
+                            <p>An opportunity for of prefessional photographers to introduce of the best beautiful of the landscape and other valuable natures of Myanmar to the world. We will be donate of the members fees to medical organizations and other organizations working to prevent COVID-19. All of the contestants must be use our service such as transportation and accomandation. Above that our company will also offer a 50% discount on individual trips of this contest. All of the contestants must be tested for covid-19. </p>
                         </div>
                     </div>
                 </div>
