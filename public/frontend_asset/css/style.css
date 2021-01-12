@@ -260,7 +260,7 @@ ul {
   background: #FDD835;
 }
 .section-title h2 span {
-  color: #FDD835;
+  color: #333333;
   font-weight: 600;
 }
 .section-title img {
@@ -3637,7 +3637,7 @@ ul {
   box-shadow: none;
 }
 .loginregistration-area .login-area fieldset .btn-send {
-  background: #d32f2f;
+  background: #6495ED;
   border: 0 none;
   color: #ffffff;
   display: block;
@@ -3645,7 +3645,7 @@ ul {
   font-weight: bold;
   padding: 20px 45px;
   border-radius: 30px;
-  box-shadow: 2px 0px 11px -2px #d32f2f;
+  box-shadow: 2px 0px 11px -2px #6495ED;
   transition: all 0.5s ease 0s;
   margin-top: 30px;
   width: 100%;
@@ -3653,7 +3653,7 @@ ul {
   cursor: pointer;
 }
 .loginregistration-area .login-area fieldset .btn-send:hover {
-  background: #b52929;
+  background: #6495ED;
   box-shadow: none;
 }
 .loginregistration-area .login-area .connected-area {
@@ -3741,7 +3741,7 @@ ul {
   box-shadow: none;
 }
 .loginregistration-area .registration-area fieldset .btn-send {
-  background: #000000;
+  background: #6495ED;
   border: 0 none;
   color: #ffffff;
   display: block;
@@ -3749,7 +3749,7 @@ ul {
   font-weight: bold;
   padding: 20px 45px;
   border-radius: 30px;
-  box-shadow: 2px 0px 11px -2px #d32f2f;
+  box-shadow: 2px 0px 11px -2px #6495ED;
   transition: all 0.5s ease 0s;
   margin-top: 30px;
   width: 100%;
@@ -3757,7 +3757,7 @@ ul {
   cursor: pointer;
 }
 .loginregistration-area .registration-area fieldset .btn-send:hover {
-  background: #d32f2f;
+  background: #6495ED;
   box-shadow: none;
 }
 /* ------------------------------------
