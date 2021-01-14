@@ -3,11 +3,14 @@
 @section('content')
 
 <style >
-    .reg{
-        margin-left: 330px;
-    }
+    
     .bgcolour{
         background: #d3d3d3;
+    }
+
+    .col-lg-6,.col-md-6,.col-sm-12{
+        padding-left: 0;
+        padding-right: 0;
     }
 </style>
 
@@ -15,7 +18,12 @@
 <div class="loginregistration-area pt-100 pb-100 bgcolour">
         <div class="container">
                 <div class="row">
-    				<div class="col-lg-6 col-md-6 col-sm-12 reg">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                       <div>
+                           <img src="{{asset('frontend_asset/images/bgn.jpg')}}" style="width: 1200px; height: 920px;">
+                       </div>
+                    </div>
+    				<div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="registration-area">
                             <h2>Registration</h2>
                             <div class="login-header">

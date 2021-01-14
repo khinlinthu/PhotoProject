@@ -106,17 +106,24 @@
                     <div class="main-menu">
                         <nav>
                             <ul>
-                                <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{route('photo_contest')}}">Photo Contests {{-- <i class="fa fa-angle-down"></i></a>
+                                <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{route('photo_contest')}}"> Contests <i class="fa fa-angle-down"></i></a>
                                     <ul>
-                                        <li><a href="index.html">Home One</a></li>
-                                        <li><a href="index2.html">Home Two</a></li>
+                                        <li><a href="index.html">Season One</a></li>
+                                        <li><a href="index2.html">Season Two</a></li>
                                     </ul>
-                                </li> --}}
-                                 <li class="{{ Request::is('photo') ? 'active' : '' }}"><a href="/photo">Photos </a> 
-                                    {{-- <ul>
-                                        <li><a href="about.html">About Us</a> 
-                                        <li><a href="about-me.html">About Me</a></li>
-                                    </ul> --}}
+                                </li>
+                                 <li class="{{ Request::is('photo') ? 'active' : '' }}"><a href="/photo">Photos <i class="fa fa-angle-down"></i></a> 
+                                    <ul>
+                                        <li><a href="about.html">Travel</a> 
+                                        <li><a href="about-me.html">Event</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="{{ Request::is('gallery') ? 'active' : '' }}"><a href="/photo">Gallery <i class="fa fa-angle-down"></i></a> 
+                                    <ul>
+                                        <li><a href="about.html">Photo</a> 
+                                        <li><a href="about-me.html">Video</a></li>
+                                    </ul>
                                 </li>
                                 <li class="{{ Request::is('vote') ? 'active' : '' }}"><a href="@auth {{route('vote')}} @else {{route('user.signin')}}  @endauth">Vote {{-- <i class="fa fa-angle-down"></i></a>
                                     <ul>
@@ -125,15 +132,15 @@
                                         <li><a href="single-portfolio.html">Portfolio Details</a></li>
                                     </ul> --}}
                                 </li>
-                                <li class="{{ Request::is('upload') ? 'active' : '' }}">
-                                    <a href="@auth {{route('uploadpage')}} @else {{route('user.signin')}}  @endauth">+UPLOAD  {{-- <i class="fa fa-angle-down"></i> --}}</a>
+                                {{-- <li class="{{ Request::is('upload') ? 'active' : '' }}">
+                                    <a href="@auth {{route('uploadpage')}} @else {{route('user.signin')}}  @endauth">+UPLOAD  <i class="fa fa-angle-down"></i></a>  --}}
                                     
                                      {{-- <ul>
                                         <li><a href="gallery.html">Gallery One</a></li>
                                         <li><a href="gallery1.html">Gallery Two</a></li>
                                         <li><a href="gallery2.html">Gallery Three</a></li>
-                                    </ul>  --}}
-                                </li>
+                                    </ul> 
+                                </li> --}}
                                 <li class="{{ Request::is('new') ? 'active' : '' }} "><a href="#">News & Announcements <i class="fa fa-angle-down"></i></a>
                                     <ul>
                                         <li><a href="{{route('live')}}">Live Score</a></li>
@@ -148,7 +155,7 @@
                                         <li><a href="blog-right.html">Blog Right Sidebar</a></li>
                                         <li><a href="single-blog.html">Single Blog</a></li>
                                     </ul>
-                                </li> --}}
+                                </li>
                                 {{-- <li><a href="contact.html">Contact Us</a></li> --}}
                             </ul>
                         </nav>
@@ -196,41 +203,57 @@
                     <div class="mobile-menu">
                         <nav id="dropdown">
                             <ul>
-                                <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{route('photo_contest')}}">Photo Contests {{-- <i class="fa fa-angle-down"> --}}</i></a>
-                                    {{-- <ul>
-                                        <li><a href="index.html">Home One</a></li>
-                                        <li><a href="index2.html">Home Two</a></li>
-                                    </ul> --}}
+                                <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{route('photo_contest')}}"> Contests <i class="fa fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="index.html">Season One</a></li>
+                                        <li><a href="index2.html">Season Two</a></li>
+                                    </ul>
                                 </li>
-                                <li class="{{ Request::is('photo') ? 'active' : '' }}"><a href="/photo">Photos {{-- <i class="fa fa-angle-down"> --}}</i></a> 
-                                    {{-- <ul>
-                                        <li><a href="about.html">About Us</a> 
-                                        <li><a href="about-me.html">About Me</a></li>
-                                    </ul> --}}
+                                 <li class="{{ Request::is('photo') ? 'active' : '' }}"><a href="/photo">Photos <i class="fa fa-angle-down"></i></a> 
+                                    <ul>
+                                        <li><a href="about.html">Travel</a> 
+                                        <li><a href="about-me.html">Event</a></li>
+                                    </ul>
                                 </li>
-                                <li class="{{ Request::is('vote') ? 'active' : '' }}"><a href="@auth {{route('vote')}} @else {{route('user.signin')}}  @endauth">Vote {{-- <i class="fa fa-angle-down"></i> --}}</a>
-                                    {{-- <ul>
+
+                                <li class="{{ Request::is('gallery') ? 'active' : '' }}"><a href="/photo">Gallery <i class="fa fa-angle-down"></i></a> 
+                                    <ul>
+                                        <li><a href="about.html">Photo</a> 
+                                        <li><a href="about-me.html">Video</a></li>
+                                    </ul>
+                                </li>
+                                <li class="{{ Request::is('vote') ? 'active' : '' }}"><a href="@auth {{route('vote')}} @else {{route('user.signin')}}  @endauth">Vote {{-- <i class="fa fa-angle-down"></i></a>
+                                    <ul>
                                         <li><a href="portfolio1.html">Portfolio 1</a></li>
                                         <li><a href="portfolio2.html">Portfolio 2</a></li>
                                         <li><a href="single-portfolio.html">Portfolio Details</a></li>
                                     </ul> --}}
                                 </li>
-                                <li class="{{ Request::is('upload') ? 'active' : '' }}">
-                                    <a href="@auth {{route('uploadpage')}} @else {{route('user.signin')}}  @endauth">+UPLOAD  {{-- <i class="fa fa-angle-down"></i> --}}</a>
-                                    {{-- <ul>
+                                {{-- <li class="{{ Request::is('upload') ? 'active' : '' }}">
+                                    <a href="@auth {{route('uploadpage')}} @else {{route('user.signin')}}  @endauth">+UPLOAD  <i class="fa fa-angle-down"></i></a>  --}}
+                                    
+                                     {{-- <ul>
                                         <li><a href="gallery.html">Gallery One</a></li>
                                         <li><a href="gallery1.html">Gallery Two</a></li>
                                         <li><a href="gallery2.html">Gallery Three</a></li>
-                                    </ul> --}}
-                                </li>
-                                <li class="{{ Request::is('new') ? 'active' : '' }}"><a href="#">News & Announcements <i class="fa fa-angle-down"></i></a>
+                                    </ul> 
+                                </li> --}}
+                                <li class="{{ Request::is('new') ? 'active' : '' }} "><a href="#">News & Announcements <i class="fa fa-angle-down"></i></a>
                                     <ul>
                                         <li><a href="{{route('live')}}">Live Score</a></li>
-                                        <li><a href="product-details.html">Prize</a></li>
-                                        
+                                        <li><a href="#">Prize</a></li>
                                     </ul>
                                 </li>
                                 
+                                {{-- <li><a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog-left.html">Blog Left Sidebar</a></li>
+                                        <li><a href="blog-right.html">Blog Right Sidebar</a></li>
+                                        <li><a href="single-blog.html">Single Blog</a></li>
+                                    </ul>
+                                </li>
+                                {{-- <li><a href="contact.html">Contact Us</a></li> --}}
                             </ul>
                         </nav>
                     </div>

@@ -100,6 +100,7 @@ img {
 }
 p {
   margin: 0 0 26px;
+  color: #ffffff;
 }
 h1,
 h2,
@@ -5114,19 +5115,19 @@ ul {
 }
 .slider-bottom-area .slider-bottom .total-business .single-business i {
   font-size: 30px;
-  color: #d32f2f;
+  color: #F1C40F;
   margin-bottom: 30px;
   transition: all 0.5s ease 0s;
   width: 60px;
   height: 60px;
   line-height: 60px;
-  border: 1px dashed #d32f2f;
+  border: 1px dashed #F1C40F;
 }
 .slider-bottom-area .slider-bottom .total-business .single-business i:hover {
   width: 60px;
   height: 60px;
   line-height: 60px;
-  border: 1px dashed #d32f2f;
+  border: 1px dashed #F1C40F;
   border-radius: 30px;
 }
 .slider-bottom-area .slider-bottom .total-business .single-business h3 {
@@ -5135,18 +5136,18 @@ ul {
 .slider-bottom-area .slider-bottom .total-business .single-business h3 a {
   font-size: 22px;
   font-weight: 500;
-  color: #000000;
+  color: #F1C40F;
   transition: all 0.5s ease 0s;
 }
 .slider-bottom-area .slider-bottom .total-business .single-business h3 a:hover {
-  color: #d32f2f;
+  color: #ffffff;
 }
 .slider-bottom-area .slider-bottom .total-business .single-business .read-more {
   display: block;
 }
 .slider-bottom-area .slider-bottom .total-business .single-business .read-more a {
   display: inline-block;
-  color: #333333;
+  color: #F1C40F;
   font-size: 16px;
   transition: all 0.5s ease 0s;
   font-weight: 500;
@@ -5155,7 +5156,7 @@ ul {
 .slider-bottom-area .slider-bottom .total-business .single-business .read-more a:after {
   content: "\f101";
   font-family: fontawesome;
-  color: #d32f2f;
+  color: #F1C40F;
   font-weight: 500;
   font-size: 16px;
   position: absolute;
@@ -5165,7 +5166,7 @@ ul {
   transition: all 0.5s ease 0s;
 }
 .slider-bottom-area .slider-bottom .total-business .single-business .read-more a:hover {
-  color: #d32f2f;
+  color: #ffffff;
 }
 .slider-bottom-area .slider-bottom .total-business .single-business .read-more a:hover:after {
   right: -30px;
@@ -5179,17 +5180,17 @@ ul {
   height: 40px;
   line-height: 30px;
   font-size: 25px;
-  border: 1px dashed #d32f2f;
+  border: 1px dashed #F1C40F;
   background: transparent;
   color: #ffffff;
   opacity: 1;
   transition: all 0.5s ease 0s;
 }
 .slider-bottom-area .slider-bottom .total-business .owl-buttons .owl-prev i {
-  color: #d32f2f;
+  color: #F1C40F;
 }
 .slider-bottom-area .slider-bottom .total-business .owl-buttons .owl-prev:hover {
-  background: #d32f2f;
+  background: #F1C40F;
   color: #ffffff;
 }
 .slider-bottom-area .slider-bottom .total-business .owl-buttons .owl-prev:hover i {
@@ -5203,17 +5204,17 @@ ul {
   height: 40px;
   line-height: 30px;
   font-size: 25px;
-  border: 1px dashed #d32f2f;
+  border: 1px dashed #F1C40F;
   background: transparent;
   color: #ffffff;
   opacity: 1;
   transition: all 0.5s ease 0s;
 }
 .slider-bottom-area .slider-bottom .total-business .owl-buttons .owl-next i {
-  color: #d32f2f;
+  color: #F1C40F;
 }
 .slider-bottom-area .slider-bottom .total-business .owl-buttons .owl-next:hover {
-  background: #d32f2f;
+  background: #F1C40F;
   color: #ffffff;
 }
 .slider-bottom-area .slider-bottom .total-business .owl-buttons .owl-next:hover i {

@@ -11,7 +11,7 @@
                     <img src="{{asset('frontend_asset/images/3.jpg')}}" alt="" title="#slider-direction-3" />
                 </div>
                 <!-- direction 2 -->
-                {{-- <div id="slider-direction-1" class="slider-direction">
+                <div id="slider-direction-1" class="slider-direction">
                     <div class="slider-content t-cn s-tb slider-1">
                         <div class="title-container s-tb-c">
                             <h1 class="title1 uppercase"><span>Your Best</span> Photo Graphy Shop </h1>
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </div>
-                direction 2
+                {{-- direction 2 --}}
                 <div id="slider-direction-2" class="slider-direction">
                     <div class="slider-content t-cn s-tb slider-2">
                         <div class="title-container s-tb-c">
@@ -37,10 +37,41 @@
                             </div>
                         </div>
                     </div>
-                </div> --}}
+                </div>
             </div>
         </div>
         <!-- Slider Area End Here-->
+
+
+        <!-- Slider Bottom area start  here --> 
+        <div class="slider-bottom-area pt-100 pb-90" style="background-color: #000000;">
+            <div class="container">
+                <div class="slider-bottom">
+                    <div class="total-business">
+                        <div class="single-business">
+                            <i class="fa fa-camera-retro"></i>
+                            <h3><a href="#">Photography</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet non ducimus hic vel minus numquam neque iusto, expedita nemo, enim odit</p>
+                            <div class="read-more"><a href="#">Read More</a></div>
+                        </div>
+                        <div class="single-business">
+                            <i class="fa fa-globe"></i>
+                            <h3><a href="#">Tourism</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet non ducimus hic vel minus numquam neque iusto, expedita nemo, enim odit</p>
+                            <div class="read-more"><a href="#">Read More</a></div>
+                        </div>
+                        <div class="single-business">
+                            <i class="fa fa-play-circle-o"></i>
+                            <h3><a href="#">Media Advertising</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet non ducimus hic vel minus numquam neque iusto, expedita nemo, enim odit</p>
+                            <div class="read-more"><a href="#">Read More</a></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slider Bottom area end  here -->
 
         <!-- Home Page Shop Start Here -->
         <div class="related-winners-area home-shop pt-90 pb-90" style="background-color: #000000;">
@@ -203,22 +234,22 @@
                         <h3>Sponsorship</h3>
                         <ul>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/AYA Bank.jpg')}}" alt="flicker photo"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/AYA Bank.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/CB bank.png')}}" alt="flicker photo"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/CB bank.png')}}" alt="flicker photo" style="width: 100px; height: 80px;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/MCB Bank.jpg')}}" alt="flicker photo"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/MCB Bank.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/myanmar_tourism_bank.jpg')}}" alt="flicker photo"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/myanmar_tourism_bank.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/Myanmr Apex Bank.png')}}" alt="flicker photo"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/Myanmr Apex Bank.png')}}" alt="flicker photo" style="width: 100px; height: 80px;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/Shwe Bank.jpg')}}" alt="flicker photo"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/Shwe Bank.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px;"></a>
                             </li>
                         </ul>
                     </div>

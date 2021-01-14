@@ -71,7 +71,7 @@
         {{-- profile card --}}
 
         {{-- edit profile  --}}
-        <div class="col-md-10 offset-md-1 mt-5">
+        <div class="col-md-10 offset-md-1 mt-5 ">
             {{-- flash back message start--}}
             @if (!empty(session()->get('success')))
                 <div class="alert alert-success alert-dismissible fade show" role="alert">

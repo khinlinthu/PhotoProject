@@ -7,14 +7,18 @@
         margin-left: 330px;
     }
     .bgcolour{
-        background: #d3d3d3;
+        /*background: #000000;*/
+    }
+    .col-lg-6,.col-md-6,.col-sm-12{
+        padding-left: 0;
+        padding-right: 0;
     }
 </style>
 
 <div class="loginregistration-area pt-100 pb-100 bgcolour">
             <div class="container">
                 <div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-12 mb-sm-30 reg">
+					<div class="col-lg-6 col-md-6 col-sm-12 mb-sm-15 ">
                         <div class="login-area">
                             <h2>Login</h2>
                             <form method="post" action="{{ route('login') }}">
@@ -70,6 +74,12 @@
                                 </fieldset>
                             </form>
                         </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                       <div>
+                           <img src="{{asset('frontend_asset/images/inle3.jpg')}}">
+                       </div>
                     </div>
                 </div>
             </div>
