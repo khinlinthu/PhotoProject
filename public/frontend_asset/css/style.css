@@ -110,6 +110,7 @@ h6 {
   margin: 0 0 26px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
+  color: #F1C40F;
 }
 a {
   transition: all 0.5s ease 0s;
@@ -229,6 +230,7 @@ ul {
   text-align: center;
 }
 .section-title h2 {
+  color: #F1C40F;
   font-size: 36px;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -260,7 +262,7 @@ ul {
   background: #FDD835;
 }
 .section-title h2 span {
-  color: #333333;
+  color: #F1C40F;
   font-weight: 600;
 }
 .section-title img {
@@ -268,6 +270,7 @@ ul {
   display: none;
 }
 .section-title p {
+  color: #ffffff;
   padding: 0 150px;
   margin-bottom: 30px;
 }
@@ -305,7 +308,7 @@ ul {
 2.Header area start here 
 ---------------------------------------*/
 .header-top-area {
-  background: #463E3F;
+  background: #F1C40F;
   padding: 10px 0;
 }
 .header-top-area .header-top-left ul {
@@ -387,7 +390,7 @@ ul {
   color: #ffffff;
 }
 .header-middle-area {
-  background: #ffffff;
+  background: #000000;
   /*background: rgba(1, 0, 0, 0.2);*/
   position: absolute;
   left: 0;
@@ -430,7 +433,7 @@ ul {
   display: block;
   text-transform: uppercase;
   text-decoration: none;
-  color: #444444;
+  color: #F1C40F;
   font-weight: 500;
   transition: all 0.5s ease 0s;
   font-family: 'Poppins', sans-serif;
@@ -4531,7 +4534,7 @@ ul {
 ---------------------------------------*/
 .home-about-area .about-content-area h2 {
   font-size: 36px;
-  color: #222222;
+  color: #F1C40F;
   font-weight: 600;
   margin-bottom: 40px;
 }
@@ -4539,6 +4542,7 @@ ul {
   color: #d32f2f;
 }
 .home-about-area .about-content-area p {
+  color: #ffffff;
   padding-right: 20px;
   margin-bottom: 0;
 }

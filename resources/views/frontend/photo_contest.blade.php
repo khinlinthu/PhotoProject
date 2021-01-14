@@ -43,7 +43,7 @@
         <!-- Slider Area End Here-->
 
         <!-- Home Page Shop Start Here -->
-        <div class="related-winners-area home-shop pt-90 pb-90 gray-bg">
+        <div class="related-winners-area home-shop pt-90 pb-90" style="background-color: #000000;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
@@ -90,7 +90,7 @@
         <!-- Home Page Shop End Here -->            
 
         <!-- Home About Start Here -->
-        <div class="home-about-area pt-100 pb-100" style="background-color: #d3d3d3;">
+        <div class="home-about-area pt-100 pb-100" style="background-color: #000000;">
             <div class="container">
                 <div class="row">
                     @foreach($aboutphotos as $aboutphoto)
@@ -106,7 +106,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-12 mb-4">
                         <div class="about-featured-image">
                             <a href="#"><img src="{{asset($aboutphoto->photo)}}" alt="image"></a>
                         </div>
@@ -118,7 +118,7 @@
         <!-- Home About End Here -->
 
         <!-- Partner Logo Area Start Here -->
-        <div class="fix client-logo-area pt-90 pb-90 gray-bg">
+        <div class="fix client-logo-area pt-90 pb-90" style="background-color: #000000;">
             <div class="container">
                 <div class="client-logo">
                     <div class="single-logo">
@@ -245,7 +245,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="footer-bottom">
-                        <p> &copy; 2021 SCW Myanmar CO., LTD. All rights reserved.</p>
+                        <p style="color: #F1C40F;"> &copy; 2021 SCW Myanmar CO., LTD. All rights reserved.</p>
                     </div>
                 </div>
             </div>
