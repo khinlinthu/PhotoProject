@@ -48,8 +48,8 @@ Route::get('vote','FrontendController@photo')->name('vote');
 Route::get('voting/{id}/{clicker}','ImageController@vt')->name('vot');
 
 Route::get('live','FrontendController@live')->name('live');
-/*
-Route::get('photo_vote','FrontendController@photo2')->name('photo_vote');*/
+
+// Route::get('/profile','ImageController@userprofile')->name('profile');
 
 
 //backend

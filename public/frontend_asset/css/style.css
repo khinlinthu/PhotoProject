@@ -440,6 +440,8 @@ ul {
   font-family: 'Poppins', sans-serif;
 }
 
+
+
 .header-middle-area .main-menu ul li a i {
   margin-left: 10px;
   color: #444444;
@@ -459,7 +461,7 @@ ul {
   color: #F1C40F;
 }
 .header-middle-area .main-menu ul li:hover a {
-  color: #F1C40F;
+  color: red;
 }
 .header-middle-area .main-menu ul li:hover a i {
   margin-left: 10px;
@@ -500,7 +502,7 @@ ul {
 }
 .header-middle-area .main-menu ul li ul li a:hover {
   padding-left: 30px;
-  color: #F1C40F !important;
+  color: red !important;
 }
 .header-middle-area .main-menu ul li:hover ul {
   opacity: 1;
@@ -542,7 +544,7 @@ ul {
   color: #444444;
 }
 .header-middle-area.stick {
-  background: #ffffff;
+  /*background: #ffffff;*/
   position: fixed !important;
   top: 0px;
   z-index: 9999;
@@ -562,8 +564,11 @@ ul {
   animation-fill-mode: both;
 }
 .header-middle-area.stick .main-menu ul li a {
-  color: #444444;
+  color: #F1C40F;
 }
+.header-middle-area.stick .main-menu ul li a:hover{
+  color: red;
+} 
 .header-middle-area.stick .menuright ul li a {
   color: #444444;
 }
