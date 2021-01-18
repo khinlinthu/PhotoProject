@@ -6,8 +6,8 @@
     .image{
         width: 800px;
         height: 400px;
-        border-width: 5px;   
-        border-color: #D3D3D3;   
+        border-width: 1px;   
+        border-color: #F1C40F;   
         border-style: solid;
     }
     .bgcolour{
@@ -73,7 +73,7 @@
     padding: 7px 14px;
     text-transform: uppercase;
     color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid #F1C40F;
     background-color: transparent;
     opacity: 0;
     filter: alpha(opacity=0);
@@ -84,7 +84,7 @@
     transition: all 0.4s ease-in-out;
     font-weight: normal;
     margin: -52px 0 0 0;
-    padding: 65px 200px 300px 200px;
+    padding: 65px 140px 300px 140px;
   }
 
   .hovereffect:hover a.info {
@@ -96,7 +96,7 @@
   }
 
   .hovereffect a.info:hover {
-    box-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 5px #F1C40F;
   }
 </style>
 
@@ -104,7 +104,7 @@
         <div class="container">
             <div class="row">
                 @forelse($images as $image)
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3">
                     <div class="hovereffect">
                         <img src="{{asset($image->image)}}" class="image img-responsive" alt="Broken" >
                             <div class="overlay">

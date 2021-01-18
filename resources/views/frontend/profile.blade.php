@@ -8,10 +8,7 @@
         object-fit: cover;
     }
 
-    .bgcolour{
-        background: #d3d3d3;
-
-    }
+    
     .userProfileImage {
         width: 140px!important;
         height: 140px!important;
@@ -22,10 +19,13 @@
     .userimg{
         width: 800px;
         height: 400px;
+        border-width: 1px;   
+        border-color: #F1C40F;   
+        border-style: solid;
     }
 
     .bgcolour{
-        background: #B6B6B4;
+        background: #000000;
     }
 
     .card{
@@ -34,6 +34,10 @@
         /*width: 97%;*/
         margin-left: 20px;
     }
+    /*.col-lg-4, .col-md-4, .col-sm-6, .col-xs-12{
+        padding-left: 0;
+        padding-right: 0;
+    }*/
 
     .hovereffect {
       width: 100%;
@@ -170,7 +174,7 @@
                             </div>
                             <div class="col-auto profile-btn">
                                 <div class="col-xl-1 col-lg-3 col-md-12 col-sm-12 col-12 order-xl-3 order-lg-3 order-md-2 order-sm-2 order-2">
-                                    <button class="btn btn-info float-right profile_editBtn" type="button"> 
+                                    <button class="btn btn-info float-right profile_editBtn" type="button" style="margin-right: 15px;"> 
                                         Edit Profile
                                     </button>
                                     <button class="btn btn-info" type="button"> 

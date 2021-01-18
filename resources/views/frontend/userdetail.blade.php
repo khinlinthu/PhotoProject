@@ -13,10 +13,13 @@
     .userimg{
         width: 800px;
         height: 400px;
+        border-width: 1px;   
+        border-color: #F1C40F;   
+        border-style: solid;
     }
 
     .bgcolour{
-        background: #B6B6B4;
+        background: #000000;
     }
 
     .card{
@@ -141,7 +144,7 @@
                     
             <div class="row mt-5 imgrow">
                 @foreach($images as $row)
-                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3">
                     <div class="hovereffect">
                         <img class="img-responsive userimg" src="{{asset($row->image)}}" alt="">
                     <div class="overlay">
