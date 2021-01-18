@@ -170,7 +170,7 @@
                             </div>
                             <div class="col-auto profile-btn">
                                 <div class="col-xl-1 col-lg-3 col-md-12 col-sm-12 col-12 order-xl-3 order-lg-3 order-md-2 order-sm-2 order-2">
-                                    <button class="btn btn-info float-right profile_editBtn" type="button"> 
+                                    <button class="btn btn-info float-right profile_editBtn" type="button" style="margin-right: 15px;"> 
                                         Edit Profile
                                     </button>
                                     <button class="btn btn-info" type="button"> 
