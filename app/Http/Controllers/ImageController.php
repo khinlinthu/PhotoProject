@@ -184,4 +184,6 @@ class ImageController extends Controller
          return redirect()->route('vote')->with('message',$back_image);   
         /* return view('frontend.vote2',compact('image'));*/             
     } 
+
+   
 }

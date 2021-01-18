@@ -6,9 +6,12 @@
     .image{
         width: 800px;
         height: 400px;
+        border-width: 5px;   
+        border-color: #D3D3D3;   
+        border-style: solid;
     }
     .bgcolour{
-        background: #f5f5f5;
+        background: black;
     }
 
 

@@ -10,6 +10,111 @@
 
     .bgcolour{
         background: #d3d3d3;
+
+    }
+    .userProfileImage {
+        width: 140px!important;
+        height: 140px!important;
+        object-fit: cover;
+        margin-left: 100px;
+    }
+
+    .userimg{
+        width: 800px;
+        height: 400px;
+    }
+
+    .bgcolour{
+        background: #B6B6B4;
+    }
+
+    .card{
+        background-color: #606060;
+        color: #000;
+        /*width: 97%;*/
+        margin-left: 20px;
+    }
+
+    .hovereffect {
+      width: 100%;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      cursor: default;
+    }
+
+    .hovereffect .overlay {
+      position: absolute;
+      overflow: hidden;
+      width: 80%;
+      height: 80%;
+      left: 10%;
+      top: 10%;
+      border-bottom: 1px solid #FFF;
+      border-top: 1px solid #FFF;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: scale(0,1);
+      -ms-transform: scale(0,1);
+      transform: scale(0,1);
+    }
+
+    .hovereffect:hover .overlay {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+
+    .hovereffect img {
+      display: block;
+      position: relative;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+    }
+
+    .hovereffect:hover img {
+      filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+      filter: brightness(0.6);
+      -webkit-filter: brightness(0.6);
+    }
+
+    .hovereffect h2 {
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      font-size: 25px;
+      background-color: transparent;
+      color: #FFF;
+      padding: 3em 0;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(0,-100%,0);
+      transform: translate3d(0,-100%,0);
+    }
+
+    .hovereffect a, .hovereffect p {
+      color: #FFF;
+      padding: 1em 0;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(0,100%,0);
+      transform: translate3d(0,100%,0);
+    }
+
+    .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
     }
 
 </style>
@@ -38,6 +143,16 @@
         {{-- profile card --}}
         <div class="row">
             <div class="col-md-12 col-lg-12">
+                {{-- flash back message start--}}
+            @if (!empty(session()->get('success')))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong class="mr-1">Update Success !</strong>{!! session()->get('error') !!}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            @endif
+            {{-- flash back message end--}}
                 <div class="card" style="background-color: #606060;">
                     <div class="card-body">                                                           
                         <div class="row align-items-center">
@@ -54,13 +169,13 @@
                                 
                             </div>
                             <div class="col-auto profile-btn">
-                                <div class="col-xl-1 col-lg-1 col-md-12 col-sm-12 col-12 order-xl-3 order-lg-3 order-md-2 order-sm-2 order-2">
+                                <div class="col-xl-1 col-lg-3 col-md-12 col-sm-12 col-12 order-xl-3 order-lg-3 order-md-2 order-sm-2 order-2">
                                     <button class="btn btn-info float-right profile_editBtn" type="button"> 
                                         Edit Profile
                                     </button>
-                                    {{-- <button class="btn btn-danger float-right profile_cancelBtn" type="button"> 
-                                        <i class="fas fa-window-close"></i>
-                                    </button> --}}
+                                    <button class="btn btn-info" type="button"> 
+                                        <i class="fas fa-window-close"></i><a href="{{route('uploadpage')}}" style="color: white;">+upload </a>  
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -72,17 +187,8 @@
 
         {{-- edit profile  --}}
         <div class="col-md-10 offset-md-1 mt-5 ">
-            {{-- flash back message start--}}
-            @if (!empty(session()->get('success')))
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <strong class="mr-1">Update Success !</strong>{!! session()->get('error') !!}
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            @endif
-            {{-- flash back message end--}}
-            <fieldset disabled>
+            
+            <fieldset disabled class="dis">
                 <form action="{{ route('user.update',$user->id) }}" method="POST" enctype="multipart/form-data">
                     @method('PUT')
                     @csrf
@@ -121,6 +227,23 @@
             </fieldset>
         </div>
         {{-- edit profile  --}}
+
+        <div class="col-md-12 col-lg-12">
+            <div class="row mt-5 imgrow">
+                @foreach($query as $row)
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-3">
+                    <div class="hovereffect">
+                        <img class="img-responsive userimg" src="{{asset($row->image)}}" alt="">
+                    <div class="overlay">
+                        <h2>Image Name</h2>
+               <!-- <a class="info" href="#"></a> -->
+                    </div>
+                    </div>
+
+                </div>
+                @endforeach           
+            </div>
+        </div>
     </div>
 </div>
 <!-- /Page Content -->
@@ -131,8 +254,9 @@
 <script>
     $(document).ready(function(){
 
-        $('.profile_editBtn').show();
-        $('.profile_cancelBtn').hide();
+        // $('.profile_editBtn').show();
+        // $('.profile_cancelBtn').hide();
+         $('fieldset').hide();
 
         $('.profile_editBtn').on('click', function(){
             $("fieldset").removeAttr("disabled");
@@ -140,6 +264,8 @@
 
             $('.profile_editBtn').hide();
             $('.profile_cancelBtn').show();
+
+            $('fieldset').show();
 
         });
 

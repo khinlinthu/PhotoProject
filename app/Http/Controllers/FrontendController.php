@@ -43,7 +43,12 @@ class FrontendController extends Controller
     {
         $user_id = Auth::user()->id;
         $user = User::find($user_id);
-        return view('frontend.profile', compact('user'));
+
+        $query=DB::table('images')
+        ->where('images.user_id','=',$user_id)
+        ->select('image')       
+        ->get();
+        return view('frontend.profile', compact('user','query'));
     }
 
 
