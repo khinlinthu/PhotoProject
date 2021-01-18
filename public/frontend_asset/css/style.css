@@ -829,6 +829,7 @@ ul {
   font-weight: 700;
 }
 .slider-area .slider-1 h1 span {
+  color: #FF0000;
   font-size: 55px;
   display: block;
 }
@@ -903,6 +904,7 @@ ul {
   text-transform: capitalize;
 }
 .slider-area .slider-2 h1 span {
+  color: #FF0000;
   font-size: 55px;
   display: block;
 }
@@ -943,8 +945,8 @@ ul {
   margin-left: 10px;
 }
 .slider-area .slider-2 div.slider-botton ul li.acitve a:hover {
-  border: 1px solid #FDD835 !important;
-  background: #FDD835 !important;
+  border: 1px solid #d32f2f !important;
+  background: #d32f2f !important;
 }
 .slider-area .slider-2 div.slider-botton ul li a {
   display: block;
@@ -5133,8 +5135,8 @@ ul {
 }
 .slider-bottom-area .slider-bottom .total-business .single-business:hover i {
   border-radius: 30px;
-  color: #F1C40F;
-  border: 1px dashed #F1C40F;
+  color: #FF0000;
+  border: 1px dashed #FF0000;
 }
 .slider-bottom-area .slider-bottom .total-business .single-business:hover h3 {
   color: #dddddd;
@@ -5157,8 +5159,8 @@ ul {
   width: 60px;
   height: 60px;
   line-height: 60px;
-  color: #F1C40F;
-  border: 1px dashed #F1C40F;
+  color: #FF0000;
+  border: 1px dashed #FF0000;
   border-radius: 30px;
 }
 .slider-bottom-area .slider-bottom .total-business .single-business h3 {

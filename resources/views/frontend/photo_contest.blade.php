@@ -8,36 +8,37 @@
                 <div id="ensign-nivoslider" class="slides">
                     <img src="{{asset('frontend_asset/images/1.jpg')}}" alt="" title="#slider-direction-1" />
                     <img src="{{asset('frontend_asset/images/2.jpg')}}" alt="" title="#slider-direction-2" />
-                    <img src="{{asset('frontend_asset/images/3.jpg')}}" alt="" title="#slider-direction-3" />
+                    {{-- <img src="{{asset('frontend_asset/images/3.jpg')}}" alt="" title="#slider-direction-3" /> --}}
                 </div>
                 <!-- direction 2 -->
                 <div id="slider-direction-1" class="slider-direction">
                     <div class="slider-content t-cn s-tb slider-1">
                         <div class="title-container s-tb-c">
-                            <h1 class="title1 uppercase"><span>Your Best</span> Photo Graphy Shop </h1>
+                            <h1 class="title1"><span>Your Best</span> Photo Graphy Shop</h1>
                             <div class="slider-botton">
                                 <ul>
-                                    <li><a class="radius-0" href="shop.html">Shop Now <i class="fa fa-angle-right"></i></a></li>
-                                    <li class="acitve"><a class="radius-0" href="about.html">About Us <i class="fa fa-angle-right"></i></a></li>
+                                    <li><a href="registration.html">Join Now <i class="fa fa-angle-right"></i></a></li>
+                                    <li class="acitve"><a href="about.html">About Us <i class="fa fa-angle-right"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                {{-- direction 2 --}}
+                <!-- direction 2 -->
                 <div id="slider-direction-2" class="slider-direction">
                     <div class="slider-content t-cn s-tb slider-2">
                         <div class="title-container s-tb-c">
-                            <h1 class="title1 uppercase"><span>Creative</span> Photo Graphy Agency</h1>
+                            <h1 class="title1"><span>Creative</span> Photo Graphy Agency</h1>
                             <div class="slider-botton">
                                 <ul>
-                                    <li class="acitve"><a class="radius-0" href="winners.html">More Details <i class="fa fa-angle-right"></i></a></li>
-                                    <li><a class="radius-0" href="contact.html">Contact Us <i class="fa fa-angle-right"></i></a></li>
+                                    <li class="acitve"><a href="about.html">More Details <i class="fa fa-angle-right"></i></a></li>
+                                    <li><a href="contact.html">Contact Us <i class="fa fa-angle-right"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
         <!-- Slider Area End Here-->

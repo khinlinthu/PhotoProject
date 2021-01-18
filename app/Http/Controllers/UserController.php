@@ -36,7 +36,7 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request);
+         //dd($request);
 
         $request->validate([
             'name' => 'required|min:2',
@@ -162,6 +162,7 @@ class UserController extends Controller
      public function show($id)
     {
         $user = User::find($id);
+        dd($user);
         return view('user.show', compact('user'));
     }
 
@@ -181,7 +182,7 @@ class UserController extends Controller
     public function destroy($id)
     {
         $user = User::find($id);
-        $user->delete();
+        $user->delete(); 
         return redirect()->route('user.index');
     }
 

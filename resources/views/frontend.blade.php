@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Photo Contests</title>
     <meta name="description" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- responsive tag -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
