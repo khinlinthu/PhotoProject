@@ -333,7 +333,7 @@ ul {
 }
 .header-top-area .header-top-left ul li a {
   transition: all 0.5s ease 0s;
-  color: #F1C40F;
+  color: white;
 }
 .header-top-area .header-top-left ul li a:hover {
   color: #FF0000;
@@ -351,7 +351,7 @@ ul {
   width: 20px;
   height: 20px;
   line-height: 20px;
-  color: #FF0000;
+  color: #dddddd;
   transition: all 0.5s ease 0s;
   text-decoration: none;
 }
@@ -445,7 +445,7 @@ ul {
 
 .header-middle-area .main-menu ul li a i {
   margin-left: 10px;
-  color: #FF0000;
+  color: black;
 }
 .header-middle-area .main-menu ul li.active a {
   color: #FF0000;
@@ -497,13 +497,13 @@ ul {
   padding: 6px 20px;
   text-transform: none;
   transition: all 0.5s ease 0s;
-  color: #F1C40F !important;
+  color: white !important;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
 }
 .header-middle-area .main-menu ul li ul li a:hover {
   padding-left: 30px;
-  color: #FF0000 !important;
+  color: gold !important;
 }
 .header-middle-area .main-menu ul li:hover ul {
   opacity: 1;
@@ -857,8 +857,8 @@ ul {
   padding: 17px 40px;
   color: #ffffff;
   transition: all 0.5s ease 0s;
-  background: #FDD835;
-  border: 1px solid #FDD835;
+  background: black;
+  border: 1px solid black;
   font-weight: 700;
   text-transform: uppercase;
   -webkit-animation: bounceInDown 2500ms ease-in-out;
@@ -870,8 +870,9 @@ ul {
   margin-left: 10px;
 }
 .slider-area .slider-1 div.slider-botton ul li.acitve a:hover {
-  border: 1px solid #ffffff !important;
-  background: #ffffff !important;
+  background: #d32f2f;
+  color: #ffffff;
+  border: 1px solid #d32f2f;
 }
 .slider-area .slider-1 div.slider-botton ul li a {
   display: block;
@@ -929,8 +930,8 @@ ul {
   padding: 17px 40px;
   color: #ffffff;
   transition: all 0.5s ease 0s;
-  background: #FDD835;
-  border: 1px solid #FDD835;
+  background: black;
+  border: 1px solid black;
   font-weight: 700;
   text-transform: uppercase;
   -webkit-animation: bounceInDown 2500ms ease-in-out;
@@ -1679,7 +1680,7 @@ ul {
   -webkit-border-radius: 50%;
 }
 .footer-top-area .single-footer .footer-social-media-area ul li a:hover {
-  border: 1px solid #FF0000;
+  border: 1px solid black;
   /*background: #F1C40F;
   border: 1px solid #463E3F;*/
 }
@@ -1791,19 +1792,19 @@ ul {
 }
 .preview-2 .nivo-directionNav a.nivo-prevNav:before {
   border: 1px dashed #F1C40F !important;
-  color: #ffffff !important;
+  color: #F1C40F !important;
   background: transparent;
   border-radius: 50% !important;
   font-size: 20px !important;
   font-weight: 300 !important;
 }
 .preview-2 .nivo-directionNav a.nivo-prevNav:hover:before {
-  background: #FF0000 !important;
+  background: black !important;
 }
 
 .preview-2 .nivo-directionNav a.nivo-nextNav:before {
   border: 1px dashed #FF0000 !important;
-  color: #ffffff !important;
+  color: #FF0000 !important;
   background: transparent;
   border-radius: 50% !important;
   font-size: 20px !important;
@@ -1811,7 +1812,7 @@ ul {
 }
 
 .preview-2 .nivo-directionNav a.nivo-nextNav:hover:before {
-  background: #F1C40F !important;
+  background: white !important;
 }
 /* ------------------------------------
 13.Portfolio One Start Here 
