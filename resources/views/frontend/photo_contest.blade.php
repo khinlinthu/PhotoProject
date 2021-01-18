@@ -74,7 +74,7 @@
         <!-- Slider Bottom area end  here -->
 
         <!-- Home Page Shop Start Here -->
-        <div class="related-winners-area home-shop pt-90 pb-90" style="background-color: #000000;">
+        <div class="related-winners-area home-shop pt-90 pb-90" style="background-color: #ffffff;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
@@ -149,7 +149,7 @@
         <!-- Home About End Here -->
 
         <!-- Partner Logo Area Start Here -->
-        <div class="fix client-logo-area pt-90 pb-90" style="background-color: #000000;">
+        <div class="fix client-logo-area pt-90 pb-90" style="background-color: #ffffff;">
             <div class="container">
                 <div class="client-logo">
                     <div class="single-logo">
@@ -205,7 +205,7 @@
                                 <ul>
                                     <li><a href="https://www.facebook.com/scwtravel"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                    {{-- <li><a href="#"><i class="fa fa-rss"></i></a></li> --}}
                                     <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
                                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                     <li><a href="https://www.instagram.com/scw_travel/?fbclid=IwAR3NGM9ACOnGq0-Al3EM-yL77282rMM8ucBb1jPw7rkNZD9-ccxhAILX3dw"><i class="fa fa-instagram"></i></a></li>

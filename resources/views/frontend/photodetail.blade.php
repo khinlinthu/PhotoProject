@@ -6,8 +6,9 @@
         <div class="slider-area">
             <div class="bend niceties preview-2">
                 <div id="ensign-nivoslider" class="slides">
-                    <img src="{{asset('frontend_asset/images/scw.png')}}" alt="" title="#slider-direction-1" />
-                    <img src="{{asset('frontend_asset/images/scw.png')}}" alt="" title="#slider-direction-2" />
+                    <img src="{{asset('frontend_asset/images/1.jpg')}}" alt="" title="#slider-direction-1" />
+                    <img src="{{asset('frontend_asset/images/2.jpg')}}" alt="" title="#slider-direction-2" />
+                    <img src="{{asset('frontend_asset/images/3.jpg')}}" alt="" title="#slider-direction-3" />
                 </div>
                 <!-- direction 2 -->
                 {{-- <div id="slider-direction-1" class="slider-direction">
@@ -42,7 +43,7 @@
         <!-- Slider Area End Here-->
 
         <!-- Home Page Shop Start Here -->
-        <div class="related-winners-area home-shop pt-90 pb-90 gray-bg">
+        <div class="related-winners-area home-shop pt-90 pb-90" style="background-color: #000000;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
@@ -88,7 +89,7 @@
         <!-- Home Page Shop End Here -->            
 
         <!-- Home About Start Here -->
-        <div class="home-about-area pt-100 pb-100" style="background-color: #d3d3d3;">
+        <div class="home-about-area pt-100 pb-100" style="background-color: #000000;">
             <div class="container {{-- @if($loop->first) {{'show'}} @endif --}}">
                 <div class="row">
                     {{-- {{$photodetail}} --}}
@@ -118,7 +119,7 @@
         <!-- Home About End Here -->
 
         <!-- Partner Logo Area Start Here -->
-        <div class="fix client-logo-area pt-90 pb-90 gray-bg">
+        <div class="fix client-logo-area pt-90 pb-90" style="background-color: #000000;">
             <div class="container">
                 <div class="client-logo">
                     <div class="single-logo">
