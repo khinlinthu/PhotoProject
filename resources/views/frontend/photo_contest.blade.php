@@ -130,7 +130,7 @@
                             <div class="about-content-area">
                                 <h2>{{$aboutphoto->name}}</h2>
                                 <p>{{$aboutphoto->description}}</p><br>
-                                <h5 class="hidden-sm">Start Date : &nbsp{{$aboutphoto->note}}</h5>
+                                <h5 class="hidden-sm"><i class="fa fa-files-o"></i>Start Date : &nbsp{{$aboutphoto->note}}</h5>
                                 {{-- <div class="botton-area">
                                     <a class="radius-0" href="about.html">About Us   <i class="fa fa-angle-right"></i> </a>
                                 </div> --}}
