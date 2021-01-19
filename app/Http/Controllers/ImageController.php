@@ -79,22 +79,24 @@ class ImageController extends Controller
 
     }
 
-    public function userdetail($id)
+    public function userdetail($id,$img_id)
     {
-        
+        // dd($img_id);
         $test=DB::table('users')
-
         ->select('users.*')
         ->where('users.id','=',$id)
         ->get();
+
         $images=DB::table('images')
         ->join('users','users.id','=','images.user_id')
         ->select('images.*')
         ->where('images.user_id','=',$id)
         ->get();
-        
 
-        return view('frontend.userdetail',compact('test','images'));
+        $query = Image::find($img_id);
+        // dd($query);
+
+        return view('frontend.userdetail',compact('test','images','query'));
     }
 
     public function vt($id,$clicker)

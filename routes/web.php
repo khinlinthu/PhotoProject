@@ -41,7 +41,7 @@ Route::post('/image', 'ImageController@post');
 
 Route::get('/profile', 'FrontendController@profile')->name('profile');
 
-Route::get('userdetail/{id}','ImageController@userdetail')->name('userdetail');
+Route::get('userdetail/{id}/{img_id}','ImageController@userdetail')->name('userdetail');
 
 Route::get('vote','FrontendController@photo')->name('vote');
 
