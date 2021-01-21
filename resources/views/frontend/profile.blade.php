@@ -238,10 +238,22 @@
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-3">
                     <div class="hovereffect">
                         <img class="img-responsive userimg" src="{{asset($row->image)}}" alt="">
-                    <div class="overlay">
-                        <h2>Image Name</h2>
-               <!-- <a class="info" href="#"></a> -->
-                    </div>
+
+                        {{-- @if(Auth::check())
+                        @if($image->user_id == Auth::user()->id) --}}
+                        <div class="overlay">
+                        {{-- <form action="{{ route ('deleteimage',$row->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            
+                            <input type="submit" value="Delete" class="btn btn-danger" name="">
+                            <button type="submit" class="btn btn-primary-outliness">Delete</button>
+                        </form> --}}
+                        </div>
+                        {{-- @endif
+                        @endif --}}
+                   <!-- <a class="info" href="#"></a> -->
+                        
                     </div>
 
                 </div>
