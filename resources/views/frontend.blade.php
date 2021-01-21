@@ -109,7 +109,7 @@
                             <ul>
                                 <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{route('photo_contest')}}"> Contests <i class="fa fa-angle-down"></i></a>
                                     <ul>
-                                        <li><a href="#">Photo Contest</a></li>
+                                        <li><a href="{{route('travel')}}">Photo Contest</a></li>
                                         <li><a href="#">Season Two</a></li>
                                     </ul>
                                 </li>
