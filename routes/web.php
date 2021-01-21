@@ -4,22 +4,24 @@ use Illuminate\Support\Facades\Route;
 
 
 
-//Admin
-Route::get('/', 'FrontendController@home')->name('photo_contest');
-
-Route::get('photodetail/{id}','FrontendController@photodetail')->name('photodetail');
+//Backend
 
 Route::middleware('role:admin')->group(function () {
 
-Route::resource('photocontest', 'PhotoContestController');
+	Route::resource('photocontest', 'PhotoContestController');
 
-Route::resource('aboutphoto', 'AboutphotoController');
+	Route::resource('aboutphoto', 'AboutphotoController');
 
-Route::resource('image', 'ImageController');
+	Route::resource('image', 'ImageController');
 
 });
 
 //frontend user
+
+Route::get('/', 'FrontendController@home')->name('photo_contest');
+
+Route::get('photodetail/{id}','FrontendController@photodetail')->name('photodetail');
+
 Route::resource('user', 'UserController');
 
 Route::get('/signin', 'UserController@login')->name('user.signin');
@@ -37,7 +39,7 @@ Route::get('/photo', 'ImageController@photo');
 
 Route::post('/image', 'ImageController@post');
 
-// Route::delete('/image/{id}', 'ImageController@destory');
+// Route::delete('/image/{id}', 'ImageController@delete')->name('deleteimage');
 
 Route::get('/profile', 'FrontendController@profile')->name('profile');
 

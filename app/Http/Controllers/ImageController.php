@@ -8,6 +8,7 @@ use App\Image;
 use Session;
 use Auth;
 use App\Vote;
+use Illuminate\Support\Facades\Storage;
 
 class ImageController extends Controller
 {
@@ -71,6 +72,15 @@ class ImageController extends Controller
     	Session::flash('success', 'Images uploaded');
     	return redirect('/photo');
     }
+    // public function delete($id)
+    // {
+    //     $image = Image::find($id);
+    //     Storage::delete($image->path);
+    //     $image->delete();
+    //     Session::flash('success', 'Images Deleted');
+    //     return redirect('/profile');
+
+    // }
     public function destroy($id)
     {
         $image = Image::find($id);
