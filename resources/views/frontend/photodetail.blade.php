@@ -43,7 +43,7 @@
         <!-- Slider Area End Here-->
 
         <!-- Home Page Shop Start Here -->
-        <div class="related-winners-area home-shop pt-90 pb-90" style="background-color: #000000;">
+        <div class="related-winners-area home-shop pt-90 pb-90" style="background-color: #463E3F;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
@@ -119,7 +119,7 @@
         <!-- Home About End Here -->
 
         <!-- Partner Logo Area Start Here -->
-        <div class="fix client-logo-area pt-90 pb-90" style="background-color: #000000;">
+        <div class="fix client-logo-area pt-90 pb-90" style="background-color: #D3D3D3;">
             <div class="container">
                 <div class="client-logo">
                     <div class="single-logo">

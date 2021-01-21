@@ -47,10 +47,10 @@ class FrontendController extends Controller
         $query=DB::table('images')
         ->where('images.user_id','=',$user_id)
         ->select('image','id')       
-        ->get();
+        //->get();
         //dd($query);
 
-        ->select('image')  
+        //->select('image')  
         ->paginate(30);
         
 

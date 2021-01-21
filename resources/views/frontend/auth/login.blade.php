@@ -7,7 +7,7 @@
         margin-left: 330px;
     }
     .bgcolour{
-        /*background: #000000;*/
+        background: #808080;
     }
     .col-lg-6,.col-md-6,.col-sm-12{
         padding-left: 0;
@@ -67,7 +67,7 @@
                                                         {{ __('Forgot Your Password?') }}
                                                     </a>
                                                 @endif 
-                                                <a href="{{ route('user.create') }}">Register</a>
+                                                <a href="{{ route('user.create') }}" style="font-size: 20px;">|&nbsp Register</a>
                                             </div>
                                         	</div>
                                     </div>
