@@ -1,3 +1,4 @@
+
 @extends('frontend')
 
 @section('content')
@@ -120,6 +121,8 @@
                 @endforelse
 
             </div>
+
+
 
         <div class="row justify-content-center">
             {{ $images->links()}}

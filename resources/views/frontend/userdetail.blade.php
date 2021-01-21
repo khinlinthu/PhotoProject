@@ -161,7 +161,7 @@
                 </div>
              </div>
                     
-            <div class="row mt-5 imgrow">
+            <div class="row mt-3 imgrow">
                 @foreach($images as $row)
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3">
                     <div class="hovereffect">
@@ -175,6 +175,10 @@
                 </div>
                 @endforeach           
             </div>
+
+            <div class="row justify-content-center">
+              {{ $images->links()}}
+          </div>
           </div>
     </div>
 

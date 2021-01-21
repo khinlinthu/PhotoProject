@@ -14,7 +14,7 @@ class ImageController extends Controller
 
      public function index()
     {
-         $images = Image::all();
+        $images = Image::all();
         return view('image.index',compact('images'));
     }
 
@@ -91,7 +91,7 @@ class ImageController extends Controller
         ->join('users','users.id','=','images.user_id')
         ->select('images.*')
         ->where('images.user_id','=',$id)
-        ->get();
+        ->paginate(30);
 
         $query = Image::find($img_id);
         // dd($query);

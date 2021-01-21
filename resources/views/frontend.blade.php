@@ -83,7 +83,7 @@
                                 
                                 @else
 
-                                <li><i class="fa fa-users"></i><a href="{{ route('user.signin') }}">Login/Registration</a></li>
+                                <li><i class="fa fa-user"></i><a href="{{ route('user.signin') }}">Login/Registration</a></li>
                             
                                 @endauth
                             </ul>
@@ -100,7 +100,7 @@
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-12">
                     <div class="logo-area">
-                        <a href="#"><img src="{{asset('frontend_asset/images/scw myanmar.png')}}" alt="logo"></a>
+                        <a href="{{route('photo_contest')}}"><img src="{{asset('frontend_asset/images/scw myanmar.png')}}" alt="logo"></a>
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-12">
@@ -171,9 +171,9 @@
                         <nav>
                             <ul>
                                 <li >
-                                    <a href="#"><img src="{{Auth::user()->photo}}" class="rounded-circle">{{-- {{Auth::user()->name}} --}}{{-- <i class="fa fa-angle-down"></i> --}}</a>
+                                    <a href="/profile"><img src="{{Auth::user()->photo}}" class="rounded-circle">{{-- {{Auth::user()->name}} --}}{{-- <i class="fa fa-angle-down"></i> --}}</a>
                                     <ul>
-                                        <li><a href="/profile">Profile</a></li>
+                                        {{-- <li><a href="/profile">Profile</a></li> --}}
                                         <li><a  href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
