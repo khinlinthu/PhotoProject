@@ -49,6 +49,8 @@ Route::get('voting/{id}/{clicker}','ImageController@vt')->name('vot');
 
 Route::get('live','FrontendController@live')->name('live');
 
+Route::get('travelphoto','FrontendController@travelphoto')->name('travel');
+
 // Route::get('/profile','ImageController@userprofile')->name('profile');
 
 

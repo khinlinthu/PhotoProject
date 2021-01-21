@@ -123,7 +123,8 @@ class FrontendController extends Controller
 
     }
 
-
-
+    public function travelphoto(){
+        return view('frontend.travelphotocontest');
+    }
     
 }

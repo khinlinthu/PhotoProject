@@ -109,8 +109,8 @@
                             <ul>
                                 <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{route('photo_contest')}}"> Contests <i class="fa fa-angle-down"></i></a>
                                     <ul>
-                                        <li><a href="index.html">Season One</a></li>
-                                        <li><a href="index2.html">Season Two</a></li>
+                                        <li><a href="{{route('travel')}}">Travel Photo Contest</a></li>
+                                        {{-- <li><a href="index2.html">Season Two</a></li> --}}
                                     </ul>
                                 </li>
                                  <li class="{{ Request::is('photo') ? 'active' : '' }}"><a href="/photo">Photos <i class="fa fa-angle-down"></i></a> 

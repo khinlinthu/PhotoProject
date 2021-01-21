@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<!-- Slider Area Start Here-->
+	    <!-- Slider Area Start Here-->
         <div class="slider-area">
             <div class="bend niceties preview-2">
                 <div id="ensign-nivoslider" class="slides">
