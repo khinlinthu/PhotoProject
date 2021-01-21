@@ -6,8 +6,8 @@
         <div class="slider-area">
             <div class="bend niceties preview-2">
                 <div id="ensign-nivoslider" class="slides">
-                    <img src="{{asset('frontend_asset/images/1.jpg')}}" alt="" title="#slider-direction-1" />
-                    <img src="{{asset('frontend_asset/images/2.jpg')}}" alt="" title="#slider-direction-2" />
+                    <img src="{{asset('frontend_asset/images/x0.jpg')}}" alt="" title="#slider-direction-1" />
+                    <img src="{{asset('frontend_asset/images/x1.jpg')}}" alt="" title="#slider-direction-2" />
                     {{-- <img src="{{asset('frontend_asset/images/3.jpg')}}" alt="" title="#slider-direction-3" /> --}}
                 </div>
                 <!-- direction 2 -->
@@ -45,7 +45,7 @@
 
 
         <!-- Slider Bottom area start  here --> 
-        <div class="slider-bottom-area pt-100 pb-90" style="background-color: #000000;">
+        <div class="slider-bottom-area pt-100 pb-90" style="background-color: #463E3F;">
             <div class="container">
                 <div class="slider-bottom">
                     <div class="total-business">
@@ -122,7 +122,7 @@
         <!-- Home Page Shop End Here -->            
 
         <!-- Home About Start Here -->
-        <div class="home-about-area pt-100 pb-100" style="background-color: #000000;">
+        <div class="home-about-area pt-100 pb-100" style="background-color: #463E3F;">
             <div class="container">
                 <div class="row">
                     @foreach($aboutphotos as $aboutphoto)
@@ -131,7 +131,7 @@
                             <div class="about-content-area">
                                 <h2>{{$aboutphoto->name}}</h2>
                                 <p>{{$aboutphoto->description}}</p><br>
-                                <h5 class="hidden-sm"><i class="fa fa-files-o"></i>Start Date : &nbsp{{$aboutphoto->note}}</h5>
+                                <h5 class="hidden-sm"><i class="fa fa-calendar"></i>&nbsp : &nbsp{{$aboutphoto->note}}</h5>
                                 {{-- <div class="botton-area">
                                     <a class="radius-0" href="about.html">About Us   <i class="fa fa-angle-right"></i> </a>
                                 </div> --}}
@@ -150,7 +150,7 @@
         <!-- Home About End Here -->
 
         <!-- Partner Logo Area Start Here -->
-        <div class="fix client-logo-area pt-90 pb-90" style="background-color: #ffffff;">
+        <div class="fix client-logo-area pt-90 pb-90" style="background-color: #D3D3D3;">
             <div class="container">
                 <div class="client-logo">
                     <div class="single-logo">

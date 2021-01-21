@@ -1,3 +1,4 @@
+
 @extends('frontend')
 
 @section('content')
@@ -110,7 +111,7 @@
                             <div class="overlay">
                                 <h2><i class="fa fa-user fa-lg"></i>&nbsp User Detail</h2>
                                 <p>
-                                    <a class="info " href="{{route('userdetail',$image->user_id)}}"></a>
+                                    <a class="info " href="{{route('userdetail',['id'=>$image->user_id,'img_id'=>$image->id])}}"></a>
                                 </p>
                             </div>
                     </div>
@@ -120,6 +121,8 @@
                 @endforelse
 
             </div>
+
+
 
         <div class="row justify-content-center">
             {{ $images->links()}}

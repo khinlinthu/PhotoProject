@@ -260,6 +260,10 @@
                 @endforeach           
             </div>
         </div>
+
+        <div class="row justify-content-center">
+            {{ $query->links()}}
+        </div>
     </div>
 </div>
 <!-- /Page Content -->

@@ -438,7 +438,8 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
   color: #FF0000;
-  font-weight: 500;
+  font-weight: 550;
+  font-size: 18px;
   transition: all 0.5s ease 0s;
   font-family: 'Poppins', sans-serif;
 }
@@ -3667,9 +3668,9 @@ ul {
   box-shadow: none;
 }
 .loginregistration-area .login-area fieldset .btn-send {
-  background: #6495ED;
+  background: #fff;
   border: 0 none;
-  color: #ffffff;
+  color: #000000;
   display: block;
   font-size: 18px;
   font-weight: bold;
@@ -3683,7 +3684,8 @@ ul {
   cursor: pointer;
 }
 .loginregistration-area .login-area fieldset .btn-send:hover {
-  background: #6495ED;
+  color: #ffffff;
+  background: #FF0000;
   box-shadow: none;
 }
 .loginregistration-area .login-area .connected-area {

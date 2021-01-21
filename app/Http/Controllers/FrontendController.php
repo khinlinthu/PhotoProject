@@ -49,6 +49,11 @@ class FrontendController extends Controller
         ->select('image','id')       
         ->get();
         //dd($query);
+
+        ->select('image')  
+        ->paginate(30);
+        
+
         return view('frontend.profile', compact('user','query'));
     }
 

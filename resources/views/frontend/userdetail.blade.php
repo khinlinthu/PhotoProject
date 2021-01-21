@@ -11,7 +11,17 @@
     }
 
     .userimg{
-        width: 800px;
+        width: 1000px;
+        height: 400px;
+        border-width: 1px;   
+        border-color: #F1C40F;   
+        border-style: solid;
+       /* margin-left: 20px;
+        margin-right: 20px;*/
+    }
+
+    .img{
+      width: 10000px;
         height: 400px;
         border-width: 1px;   
         border-color: #F1C40F;   
@@ -141,8 +151,17 @@
                 </div>
             </div>
              @endforeach
+
+             <div class="row mt-5 imgrow">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-3 mt-3">
                     
-            <div class="row mt-5 imgrow">
+                        <img class="img-responsive img" src="{{asset($query->image)}}" alt="">
+                  
+
+                </div>
+             </div>
+                    
+            <div class="row mt-3 imgrow">
                 @foreach($images as $row)
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3">
                     <div class="hovereffect">
@@ -156,6 +175,10 @@
                 </div>
                 @endforeach           
             </div>
+
+            <div class="row justify-content-center">
+              {{ $images->links()}}
+          </div>
           </div>
     </div>
 
