@@ -56,23 +56,23 @@
                 <div class="slider-bottom">
                     <div class="total-business">
                         <div class="single-business">
-                            <h3><a href="#">Photo Brading</a></h3>
+                            <h3><a href="#">အထင်ကရနေရာများ</a></h3>
                             <ul>
-                            	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet non ducimus hic vel minus numquam neque iusto, expedita nemo, enim odit</li> 
+                            	<li>မိမိတို့ကြိုက်နှစ်သက်ရာမြို့များမှ အထင်ကရနေများ၏ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li> 
                             </ul>
                             <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3">
                         </div>
                         <div class="single-business">
-                            <h3><a href="#">Photo Editing</a></h3>
+                            <h3><a href="#">ယဥ်ကျေးမှုများ</a></h3>
                             <ul>
-                            	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet non ducimus hic vel minus numquam neque iusto, expedita nemo, enim odit</li>
+                            	<li>မိမိတို့ကြိုက်နှစ်သက်ရာမြို့များမှ ယဥ်ကျေးမှုအမွေအနှစ်ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
                             </ul>
                             <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3">
                         </div>
                         <div class="single-business">
-                            <h3><a href="#">Photoshot</a></h3>
+                            <h3><a href="#">ကိုယ်ပိုင်စိတ်ကြိုက်ဖန်တီးမှုများ</a></h3>
                             <ul>
-                            	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet non ducimus hic vel minus numquam neque iusto, expedita nemo, enim odit</li>
+                            	<li>မိမိတို့ ကြိုက်နှစ်ရာမြို့များမှ ပြိုင်ပွဲဝင်များအနေဖြင့် ကြိုက်နှစ်သက်ရာ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
                             </ul>
                             <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3">
                         </div>
@@ -82,13 +82,8 @@
                 <div class="row mt-3">
                 	<div class="col-lg-12 col-md-12 col-sm-12">
                 		<div class="section-title">
-	                		<p style="color: #000;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	                		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	                		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	                		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	                		cillum dolore eu fugiat nulla pariatur..</p>
-	                		<h4> Excepteur sint occaecat cupidatat non
-	                		proident</h4>
+	                		<p style="color: #000;">ပြိုင်ပွဲဝင်များသည် ဝင်ကြေးအနေဖြင့် ကျပ် ၁၁၀၀၀ ပေးရမည်ဖြစ်သည်။ ရာသီတစ်ခု၏ ဆုအနေဖြင့် $1000 ရရှိမှာဖြစ်ပီး ရာသီလေးခု ပြိုင်ရမည်ဖြစ်သည်။ ရာသီလေးခု အပြီးနောက်ဆုံးရာသီတွင် ဆုအနေဖြင့် $5000 နှင့် Sponsorship အား ရရှိမှာဖြစ်သည်။ </p>
+	                		<h4>"သင်တို့၏အရည်ချင်းများဖြင့် မြန်မာနိုင်ငံ၏အလှအား ကမ္ဘာသိအောင် ပြလိုက်ကြပါစို့"</h4>
                 		</div>
                 	</div>
                 </div>
@@ -106,8 +101,8 @@
                         {{-- <img class="tablate" src="images/activities-bg1.jpg" alt=""> --}}
                     </div>
                     <div class="col-lg-5 col-md-12 acurate">
-                        <div class="home-activities-area">
-                            <h3>Photo Contest Features</h3>
+                        <div class="home-activities-area pt-3">
+                            <h3>မြန်မာနိုင်ငံ၏ပထမဦးဆုံးသောခရီးသွားဓာတ်ပုံပြိုင်ပွဲများ</h3>
                             <div class="single-activities">
                                 <div class="media">
                                     {{-- <div class="pull-left">
@@ -117,20 +112,17 @@
                                     </div> --}}
                                     <div class="media-body">
                                         <h4 class="media-heading">{{-- <a href="#">Shop Intregated</a> --}}
-                                        	Photo Contest
+                                        	ပြိုင်ပွဲဝင်များလိုက်နာရန် စည်းကမ်းချက်များ
                                         </h4>
                                         <ul class="text-danger" style="list-style-type:disc">
-                                        	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        	<li>ပြိုင်ပွဲဝင်များသည် Season တစ်ခုတွင် ကြိုက်နှစ်ရာ တိုင်းနှင့်ပြည်နယ် သုံးခုကို ရွေးချယ်၍ သွားရောက်ရမည်။
                                         	</li>
-                                        	<li> sed do eiusmod
-                                        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</li>
-                                        	<li>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        	consequat. </li>
-                                        	<li>Duis aute irure dolor in reprehenderit in voluptate velit esse</li>
-                                        	<li>cillum dolore eu fugiat nulla pariatur.</li>
-                                        	<li>Excepteur sint occaecat cupidatat non
-                                        	proident, </li>
-                                        	<li>sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                                        	<li>Season တစ်ခုတွင် သုံးလသတ်မှတ်ထားသောကြောင့် တစ်လပြီးတစ်လ ခရီးသွား၍ ရိုက်ကူးရမည်ဖြစ်ပါသည်။ ရွေးချယ်ထားသောမြို့၏ ပုံများကို တစ်လတွင် သုံးပုံရိုက်ကူးရပါမည်။</li>
+                                        	<li>ထိုကဲ့သို့ ခရီးသွားရာတွင်လည်း SCW Travel & Tours တစ်ခုထဲကိုသာ မိမိတို့သွားလိုသော လေယာဥ်လက်မှတ်၊ ကားလက်မှတ်များနှင့် ဟိုတည်များကို အသုံးပြုရမည်ဖြစ်သည်။</li>
+                                        	<li>ထိုကဲ့သို့ အသုံးပြုရာတွင် SCW Travel မှ ပြိုင်ပွဲဝင်များအတွက် 50% အားလျှော့ပေးမည် ဖြစ်သည်။</li>
+                                        	<li>ပြိုင်ပွဲဝင်များသည် ပြိုင်ပွဲဝင်သည်နှင့်တပြိုင်နက် SCW Travel & Tours ၏ ကျန်းမားရေးဌာနမှ COVID-19 စစ်ဆေးမှုများကိုပြုလုပ်သွားမည်ဖြစ်သည်။</li>
+                                        	<li>ပြိုင်ပွဲဝင်များသည် SCW Travel နှင့် ပြိုင်ပွဲ၏ဒိုင်များမှ ချမှတ်ထားသော စည်းကမ်းချက်များကို လိုက်နာရမည်ဖြစ်သည်။</li>
+                                        	<li>ပြိုင်ပွဲအတွင်း ကိစ္စ တစုံတရာရှိလာပါက SCW Travel ၏ ဆုံးဖြတ်ချက်များသာ အတည်ဖြစ်ပါသည်။</li>
                                         </ul>
                                         <a href=""><button type="button" class="btn mt-4">Vote Now</button></a>
 

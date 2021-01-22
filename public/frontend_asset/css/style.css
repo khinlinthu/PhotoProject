@@ -309,7 +309,7 @@ ul {
 2.Header area start here 
 ---------------------------------------*/
 .header-top-area {
-  background: #000000;
+  background: #F1C40F;
   padding: 10px 0;
 }
 .header-top-area .header-top-left ul {
@@ -333,7 +333,7 @@ ul {
 }
 .header-top-area .header-top-left ul li a {
   transition: all 0.5s ease 0s;
-  color: white;
+  color: #000000;
 }
 .header-top-area .header-top-left ul li a:hover {
   color: #FF0000;
@@ -351,12 +351,12 @@ ul {
   width: 20px;
   height: 20px;
   line-height: 20px;
-  color: #dddddd;
+  color: #000;
   transition: all 0.5s ease 0s;
   text-decoration: none;
 }
 .header-top-area .social-media-area ul li a:hover {
-  color: #F1C40F;
+  color: #FF0000;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -381,7 +381,7 @@ ul {
   display: inline-block;
 }
 .header-top-area .header-top-right ul li a {
-  color: #F1C40F;
+  color: #000;
   transition: all 0.5s ease 0s;
 }
 .header-top-area .header-top-right ul li a:hover {
@@ -1750,7 +1750,7 @@ ul {
   color: #FF0000;
 }
 .footer-bottom-area {
-  background: #000000;
+  background: #F1C40F;
   padding: 20px 0;
 }
 .footer-bottom-area .footer-bottom p {

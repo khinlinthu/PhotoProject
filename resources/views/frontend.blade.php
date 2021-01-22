@@ -79,7 +79,7 @@
                         <div class="header-top-right">
                             <ul>
                                 @auth
-                                <li style="color: #F1C40F; ">Login Successful!</li>
+                                <li style="color: #000; ">Login Successful!</li>
                                 
                                 @else
 

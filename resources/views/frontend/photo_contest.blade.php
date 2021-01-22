@@ -282,7 +282,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="footer-bottom">
-                        <p style="color: #F1C40F;"> &copy; 2021 SCW Myanmar CO., LTD. All rights reserved.</p>
+                        <p style="color: #000;"> &copy; 2021 SCW Myanmar CO., LTD. All rights reserved.</p>
                     </div>
                 </div>
             </div>
