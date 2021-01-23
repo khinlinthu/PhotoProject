@@ -72,15 +72,15 @@ class ImageController extends Controller
     	Session::flash('success', 'Images uploaded');
     	return redirect('/photo');
     }
-    // public function delete($id)
-    // {
-    //     $image = Image::find($id);
-    //     Storage::delete($image->path);
-    //     $image->delete();
-    //     Session::flash('success', 'Images Deleted');
-    //     return redirect('/profile');
+    public function delete($id)
+    {
+          // dd($id);
+          $d_img=Image::find($id);
+          $d_img->delete();
+          return redirect('/profile');
+    
+    }
 
-    // }
     public function destroy($id)
     {
         $image = Image::find($id);

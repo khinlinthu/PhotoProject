@@ -45,12 +45,8 @@ class FrontendController extends Controller
         $user = User::find($user_id);
 
         $query=DB::table('images')
-        ->where('images.user_id','=',$user_id)
-        ->select('image','id')       
-        ->get();
-        //dd($query);
-
-        ->select('image')  
+        ->where('images.user_id','=',$user_id)     
+        ->select('image','id')  
         ->paginate(30);
         
 
@@ -95,7 +91,7 @@ class FrontendController extends Controller
         $image_id=DB::select('select image_id from votes');
             if ($user_id == $name && $image_id == $id) {
         
-            $vote=DB::table('votes')->increment('count',5);
+        $vote=DB::table('votes')->increment('count',5);
 
     }
     
@@ -119,10 +115,6 @@ class FrontendController extends Controller
         ->groupBy('images.id')
         ->orderBy('votes.count','DESC')
         ->get();
-
-
-
-        
 
         return view('frontend.live',compact('live'));
 

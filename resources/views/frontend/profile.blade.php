@@ -34,10 +34,36 @@
         /*width: 97%;*/
         margin-left: 20px;
     }
-    /*.col-lg-4, .col-md-4, .col-sm-6, .col-xs-12{
-        padding-left: 0;
-        padding-right: 0;
-    }*/
+
+    .button {
+        background-color: #000000;
+        border: none;
+        color: #fff;
+        padding: 7px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-width: 1px;   
+        border-color: #F1C40F;   
+        border-style: solid;
+        border-radius: 30px;
+    }
+
+    .button:hover {
+        background-color: red;
+        border: none;
+        color: #000;
+        padding: 7px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-width: 1px;   
+        border-color: #F1C40F;   
+        border-style: solid;
+        border-radius: 30px;
+    }
 
     .hovereffect {
       width: 100%;
@@ -238,24 +264,11 @@
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-3">
                     <div class="hovereffect">
                         <img class="img-responsive userimg" src="{{asset($row->image)}}" alt="">
-
-                        {{-- @if(Auth::check())
-                        @if($image->user_id == Auth::user()->id) --}}
                         <div class="overlay">
-                        {{-- <form action="{{ route ('deleteimage',$row->id) }}" method="POST">
-                            @csrf
-                            @method('DELETE')
-                            
-                            <input type="submit" value="Delete" class="btn btn-danger" name="">
-                            <button type="submit" class="btn btn-primary-outliness">Delete</button>
-                        </form> --}}
+                            <h2>Image Name</h2>
+                            <button class="button"><a href="{{route('deleteimage',$row->id)}}" >Delete</a></button>
                         </div>
-                        {{-- @endif
-                        @endif --}}
-                   <!-- <a class="info" href="#"></a> -->
-                        
                     </div>
-
                 </div>
                 @endforeach           
             </div>

@@ -39,7 +39,7 @@ Route::get('/photo', 'ImageController@photo');
 
 Route::post('/image', 'ImageController@post');
 
-// Route::delete('/image/{id}', 'ImageController@delete')->name('deleteimage');
+Route::get('deleteimage/{id}','ImageController@delete')->name('deleteimage');
 
 Route::get('/profile', 'FrontendController@profile')->name('profile');
 
