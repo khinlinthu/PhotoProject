@@ -3,7 +3,7 @@
 @section('content')
 
 <style type="text/css">
-	img{
+	.img{
 		border-width: 1px;   
         border-color: #F1C40F;   
         border-style: solid;
@@ -21,6 +21,10 @@
 		color: #ffffff;
 		background-color: red;
 	}
+
+    #headertwo {
+        height: 1000px;
+    }
 	
 </style>
 
@@ -37,10 +41,10 @@
                             <h1 class="title1">Travel Photo Contest</h1>
                             <div class="slider-botton">
                                 <ul>
-                                    <li><a href="#headerone">header </a></li>
-                                    <li class="acitve"><a href="#headerone">header</a></li>
-                                    <li><a href="#headerone">header </a></li>
-                                    <li class="acitve"><a href="#headertwo">header</a></li>
+                                    <li><a href="#headerone">အထင်ကရနေရာများ</a></li>
+                                    <li class="acitve"><a href="#headerone">ယဥ်ကျေးမှုများ</a></li>
+                                    <li><a href="#headerone">ကိုယ်ပိုင်စိတ်ကြိုက်ဖန်တီးမှုများ</a></li>
+                                    <li class="acitve"><a href="#headertwo">စည်းကမ်းချက်များ</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -60,21 +64,21 @@
                             <ul>
                             	<li>မိမိတို့ကြိုက်နှစ်သက်ရာမြို့များမှ အထင်ကရနေများ၏ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li> 
                             </ul>
-                            <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3">
+                            <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3 img">
                         </div>
                         <div class="single-business">
                             <h3><a href="#">ယဥ်ကျေးမှုများ</a></h3>
                             <ul>
                             	<li>မိမိတို့ကြိုက်နှစ်သက်ရာမြို့များမှ ယဥ်ကျေးမှုအမွေအနှစ်ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
                             </ul>
-                            <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3">
+                            <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3 img">
                         </div>
                         <div class="single-business">
                             <h3><a href="#">ကိုယ်ပိုင်စိတ်ကြိုက်ဖန်တီးမှုများ</a></h3>
                             <ul>
                             	<li>မိမိတို့ ကြိုက်နှစ်ရာမြို့များမှ ပြိုင်ပွဲဝင်များအနေဖြင့် ကြိုက်နှစ်သက်ရာ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
                             </ul>
-                            <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3">
+                            <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3 img">
                         </div>
                     </div>
                 </div>
@@ -92,49 +96,47 @@
     	</section>
 
         <!-- Home page core services start here -->
-        <section id="headertwo">
-        <div class="container-fluid acurate">
+       
+          <div class="container-fluid acurate">
             <div class="home-page-core-activities-area">
                 <div class="row acurate">
-                    <div class="col-lg-7 col-md-12 acurate">
-                        <img class="normal" src="{{asset('frontend_asset/images/11.jpg')}}" alt="">
-                        {{-- <img class="tablate" src="images/activities-bg1.jpg" alt=""> --}}
+                    <div class="col-lg-6 col-md-12 acurate">
+                        <img class="normal  img" src="{{asset('frontend_asset/images/11.jpg')}}" alt="">
                     </div>
-                    <div class="col-lg-5 col-md-12 acurate">
-                        <div class="home-activities-area pt-3">
+                    <div class="col-lg-6 col-md-12 acurate">
+                        <div class="home-activities-area">
                             <h3>မြန်မာနိုင်ငံ၏ပထမဦးဆုံးသောခရီးသွားဓာတ်ပုံပြိုင်ပွဲများ</h3>
+
                             <div class="single-activities">
                                 <div class="media">
-                                    {{-- <div class="pull-left">
-                                        <a href="#">
-                                            <i class="fa fa-camera-retro"></i>
-                                        </a>
-                                    </div> --}}
+                                    
                                     <div class="media-body">
+                                       
                                         <h4 class="media-heading">{{-- <a href="#">Shop Intregated</a> --}}
-                                        	ပြိုင်ပွဲဝင်များလိုက်နာရန် စည်းကမ်းချက်များ
+                                            ပြိုင်ပွဲဝင်များလိုက်နာရန် စည်းကမ်းချက်များ
                                         </h4>
                                         <ul class="text-danger" style="list-style-type:disc">
-                                        	<li>ပြိုင်ပွဲဝင်များသည် Season တစ်ခုတွင် ကြိုက်နှစ်ရာ တိုင်းနှင့်ပြည်နယ် သုံးခုကို ရွေးချယ်၍ သွားရောက်ရမည်။
-                                        	</li>
-                                        	<li>Season တစ်ခုတွင် သုံးလသတ်မှတ်ထားသောကြောင့် တစ်လပြီးတစ်လ ခရီးသွား၍ ရိုက်ကူးရမည်ဖြစ်ပါသည်။ ရွေးချယ်ထားသောမြို့၏ ပုံများကို တစ်လတွင် သုံးပုံရိုက်ကူးရပါမည်။</li>
-                                        	<li>ထိုကဲ့သို့ ခရီးသွားရာတွင်လည်း SCW Travel & Tours တစ်ခုထဲကိုသာ မိမိတို့သွားလိုသော လေယာဥ်လက်မှတ်၊ ကားလက်မှတ်များနှင့် ဟိုတည်များကို အသုံးပြုရမည်ဖြစ်သည်။</li>
-                                        	<li>ထိုကဲ့သို့ အသုံးပြုရာတွင် SCW Travel မှ ပြိုင်ပွဲဝင်များအတွက် 50% အားလျှော့ပေးမည် ဖြစ်သည်။</li>
-                                        	<li>ပြိုင်ပွဲဝင်များသည် ပြိုင်ပွဲဝင်သည်နှင့်တပြိုင်နက် SCW Travel & Tours ၏ ကျန်းမားရေးဌာနမှ COVID-19 စစ်ဆေးမှုများကိုပြုလုပ်သွားမည်ဖြစ်သည်။</li>
-                                        	<li>ပြိုင်ပွဲဝင်များသည် SCW Travel နှင့် ပြိုင်ပွဲ၏ဒိုင်များမှ ချမှတ်ထားသော စည်းကမ်းချက်များကို လိုက်နာရမည်ဖြစ်သည်။</li>
-                                        	<li>ပြိုင်ပွဲအတွင်း ကိစ္စ တစုံတရာရှိလာပါက SCW Travel ၏ ဆုံးဖြတ်ချက်များသာ အတည်ဖြစ်ပါသည်။</li>
+                                            <li>ပြိုင်ပွဲဝင်များသည် Season တစ်ခုတွင် ကြိုက်နှစ်ရာ တိုင်းနှင့်ပြည်နယ် သုံးခုကို ရွေးချယ်၍ သွားရောက်ရမည်။
+                                            </li>
+                                            <li>Season တစ်ခုတွင် သုံးလသတ်မှတ်ထားသောကြောင့် တစ်လပြီးတစ်လ ခရီးသွား၍ ရိုက်ကူးရမည်ဖြစ်ပါသည်။ ရွေးချယ်ထားသောမြို့၏ ပုံများကို တစ်လတွင် သုံးပုံရိုက်ကူးရပါမည်။</li>
+                                            <li>ထိုကဲ့သို့ ခရီးသွားရာတွင်လည်း SCW Travel & Tours တစ်ခုထဲကိုသာ မိမိတို့သွားလိုသော လေယာဥ်လက်မှတ်၊ ကားလက်မှတ်များနှင့် ဟိုတည်များကို အသုံးပြုရမည်ဖြစ်သည်။</li>
+                                            <li>ထိုကဲ့သို့ အသုံးပြုရာတွင် SCW Travel မှ ပြိုင်ပွဲဝင်များအတွက် 50% အားလျှော့ပေးမည် ဖြစ်သည်။</li>
+                                            <li>ပြိုင်ပွဲဝင်များသည် ပြိုင်ပွဲဝင်သည်နှင့်တပြိုင်နက် SCW Travel & Tours ၏ ကျန်းမားရေးဌာနမှ COVID-19 စစ်ဆေးမှုများကိုပြုလုပ်သွားမည်ဖြစ်သည်။</li>
+                                            <li>ပြိုင်ပွဲဝင်များသည် SCW Travel နှင့် ပြိုင်ပွဲ၏ဒိုင်များမှ ချမှတ်ထားသော စည်းကမ်းချက်များကို လိုက်နာရမည်ဖြစ်သည်။</li>
+                                            <li>ပြိုင်ပွဲအတွင်း ကိစ္စ တစုံတရာရှိလာပါက SCW Travel ၏ ဆုံးဖြတ်ချက်များသာ အတည်ဖြစ်ပါသည်။</li>
                                         </ul>
                                         <a href=""><button type="button" class="btn mt-4">Vote Now</button></a>
 
+                              
                                     </div>
                                 </div>
                             </div>
+                           
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
         <!-- Home page core services end here -->
 
 @endsection

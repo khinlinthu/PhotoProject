@@ -102,8 +102,9 @@
                                 <div class="overley">
                                     <div class="winners-details">
                                         <ul class="product-info">
-                                           <a href="{{route('photodetail',$photocontest->id)}}"> <li>{{$photocontest->name}}</li></a>
+                                           {{-- <a href="{{route('photodetail',$photocontest->id)}}"> <li>{{$photocontest->name}}</li></a> --}}
                                             
+                                            <a href="{{route('travel')}}"> <li>{{$photocontest->name}}</li></a>
                                         </ul>
                                     </div>
                                 </div>
