@@ -79,11 +79,11 @@
                         <div class="header-top-right">
                             <ul>
                                 @auth
-                                <li style="color: #F1C40F; ">Login Successful!</li>
+                                <li style="color: #000; ">Login Successful!</li>
                                 
                                 @else
 
-                                <li><i class="fa fa-user"></i><a href="{{ route('user.signin') }}">Login/Registration</a></li>
+                                <li><i class="fa fa-user"></i><a href="{{ route('user.signin') }}">LOGIN</a></li>
                             
                                 @endauth
                             </ul>
@@ -109,21 +109,21 @@
                             <ul>
                                 <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{route('photo_contest')}}"> Contests <i class="fa fa-angle-down"></i></a>
                                     <ul>
-                                        <li><a href="{{route('travel')}}">Travel Photo Contest</a></li>
-                                        {{-- <li><a href="index2.html">Season Two</a></li> --}}
+                                        <li><a href="{{route('travel')}}">Photo Contest</a></li>
+                                        <li><a href="#">Season Two</a></li>
                                     </ul>
                                 </li>
                                  <li class="{{ Request::is('photo') ? 'active' : '' }}"><a href="/photo">Photos <i class="fa fa-angle-down"></i></a> 
                                     <ul>
-                                        <li><a href="about.html">Travel</a> 
-                                        <li><a href="about-me.html">Event</a></li>
+                                        <li><a href="#">Travel</a> 
+                                        <li><a href="#">Event</a></li>
                                     </ul>
                                 </li>
 
-                                <li class="{{ Request::is('gallery') ? 'active' : '' }}"><a href="/photo">Gallery <i class="fa fa-angle-down"></i></a> 
+                                <li class="{{ Request::is('gallery') ? 'active' : '' }}"><a href="#">Gallery <i class="fa fa-angle-down"></i></a> 
                                     <ul>
-                                        <li><a href="about.html">Photo</a> 
-                                        <li><a href="about-me.html">Video</a></li>
+                                        <li><a href="#">Photo</a> 
+                                        <li><a href="#">Video</a></li>
                                     </ul>
                                 </li>
                                 <li class="{{ Request::is('vote') ? 'active' : '' }}"><a href="@auth {{route('vote')}} @else {{route('user.signin')}}  @endauth">Vote {{-- <i class="fa fa-angle-down"></i></a>

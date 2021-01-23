@@ -14,11 +14,16 @@
                 <div id="slider-direction-1" class="slider-direction">
                     <div class="slider-content t-cn s-tb slider-1">
                         <div class="title-container s-tb-c">
-                            <h1 class="title1"><span>Your Best</span> Photo Graphy Shop</h1>
+                            <h1 class="title1"><span>Your Best</span> Photography Shop</h1>
                             <div class="slider-botton">
                                 <ul>
-                                    <li><a href="registration.html">Join Now <i class="fa fa-angle-right"></i></a></li>
-                                    <li class="acitve"><a href="about.html">About Us <i class="fa fa-angle-right"></i></a></li>
+                                    <li><a href="/photo">View Now <i class="fa fa-angle-right"></i></a></li>
+                                    @if(Auth::check()){
+                                    <li class="acitve"><a href="{{route('vote')}}">Photo Contest <i class="fa fa-angle-right"></i></a></li>
+                                    }
+                                    @else
+                                    <li><a href="/signin">Photo Contest<i class="fa fa-angle-right"></i></a></li>
+                                    @endif
                                 </ul>
                             </div>
                         </div>
@@ -31,8 +36,8 @@
                             <h1 class="title1"><span>Creative</span> Photo Graphy Agency</h1>
                             <div class="slider-botton">
                                 <ul>
-                                    <li class="acitve"><a href="about.html">More Details <i class="fa fa-angle-right"></i></a></li>
-                                    <li><a href="contact.html">Contact Us <i class="fa fa-angle-right"></i></a></li>
+                                    <li class="acitve"><a href="#">More Details <i class="fa fa-angle-right"></i></a></li>
+                                    <li><a href="#">Contact Us <i class="fa fa-angle-right"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -51,21 +56,21 @@
                     <div class="total-business">
                         <div class="single-business">
                             <i class="fa fa-camera-retro"></i>
-                            <h3><a href="#">Photography</a></h3>
+                            <h3><a href="#">Gallery</a></h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet non ducimus hic vel minus numquam neque iusto, expedita nemo, enim odit</p>
-                            <div class="read-more"><a href="#">Read More</a></div>
+                            <div class="read-more"><a href="/photo">Read More</a></div>
                         </div>
                         <div class="single-business">
-                            <i class="fa fa-globe"></i>
-                            <h3><a href="#">Tourism</a></h3>
+                            <i class="fa fa-trophy"></i>
+                            <h3><a href="#">Contest</a></h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet non ducimus hic vel minus numquam neque iusto, expedita nemo, enim odit</p>
                             <div class="read-more"><a href="#">Read More</a></div>
                         </div>
                         <div class="single-business">
                             <i class="fa fa-play-circle-o"></i>
-                            <h3><a href="#">Media Advertising</a></h3>
+                            <h3><a href="#">Live Announcement</a></h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet non ducimus hic vel minus numquam neque iusto, expedita nemo, enim odit</p>
-                            <div class="read-more"><a href="#">Read More</a></div>
+                            <div class="read-more"><a href="{{route('live')}}">Read More</a></div>
                         </div>
                         
                     </div>
@@ -277,7 +282,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="footer-bottom">
-                        <p style="color: #F1C40F;"> &copy; 2021 SCW Myanmar CO., LTD. All rights reserved.</p>
+                        <p style="color: #000;"> &copy; 2021 SCW Myanmar CO., LTD. All rights reserved.</p>
                     </div>
                 </div>
             </div>

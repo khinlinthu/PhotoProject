@@ -49,7 +49,6 @@ class FrontendController extends Controller
         ->select('image','id')  
         ->paginate(30);
         
-
         return view('frontend.profile', compact('user','query'));
     }
 
