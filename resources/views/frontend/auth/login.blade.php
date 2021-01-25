@@ -13,6 +13,14 @@
         padding-left: 0;
         padding-right: 0;
     }
+
+    .alink{
+        color: #000000;
+    }
+
+    .alink:hover {
+        color: red;
+    }
 </style>
 
 <div class="loginregistration-area pt-100 pb-100 bgcolour">
@@ -63,11 +71,11 @@
                                             <button class="btn-send" type="submit">{{ __('Login') }}</button>
                                             <div class="text-center dont-have">
                                                 @if (Route::has('password.request'))
-                                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                                    <a class="btn btn-link alink" href="{{ route('password.request') }}">
                                                         {{ __('Forgot Your Password?') }}
                                                     </a>
                                                 @endif 
-                                                <a href="{{ route('user.create') }}" style="font-size: 20px;">|&nbsp Register</a>
+                                                <a class="alink" href="{{ route('user.create') }}" style="font-size: 20px;">|&nbsp Register</a>
                                             </div>
                                         	</div>
                                     </div>
