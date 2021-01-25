@@ -49,7 +49,12 @@ class FrontendController extends Controller
         ->select('image','id')  
         ->paginate(30);
         
-        return view('frontend.profile', compact('user','query'));
+        $role = DB::table('roles')
+        ->join('model_has_roles','roles.id','=','model_has_roles.role_id')
+        ->where('model_has_roles.model_id','=',$user_id)
+        ->select('name')
+        ->get();
+        return view('frontend.profile', compact('user','query','role'));
     }
 
 

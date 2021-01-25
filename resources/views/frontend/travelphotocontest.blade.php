@@ -23,6 +23,7 @@
 		background-color: red;
 	}
 
+
     #headertwo {
         height: 1000px;
     }
@@ -32,6 +33,7 @@
     .media-body h4:hover{
         color: #FF0000;
     }
+
 	
 </style>
 
@@ -40,6 +42,7 @@
             <div class="bend niceties preview-2">
                 <div id="ensign-nivoslider" class="slides">
                     <img src="{{asset('frontend_asset/images/q.jpg')}}" alt="" title="#slider-direction-1" />
+                    <img src="{{asset('frontend_asset/images/p.jpg')}}" alt="" title="#slider-direction-1" />
                 </div>
                 <!-- direction 2 -->
                 <div id="slider-direction-1" class="slider-direction">
@@ -48,24 +51,46 @@
                             <h1 class="title1">Travel Photo Contest</h1>
                             <div class="slider-botton">
                                 <ul>
-                                    <li><a href="#headerone">အထင်ကရနေရာများ</a></li>
-                                    <li class="acitve"><a href="#headerone">ယဥ်ကျေးမှုများ</a></li>
-                                    <li><a href="#headerone">ကိုယ်ပိုင်စိတ်ကြိုက်ဖန်တီးမှုများ</a></li>
+                                    <li><a href="#headerone1">အထင်ကရနေရာများ</a></li>
+                                    <li class="acitve"><a href="#headerone2">ယဥ်ကျေးမှုများ</a></li>
+                                    <li><a href="#headerone3">ကိုယ်ပိုင်စိတ်ကြိုက်ဖန်တီးမှုများ</a></li>
                                     <li class="acitve"><a href="#headertwo">စည်းကမ်းချက်များ</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- direction 2 -->
+                {{-- <div id="slider-direction-2" class="slider-direction">
+                    <div class="slider-content t-cn s-tb slider-2">
+                        <div class="title-container s-tb-c">
+                            <h1 class="title1"><span>Creative</span> Photo Graphy Agency</h1>
+                            <div class="title2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quos aliquid laborum asperiores quidem, aliquam sunt expedita praesentium.</div>
+                            <div class="slider-botton">
+                                <ul>
+                                    <li class="acitve"><a href="about.html">More Details <i class="fa fa-angle-right"></i></a></li>
+                                    <li><a href="contact.html">Contact Us <i class="fa fa-angle-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> --}}
             </div>
         </div>
         <!-- Slider Area End Here-->
 
+
         <section id="headerone">
 		<div class="slider-bottom-area pt-100 pb-90" style="background-color: #463E3F;">
+
+        {{-- <section id="headerone"> --}}
+		<div class="slider-bottom-area pt-100 pb-90">
+
             <div class="container">
                 <div class="slider-bottom">
                     <div class="total-business">
+                        <section id="headerone1">
                         <div class="single-business">
                             <h3><a href="#">အထင်ကရနေရာများ</a></h3>
                             <ul>
@@ -73,6 +98,8 @@
                             </ul>
                             <img src="{{asset('frontend_asset/images/shwedagon.jpg')}}" class="mt-3 img">
                         </div>
+                    </section>
+                    <section id="headerone2">
                         <div class="single-business">
                             <h3><a href="#">ယဥ်ကျေးမှုများ</a></h3>
                             <ul>
@@ -80,6 +107,8 @@
                             </ul>
                             <img src="{{asset('frontend_asset/images/traditional.jpg')}}" class="mt-3 img">
                         </div>
+                    </section>
+                    <section id="headerone3">
                         <div class="single-business">
                             <h3><a href="#">ကိုယ်ပိုင်စိတ်ကြိုက်ဖန်တီးမှုများ</a></h3>
                             <ul>
@@ -87,6 +116,7 @@
                             </ul>
                             <img src="{{asset('frontend_asset/images/it1.jpg')}}" class="mt-3 img">
                         </div>
+                    </section>
                     </div>
                 </div>
 
@@ -100,10 +130,10 @@
                 </div>
             </div>
         </div>
-    	</section>
+    	{{-- </section> --}}
 
         <!-- Home page core services start here -->
-       
+       <section id="headertwo">
           <div class="container-fluid acurate">
             <div class="home-page-core-activities-area">
                 <div class="row acurate">
@@ -112,7 +142,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12 acurate">
                         <div class="home-activities-area">
-                            <h3>မြန်မာနိုင်ငံ၏ပထမဦးဆုံးသောခရီးသွားဓာတ်ပုံပြိုင်ပွဲများ</h3>
+                            <h3 style="margin-top: 8px;">မြန်မာနိုင်ငံ၏ပထမဦးဆုံးသောခရီးသွားဓာတ်ပုံပြိုင်ပွဲများ</h3>
 
                             <div class="single-activities">
                                 <div class="media">
@@ -147,6 +177,7 @@
                 </div>
             </div>
         </div>
+        </section>
         <!-- Home page core services end here -->
 
 @endsection

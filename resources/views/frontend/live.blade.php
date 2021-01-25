@@ -42,6 +42,7 @@
       <th scope="col">Player Name</th>
       <th scope="col">Photo</th>
       <th scope="col">Counts</th>
+      <th scope="col">Score</th>
     </tr>
   </thead>
   <tbody>
@@ -51,6 +52,7 @@
       <td>{{$lives->name}}</td>
       <td><img src="{{$lives->image}} " style="width: 100px; height: 100px;"></td>
       <td>{{$lives->user_count}}</td>
+      <td></td>
      
     </tr>
     

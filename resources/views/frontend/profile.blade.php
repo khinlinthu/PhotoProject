@@ -191,13 +191,15 @@
                                     <img class="rounded-circle userProfileImage" alt="User Image" src="{{Auth::user()->photo}}">
                                 </a>
                             </div>
+                            @foreach($role as $roles)
                             <div class="col ml-md-n2 profile-user-info">
                                 <h4 class="user-name ">{{Auth::user()->name}}</h4>
                                 <h6 class="">{{Auth::user()->email}}</h6>
                                 <h6 class="">{{Auth::user()->phone}}</h6>
-                                {{-- <h6 class="text-muted">{{Auth::user()->role}}</h6> --}}
+                                <h6 class="">{{$roles->name}}</h6>
                                 
                             </div>
+                            @endforeach
                             <div class="col-auto profile-btn">
                                 <div class="col-xl-1 col-lg-3 col-md-12 col-sm-12 col-12 order-xl-3 order-lg-3 order-md-2 order-sm-2 order-2">
                                     <button class="btn btn-info float-right profile_editBtn" type="button" style="margin-right: 15px;"> 
