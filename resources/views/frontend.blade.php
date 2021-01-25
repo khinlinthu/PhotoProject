@@ -100,7 +100,7 @@
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-12">
                     <div class="logo-area">
-                        <a href="{{route('photo_contest')}}"><img src="{{asset('frontend_asset/images/scw myanmar.png')}}" alt="logo"></a>
+                        <a href="{{route('photo_contest')}}"><img src="{{asset('frontend_asset/images/scwlogo.png')}}" alt="logo"></a>
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-12">
@@ -110,7 +110,7 @@
                                 <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{route('photo_contest')}}"> Contests <i class="fa fa-angle-down"></i></a>
                                     <ul>
                                         <li><a href="{{route('travel')}}">Photo Contest</a></li>
-                                        {{-- <li><a href="#">Season Two</a></li> --}}
+                                        <li><a href="#">Season Two</a></li>
                                     </ul>
                                 </li>
                                  <li class="{{ Request::is('photo') ? 'active' : '' }}"><a href="/photo">Photos <i class="fa fa-angle-down"></i></a> 
@@ -206,21 +206,21 @@
                             <ul>
                                 <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{route('photo_contest')}}"> Contests <i class="fa fa-angle-down"></i></a>
                                     <ul>
-                                        <li><a href="index.html">Season One</a></li>
-                                        <li><a href="index2.html">Season Two</a></li>
+                                        <li><a href="{{route('travel')}}">Photo Contest</a></li>
+                                        <li><a href="#">Season Two</a></li>
                                     </ul>
                                 </li>
                                  <li class="{{ Request::is('photo') ? 'active' : '' }}"><a href="/photo">Photos <i class="fa fa-angle-down"></i></a> 
                                     <ul>
-                                        <li><a href="about.html">Travel</a> 
-                                        <li><a href="about-me.html">Event</a></li>
+                                        <li><a href="#">Travel</a> 
+                                        <li><a href="#">Event</a></li>
                                     </ul>
                                 </li>
 
                                 <li class="{{ Request::is('gallery') ? 'active' : '' }}"><a href="/photo">Gallery <i class="fa fa-angle-down"></i></a> 
                                     <ul>
-                                        <li><a href="about.html">Photo</a> 
-                                        <li><a href="about-me.html">Video</a></li>
+                                        <li><a href="#">Photo</a> 
+                                        <li><a href="#">Video</a></li>
                                     </ul>
                                 </li>
                                 <li class="{{ Request::is('vote') ? 'active' : '' }}"><a href="@auth {{route('vote')}} @else {{route('user.signin')}}  @endauth">Vote {{-- <i class="fa fa-angle-down"></i></a>
@@ -239,7 +239,7 @@
                                         <li><a href="gallery2.html">Gallery Three</a></li>
                                     </ul> 
                                 </li> --}}
-                                <li class="{{ Request::is('new') ? 'active' : '' }} "><a href="#">News & Announcements <i class="fa fa-angle-down"></i></a>
+                                <li class="{{ Request::is('new') ? 'active' : '' }} "><a href="#">News & Announcements<i class="fa fa-angle-down"></i></a>
                                     <ul>
                                         <li><a href="{{route('live')}}">Live Score</a></li>
                                         <li><a href="#">Prize</a></li>
@@ -255,6 +255,28 @@
                                     </ul>
                                 </li>
                                 {{-- <li><a href="contact.html">Contact Us</a></li> --}}
+
+                                @auth
+
+                                <li><a href="/profile">Profile</a></li>
+
+                                <li><a  href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                            </a>
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                @csrf
+                                            </form>
+                                </li>
+                                
+                                @else
+
+                                <li><a href="{{ route('user.signin') }}">LOGIN</a></li>
+                            
+                                @endauth
+
+
                             </ul>
                         </nav>
                     </div>

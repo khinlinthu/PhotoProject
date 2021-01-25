@@ -70,7 +70,7 @@ body {
   }
 
   label, input {
-    cursor: pointer;
+    /*cursor: pointer;*/
     display: block;
     height: 50px;
     left: 0;
@@ -150,7 +150,8 @@ body {
                                                 <label for="file" style="font-size: 20px;">PHOTO :</label>
                                                 <input type="file" name="image[]" multiple accept="image/*">
                                             </div>
-                                            <input type="submit" value="Upload"  class="upload mt-5">
+                                            <button type="submit" class="upload mt-5">Upload</button>
+                                            {{-- <input type="submit" value="Upload"  class="upload mt-5"> --}}
                                             
                                     </form>
                                     </fieldset>

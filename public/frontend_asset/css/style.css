@@ -566,7 +566,7 @@ ul {
   animation-fill-mode: both;
 }
 .header-middle-area.stick .main-menu ul li a {
-  color: #FF0000;
+  color:#F1C40F;
 }
 .header-middle-area.stick .menuright ul li a {
   color: #444444;
@@ -3646,12 +3646,13 @@ ul {
 .loginregistration-area .login-area fieldset label {
   font-size: 16px;
   font-weight: normal;
-  margin: 10px 0;
+  margin-top: 13px;
+  margin-left: 20px;
 }
 .loginregistration-area .login-area fieldset input {
   background: #ffffff;
   height: 45px;
-  margin-right: 20px;
+  margin-left: 9px;
   border-radius: 5px;
 }
 .loginregistration-area .login-area fieldset input:focus {

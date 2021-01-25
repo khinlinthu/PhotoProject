@@ -21,15 +21,16 @@
     }
 
     .img{
-      width: 10000px;
-        height: 400px;
+        width:auto;
+        height:auto;
         border-width: 1px;   
         border-color: #F1C40F;   
         border-style: solid;
+        margin-left:340px;
     }
 
     .bgcolour{
-        background: #000000;
+        background: #463E3F;
     }
 
     .card{
