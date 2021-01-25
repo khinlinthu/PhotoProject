@@ -18,9 +18,8 @@
                             <div class="slider-botton">
                                 <ul>
                                     <li><a href="/photo">View Now <i class="fa fa-angle-right"></i></a></li>
-                                    @if(Auth::check()){
+                                    @if(Auth::check())
                                     <li class="acitve"><a href="{{route('vote')}}">Photo Contest <i class="fa fa-angle-right"></i></a></li>
-                                    }
                                     @else
                                     <li><a href="/signin">Photo Contest<i class="fa fa-angle-right"></i></a></li>
                                     @endif

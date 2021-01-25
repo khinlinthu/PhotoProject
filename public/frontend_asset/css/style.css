@@ -3618,7 +3618,7 @@ ul {
 ---------------------------------------*/
 .loginregistration-area .login-area {
   background: #d3d3d3;
-  padding: 30px;
+  padding: 38px;
   border-radius: 5px;
 }
 .loginregistration-area .login-area h2 {
@@ -3773,9 +3773,9 @@ ul {
   box-shadow: none;
 }
 .loginregistration-area .registration-area fieldset .btn-send {
-  background: #6495ED;
+  background: #ffffff;
   border: 0 none;
-  color: #ffffff;
+  color: #000000;
   display: block;
   font-size: 18px;
   font-weight: bold;
@@ -3789,7 +3789,8 @@ ul {
   cursor: pointer;
 }
 .loginregistration-area .registration-area fieldset .btn-send:hover {
-  background: #6495ED;
+  background: #FF0000;
+  color: #ffffff;
   box-shadow: none;
 }
 /* ------------------------------------

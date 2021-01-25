@@ -110,21 +110,21 @@
                                 <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{route('photo_contest')}}"> Contests <i class="fa fa-angle-down"></i></a>
                                     <ul>
                                         <li><a href="{{route('travel')}}">Photo Contest</a></li>
-                                        {{-- <li><a href="#">Season Two</a></li> --}}
+                                        <li><a href="#">Season Two</a></li>
                                     </ul>
                                 </li>
                                  <li class="{{ Request::is('photo') ? 'active' : '' }}"><a href="/photo">Photos <i class="fa fa-angle-down"></i></a> 
-                                    {{-- <ul>
+                                    <ul>
                                         <li><a href="#">Travel</a> 
                                         <li><a href="#">Event</a></li>
-                                    </ul> --}}
+                                    </ul>
                                 </li>
 
                                 <li class="{{ Request::is('gallery') ? 'active' : '' }}"><a href="#">Gallery <i class="fa fa-angle-down"></i></a> 
-                                    {{-- <ul>
+                                    <ul>
                                         <li><a href="#">Photo</a> 
                                         <li><a href="#">Video</a></li>
-                                    </ul> --}}
+                                    </ul>
                                 </li>
                                 <li class="{{ Request::is('vote') ? 'active' : '' }}"><a href="@auth {{route('vote')}} @else {{route('user.signin')}}  @endauth">Vote {{-- <i class="fa fa-angle-down"></i></a>
                                     <ul>
@@ -171,7 +171,7 @@
                         <nav>
                             <ul>
                                 <li >
-                                    <a href="/profile"><img src="{{Auth::user()->photo}}" class="rounded-circle">{{-- {{Auth::user()->name}} --}}{{-- <i class="fa fa-angle-down"></i> --}}</a>
+                                    <a href="/profile"><img src="{{Auth::user()->photo}}" class="rounded-circle" style="width: 35px; height: 35px;">{{-- {{Auth::user()->name}} --}}{{-- <i class="fa fa-angle-down"></i> --}}</a>
                                     <ul>
                                         {{-- <li><a href="/profile">Profile</a></li> --}}
                                         <li><a  href="{{ route('logout') }}"
