@@ -105,7 +105,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12 acurate">
                         <div class="home-activities-area">
-                            <h3>မြန်မာနိုင်ငံ၏ပထမဦးဆုံးသောခရီးသွားဓာတ်ပုံပြိုင်ပွဲများ</h3>
+                            <h3 style="margin-top: 8px;">မြန်မာနိုင်ငံ၏ပထမဦးဆုံးသောခရီးသွားဓာတ်ပုံပြိုင်ပွဲများ</h3>
 
                             <div class="single-activities">
                                 <div class="media">
