@@ -4,9 +4,13 @@
 
 <style >
 
+.bgcolour{
+  background-color: #D3D3D3;
+}
+
 .upload {
     padding: 15px 100px;
-    background-color: #b0bfb4;
+    background-color: #fff;
     color: #000;
     border-radius: 30px;
     text-transform: uppercase;
@@ -15,7 +19,8 @@
 }
 
 .upload:hover {
-    background-color: #92CCA6;
+    background-color: #FF0000;
+    color: #fff;
 }
 
 
@@ -34,7 +39,7 @@ body {
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  background: radial-gradient(ellipse at center,#91B49C 0,#91B49C 100%);
+  background: radial-gradient(ellipse at center,#808080,#808080 100%);
   width:100%;
   height:500px;  
   border:5px dashed gray;

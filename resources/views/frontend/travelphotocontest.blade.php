@@ -7,6 +7,7 @@
 		border-width: 1px;   
         border-color: #F1C40F;   
         border-style: solid;
+        height: 300px;
 	}
 
 	.btn{
@@ -21,6 +22,18 @@
 		color: #ffffff;
 		background-color: red;
 	}
+
+
+    #headertwo {
+        height: 1000px;
+    }
+    .home-activities-area h3:hover{
+        color: #FF0000;
+    }
+    .media-body h4:hover{
+        color: #FF0000;
+    }
+
 	
 </style>
 
@@ -67,8 +80,13 @@
         </div>
         <!-- Slider Area End Here-->
 
+
+        <section id="headerone">
+		<div class="slider-bottom-area pt-100 pb-90" style="background-color: #463E3F;">
+
         {{-- <section id="headerone"> --}}
 		<div class="slider-bottom-area pt-100 pb-90">
+
             <div class="container">
                 <div class="slider-bottom">
                     <div class="total-business">
@@ -76,27 +94,27 @@
                         <div class="single-business">
                             <h3><a href="#">အထင်ကရနေရာများ</a></h3>
                             <ul>
-                            	<li>မိမိတို့ကြိုက်နှစ်သက်ရာမြို့များမှ အထင်ကရနေများ၏ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li> 
+                            	<li style="color: #ffffff;">မိမိတို့ကြိုက်နှစ်သက်ရာမြို့များမှ အထင်ကရနေများ၏ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li> 
                             </ul>
-                            <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3 img">
+                            <img src="{{asset('frontend_asset/images/shwedagon.jpg')}}" class="mt-3 img">
                         </div>
                     </section>
                     <section id="headerone2">
                         <div class="single-business">
                             <h3><a href="#">ယဥ်ကျေးမှုများ</a></h3>
                             <ul>
-                            	<li>မိမိတို့ကြိုက်နှစ်သက်ရာမြို့များမှ ယဥ်ကျေးမှုအမွေအနှစ်ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
+                            	<li style="color: #ffffff;">မိမိတို့ကြိုက်နှစ်သက်ရာမြို့များမှ ယဥ်ကျေးမှုအမွေအနှစ်ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
                             </ul>
-                            <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3 img">
+                            <img src="{{asset('frontend_asset/images/traditional.jpg')}}" class="mt-3 img">
                         </div>
                     </section>
                     <section id="headerone3">
                         <div class="single-business">
                             <h3><a href="#">ကိုယ်ပိုင်စိတ်ကြိုက်ဖန်တီးမှုများ</a></h3>
                             <ul>
-                            	<li>မိမိတို့ ကြိုက်နှစ်ရာမြို့များမှ ပြိုင်ပွဲဝင်များအနေဖြင့် ကြိုက်နှစ်သက်ရာ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
+                            	<li style="color: #ffffff;">မိမိတို့ ကြိုက်နှစ်ရာမြို့များမှ ပြိုင်ပွဲဝင်များအနေဖြင့် ကြိုက်နှစ်သက်ရာ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
                             </ul>
-                            <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3 img">
+                            <img src="{{asset('frontend_asset/images/it1.jpg')}}" class="mt-3 img">
                         </div>
                     </section>
                     </div>
@@ -105,7 +123,7 @@
                 <div class="row mt-3">
                 	<div class="col-lg-12 col-md-12 col-sm-12">
                 		<div class="section-title">
-	                		<p style="color: #000;">ပြိုင်ပွဲဝင်များသည် ဝင်ကြေးအနေဖြင့် ကျပ် ၁၁၀၀၀ ပေးရမည်ဖြစ်သည်။ ရာသီတစ်ခု၏ ဆုအနေဖြင့် $1000 ရရှိမှာဖြစ်ပီး ရာသီလေးခု ပြိုင်ရမည်ဖြစ်သည်။ ရာသီလေးခု အပြီးနောက်ဆုံးရာသီတွင် ဆုအနေဖြင့် $5000 နှင့် Sponsorship အား ရရှိမှာဖြစ်သည်။ </p>
+	                		<p style="color: #ffffff;">ပြိုင်ပွဲဝင်များသည် ဝင်ကြေးအနေဖြင့် ကျပ် ၁၁၀၀၀ ပေးရမည်ဖြစ်သည်။ ရာသီတစ်ခု၏ ဆုအနေဖြင့် $1000 ရရှိမှာဖြစ်ပီး ရာသီလေးခု ပြိုင်ရမည်ဖြစ်သည်။ ရာသီလေးခု အပြီးနောက်ဆုံးရာသီတွင် ဆုအနေဖြင့် $5000 နှင့် Sponsorship အား ရရှိမှာဖြစ်သည်။ </p>
 	                		<h4>"သင်တို့၏အရည်ချင်းများဖြင့် မြန်မာနိုင်ငံ၏အလှအား ကမ္ဘာသိအောင် ပြလိုက်ကြပါစို့"</h4>
                 		</div>
                 	</div>
@@ -144,9 +162,12 @@
                                             <li>ပြိုင်ပွဲဝင်များသည် SCW Travel နှင့် ပြိုင်ပွဲ၏ဒိုင်များမှ ချမှတ်ထားသော စည်းကမ်းချက်များကို လိုက်နာရမည်ဖြစ်သည်။</li>
                                             <li>ပြိုင်ပွဲအတွင်း ကိစ္စ တစုံတရာရှိလာပါက SCW Travel ၏ ဆုံးဖြတ်ချက်များသာ အတည်ဖြစ်ပါသည်။</li>
                                         </ul>
-                                        <a href=""><button type="button" class="btn mt-4">Vote Now</button></a>
+                                        @if(Auth::check())
+                                        <a href="{{route('vote')}}"><button type="button" class="btn mt-4">ဝင်ရောက်ရန်</button></a>
+                                        @else
+                                        <a href="/signin"><button type="button" class="btn mt-4">ဝင်ရောက်ရန်</button></a>
+                                        @endif
 
-                              
                                     </div>
                                 </div>
                             </div>

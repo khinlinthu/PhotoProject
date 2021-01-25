@@ -5,7 +5,7 @@
 <style >
     
     .bgcolour{
-        background: #d3d3d3;
+        background: #808080;
     }
 
     .col-lg-6,.col-md-6,.col-sm-12{

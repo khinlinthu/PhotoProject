@@ -126,6 +126,7 @@
                                         <li><a href="#">Video</a></li>
                                     </ul>
                                 </li>
+
                                 <li class="{{ Request::is('vote') ? 'active' : '' }}"><a href="@auth {{route('vote')}} @else {{route('user.signin')}}  @endauth">Vote {{-- <i class="fa fa-angle-down"></i></a>
                                     <ul>
                                         <li><a href="portfolio1.html">Portfolio 1</a></li>
@@ -171,7 +172,7 @@
                         <nav>
                             <ul>
                                 <li >
-                                    <a href="/profile"><img src="{{Auth::user()->photo}}" class="rounded-circle">{{-- {{Auth::user()->name}} --}}{{-- <i class="fa fa-angle-down"></i> --}}</a>
+                                    <a href="/profile"><img src="{{Auth::user()->photo}}" class="rounded-circle" style="width: 35px; height: 35px;">{{-- {{Auth::user()->name}} --}}{{-- <i class="fa fa-angle-down"></i> --}}</a>
                                     <ul>
                                         {{-- <li><a href="/profile">Profile</a></li> --}}
                                         <li><a  href="{{ route('logout') }}"
@@ -210,16 +211,16 @@
                                         <li><a href="#">Season Two</a></li>
                                     </ul>
                                 </li>
-                                 <li class="{{ Request::is('photo') ? 'active' : '' }}"><a href="/photo">Photos <i class="fa fa-angle-down"></i></a> 
+                                {{-- <li class="{{ Request::is('photo') ? 'active' : '' }}"><a href="#">Photos <i class="fa fa-angle-down"></i></a> 
                                     <ul>
                                         <li><a href="#">Travel</a> 
                                         <li><a href="#">Event</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
 
-                                <li class="{{ Request::is('gallery') ? 'active' : '' }}"><a href="/photo">Gallery <i class="fa fa-angle-down"></i></a> 
+                                <li class="{{ Request::is('gallery') ? 'active' : '' }}"><a href="#">Gallery <i class="fa fa-angle-down"></i></a> 
                                     <ul>
-                                        <li><a href="#">Photo</a> 
+                                        <li><a href="/photo">Photo</a> 
                                         <li><a href="#">Video</a></li>
                                     </ul>
                                 </li>
