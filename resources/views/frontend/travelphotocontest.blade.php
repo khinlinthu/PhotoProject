@@ -7,6 +7,7 @@
 		border-width: 1px;   
         border-color: #F1C40F;   
         border-style: solid;
+        height: 300px;
 	}
 
 	.btn{
@@ -70,21 +71,21 @@
                             <ul>
                             	<li style="color: #ffffff;">မိမိတို့ကြိုက်နှစ်သက်ရာမြို့များမှ အထင်ကရနေများ၏ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li> 
                             </ul>
-                            <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3 img">
+                            <img src="{{asset('frontend_asset/images/shwedagon.jpg')}}" class="mt-3 img">
                         </div>
                         <div class="single-business">
                             <h3><a href="#">ယဥ်ကျေးမှုများ</a></h3>
                             <ul>
                             	<li style="color: #ffffff;">မိမိတို့ကြိုက်နှစ်သက်ရာမြို့များမှ ယဥ်ကျေးမှုအမွေအနှစ်ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
                             </ul>
-                            <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3 img">
+                            <img src="{{asset('frontend_asset/images/traditional.jpg')}}" class="mt-3 img">
                         </div>
                         <div class="single-business">
                             <h3><a href="#">ကိုယ်ပိုင်စိတ်ကြိုက်ဖန်တီးမှုများ</a></h3>
                             <ul>
                             	<li style="color: #ffffff;">မိမိတို့ ကြိုက်နှစ်ရာမြို့များမှ ပြိုင်ပွဲဝင်များအနေဖြင့် ကြိုက်နှစ်သက်ရာ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
                             </ul>
-                            <img src="{{asset('frontend_asset/images/travel.jpg')}}" class="mt-3 img">
+                            <img src="{{asset('frontend_asset/images/it1.jpg')}}" class="mt-3 img">
                         </div>
                     </div>
                 </div>

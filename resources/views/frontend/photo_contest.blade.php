@@ -17,9 +17,9 @@
                             <h1 class="title1"><span>Your Best</span> Photography Shop</h1>
                             <div class="slider-botton">
                                 <ul>
-                                    <li><a href="/photo">View Now <i class="fa fa-angle-right"></i></a></li>
+                                    <li class="acitve"><a href="/photo">View Now <i class="fa fa-angle-right"></i></a></li>
                                     @if(Auth::check())
-                                    <li class="acitve"><a href="{{route('vote')}}">Photo Contest <i class="fa fa-angle-right"></i></a></li>
+                                    <li><a href="{{route('vote')}}">Photo Contest <i class="fa fa-angle-right"></i></a></li>
                                     @else
                                     <li><a href="/signin">Photo Contest<i class="fa fa-angle-right"></i></a></li>
                                     @endif
@@ -63,7 +63,7 @@
                             <i class="fa fa-trophy"></i>
                             <h3><a href="#">Contest</a></h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet non ducimus hic vel minus numquam neque iusto, expedita nemo, enim odit</p>
-                            <div class="read-more"><a href="#">Read More</a></div>
+                            <div class="read-more"><a href="{{route('travel')}}">Read More</a></div>
                         </div>
                         <div class="single-business">
                             <i class="fa fa-play-circle-o"></i>
