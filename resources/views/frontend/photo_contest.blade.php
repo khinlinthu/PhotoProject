@@ -94,32 +94,75 @@
                 
                 <div class="home-ralated">
                     <div class="single-shop-area">
-                        @php $i=1; @endphp
-                        @foreach($photoconests as $photocontest)
+                        {{-- @php $i=1; @endphp --}}
+                        {{-- @foreach($photoconests as $photocontest) --}}
                         <div class="single-winners">
                             <div class="images">
-                                <a href=""><img src="{{asset($photocontest->photo)}}" alt="" class="img-fluid" style="height: 250px;"></a>
+                                {{-- <a href=""><img src="{{asset($photocontest->photo)}}" alt="" class="img-fluid" style="height: 250px;"></a> --}}
+                                <a href=""><img src="{{asset('frontend_asset/images/taunggyi.jpg')}}" alt="" class="img-fluid" style="height: 250px;"></a>
                                 <div class="overley">
                                     <div class="winners-details">
                                         <ul class="product-info">
                                            {{-- <a href="{{route('photodetail',$photocontest->id)}}"> <li>{{$photocontest->name}}</li></a> --}}
                                             
-                                            <a href="{{route('travel')}}"> <li>{{$photocontest->name}}</li></a>
+                                            <a href="{{route('travel')}}"> <li>Season One</li></a>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                        
-                            {{-- <h3><a href="product-details.html">Camera Lence</a></h3>
-                            <div class="price-details">
-                                <ul>
-                                    <li>
-                                        <del>$150 </del> $120</li>
-                                </ul>
-                            </div> --}}
                         </div>
-                        @endforeach
-                        
+                        {{-- @endforeach --}}
+                        <div class="single-winners">
+                            <div class="images">
+                                <a href=""><img src="{{asset('frontend_asset/images/inle.jpg')}}" alt="" class="img-fluid" style="height: 250px;"></a>
+                                <div class="overley">
+                                    <div class="winners-details">
+                                        <ul class="product-info">
+                                           <a href="#"> <li>Season Two</li></a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-winners">
+                            <div class="images">
+                                <a href=""><img src="{{asset('frontend_asset/images/inle1.jpg')}}" alt="" class="img-fluid" style="height: 250px;"></a>
+                                <div class="overley">
+                                    <div class="winners-details">
+                                        <ul class="product-info">
+                                           <a href="#"> <li>Season Three</li></a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-winners">
+                            <div class="images">
+                                <a href=""><img src="{{asset('frontend_asset/images/inle3.jpg')}}" alt="" class="img-fluid" style="height: 250px;"></a>
+                                <div class="overley">
+                                    <div class="winners-details">
+                                        <ul class="product-info">
+                                           <a href="#"> <li>Season Four</li></a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-winners">
+                            <div class="images">
+                                <a href=""><img src="{{asset('frontend_asset/images/GIC.jpg')}}" alt="" class="img-fluid" style="height: 250px;"></a>
+                                <div class="overley">
+                                    <div class="winners-details">
+                                        <ul class="product-info">     
+                                            <a href="#"> <li>Final</li></a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
@@ -241,22 +284,22 @@
                         <h3>Sponsorship</h3>
                         <ul>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/AYA Bank.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px;"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/AYA Bank.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px;border-width: 1px; border-color: #F1C40F; border-style: solid;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/CB bank.png')}}" alt="flicker photo" style="width: 100px; height: 80px;"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/CB bank.png')}}" alt="flicker photo" style="width: 100px; height: 80px; border-width: 1px; border-color: #F1C40F; border-style: solid;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/MCB Bank.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px;"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/MCB Bank.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px; border-width: 1px; border-color: #F1C40F; border-style: solid;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/myanmar_tourism_bank.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px;"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/myanmar_tourism_bank.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px; border-width: 1px; border-color: #F1C40F; border-style: solid;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/Myanmr Apex Bank.png')}}" alt="flicker photo" style="width: 100px; height: 80px;"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/Myanmr Apex Bank.png')}}" alt="flicker photo" style="width: 100px; height: 80px; border-width: 1px; border-color: #F1C40F; border-style: solid;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/Shwe Bank.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px;"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/sponsorimages/Shwe Bank.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px; border-width: 1px; border-color: #F1C40F; border-style: solid;"></a>
                             </li>
                         </ul>
                     </div>
