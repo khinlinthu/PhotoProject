@@ -151,9 +151,20 @@ body {
                                     <fieldset>
                                     <form action="/image" enctype="multipart/form-data" method="POST">
                                         @csrf
-                                            <div class="selectFile mt-5 mb-3">
-                                                <label for="file" style="font-size: 20px;">PHOTO :</label>
-                                                <input type="file" name="image[]" multiple accept="image/*">
+
+                                            <div class="form-group row mt-5">
+                                              <label for="text" style="font-size: 20px;" class="col-sm-3 col-form-label">Image name :</label>
+                                              <div class="col-sm-9">
+                                                <input type="text" name="imagename" class="form-control form-control-lg" placeholder="IMAGE NAME..." required>
+                                              </div>
+                                            </div>
+
+                                            <div class="form-group row selectFile mt-5 mb-3">
+
+                                                <label for="file" style="font-size: 20px;" class="col-sm-3 col-form-label">PHOTO :</label>
+                                                <div class="col-sm-9">
+                                                <input type="file" name="image[]" multiple accept="image/*" class="form-control-file form-control-lg" required>
+                                              </div>
                                             </div>
                                             <button type="submit" class="upload mt-5">Upload</button>
                                             {{-- <input type="submit" value="Upload"  class="upload mt-5"> --}}

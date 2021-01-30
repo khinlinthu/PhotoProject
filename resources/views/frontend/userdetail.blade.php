@@ -168,7 +168,7 @@
                     <div class="hovereffect">
                         <img class="img-responsive userimg" src="{{asset($row->image)}}" alt="">
                     <div class="overlay">
-                        <h2>Image Name</h2>
+                        <h2>{{$row->name}}</h2>
                <!-- <a class="info" href="#"></a> -->
                     </div>
                     </div>

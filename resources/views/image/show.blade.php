@@ -16,7 +16,7 @@
       <div class="col-md-12">
         <div class="tile">
           <h2>Images</h2>
-
+          <h4>{{$images->name}}</h4>
           <img src="{{asset($images->image)}}" class="img-fluid" alt="" style="width: 400px; height: 400px;">
 
           
