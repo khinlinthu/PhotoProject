@@ -22,11 +22,6 @@
 		color: #ffffff;
 		background-color: red;
 	}
-
-
-    #headertwo {
-        height: 1000px;
-    }
     .home-activities-area h3:hover{
         color: #FF0000;
     }
@@ -134,7 +129,7 @@
 
         <!-- Home page core services start here -->
        <section id="headertwo">
-          <div class="container-fluid acurate">
+        <div class="container-fluid acurate">
             <div class="home-page-core-activities-area">
                 <div class="row acurate">
                     <div class="col-lg-6 col-md-12 acurate">
