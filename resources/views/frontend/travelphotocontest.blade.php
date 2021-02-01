@@ -28,11 +28,6 @@
 		color: #ffffff;
 		background-color: red;
 	}
-
-
-    #headertwo {
-        height: 1000px;
-    }
     .home-activities-area h3:hover{
         color: #FF0000;
     }
@@ -86,43 +81,39 @@
         </div>
         <!-- Slider Area End Here-->
 
-
-        <section id="headerone">
-		<div class="slider-bottom-area pt-100 pb-90" style="background-color: #463E3F;">
-
         {{-- <section id="headerone"> --}}
-		<div class="slider-bottom-area pt-100 pb-90">
+		<div class="slider-bottom-area pt-100" style="background-color: #463E3F;">
 
             <div class="container">
                 <div class="slider-bottom">
                     <div class="total-business">
                         <section id="headerone1">
-                        <div class="single-business">
-                            <h3><a href="#">အထင်ကရနေရာများ</a></h3>
-                            <ul>
-                            	<li style="color: #ffffff;">မိမိတို့ကြိုက်နှစ်သက်ရာမြို့များမှ အထင်ကရနေများ၏ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li> 
-                            </ul>
-                            <img src="{{asset('frontend_asset/images/shwedagon.jpg')}}" class="mt-3 img">
-                        </div>
-                    </section>
-                    <section id="headerone2">
-                        <div class="single-business">
-                            <h3><a href="#">ယဥ်ကျေးမှုများ</a></h3>
-                            <ul>
-                            	<li style="color: #ffffff;">မိမိတို့ကြိုက်နှစ်သက်ရာမြို့များမှ ယဥ်ကျေးမှုအမွေအနှစ်ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
-                            </ul>
-                            <img src="{{asset('frontend_asset/images/traditional.jpg')}}" class="mt-3 img">
-                        </div>
-                    </section>
-                    <section id="headerone3">
-                        <div class="single-business">
-                            <h3><a href="#">ကိုယ်ပိုင်စိတ်ကြိုက်ဖန်တီးမှုများ</a></h3>
-                            <ul>
-                            	<li style="color: #ffffff;">မိမိတို့ ကြိုက်နှစ်ရာမြို့များမှ ပြိုင်ပွဲဝင်များအနေဖြင့် ကြိုက်နှစ်သက်ရာ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
-                            </ul>
-                            <img src="{{asset('frontend_asset/images/it1.jpg')}}" class="mt-3 img">
-                        </div>
-                    </section>
+                            <div class="single-business">
+                                <h3><a href="#">အထင်ကရနေရာများ</a></h3>
+                                <ul>
+                                	<li style="color: #ffffff;">မိမိတို့ကြိုက်နှစ်သက်ရာမြို့များမှ အထင်ကရနေများ၏ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li> 
+                                </ul>
+                                <img src="{{asset('frontend_asset/images/shwedagon.jpg')}}" class="mt-3 img">
+                            </div>
+                        </section>
+                        <section id="headerone2">
+                            <div class="single-business">
+                                <h3><a href="#">ယဥ်ကျေးမှုများ</a></h3>
+                                <ul>
+                                	<li style="color: #ffffff;">မိမိတို့ကြိုက်နှစ်သက်ရာမြို့များမှ ယဥ်ကျေးမှုအမွေအနှစ်ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
+                                </ul>
+                                <img src="{{asset('frontend_asset/images/traditional.jpg')}}" class="mt-3 img">
+                            </div>
+                        </section>
+                        <section id="headerone3">
+                            <div class="single-business">
+                                <h3><a href="#">ကိုယ်ပိုင်စိတ်ကြိုက်ဖန်တီးမှုများ</a></h3>
+                                <ul>
+                                	<li style="color: #ffffff;">မိမိတို့ ကြိုက်နှစ်ရာမြို့များမှ ပြိုင်ပွဲဝင်များအနေဖြင့် ကြိုက်နှစ်သက်ရာ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
+                                </ul>
+                                <img src="{{asset('frontend_asset/images/it1.jpg')}}" class="mt-3 img">
+                            </div>
+                        </section>
                     </div>
                 </div>
 
@@ -140,7 +131,7 @@
 
         <!-- Home page core services start here -->
        <section id="headertwo">
-          <div class="container-fluid acurate">
+        <div class="container-fluid acurate">
             <div class="home-page-core-activities-area">
                 <div class="row acurate">
                     <div class="col-lg-6 col-md-12 acurate">
