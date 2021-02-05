@@ -1,20 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
-
-
-//Backend
-
-Route::middleware('role:admin')->group(function () {
-
-	Route::resource('photocontest', 'PhotoContestController');
-
-	Route::resource('aboutphoto', 'AboutphotoController');
-
-	Route::resource('image', 'ImageController');
-
-});
 
 //frontend user
 
@@ -25,8 +12,10 @@ Route::get('photodetail/{id}','FrontendController@photodetail')->name('photodeta
 Route::resource('user', 'UserController');
 
 Route::get('/signin', 'UserController@login')->name('user.signin');
+
 Route::get('/player/register', 'UserController@playerCreate')->name('user.player');
-Route::post('/player/store', 'UserController@playerstore')->name('user.playerstore');
+
+Route::post('/player/store','UserController@playerstore')->name('user.playerstore');
 
 Auth::routes(['register'=>false]);
 
@@ -35,7 +24,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('upload', 'FrontendController@upload')->name('uploadpage');
 
 Route::get('/photo', 'ImageController@photo');
-
 
 Route::post('/image', 'ImageController@post');
 
@@ -55,9 +43,23 @@ Route::get('travelphoto','FrontendController@travelphoto')->name('travel');
 
 // Route::get('/profile','ImageController@userprofile')->name('profile');
 
+//Backend
+//admin route
+Route::group(['middleware'=>['siteadmin']],function(){
 
-//backend
+	Route::resource('photocontest', 'PhotoContestController');
+
+	Route::resource('aboutphoto', 'AboutphotoController');
+
+	Route::resource('image', 'ImageController');
+
+});
+
+
+Route::group(['middleware'=>['admin']],function(){
 
 Route::get('/role/{id}', 'UserController@role')->name('user.role');
 
 Route::put('/role/{id}', 'UserController@roleUpdate')->name('user.roleUpdate');
+
+});

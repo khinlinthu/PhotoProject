@@ -100,9 +100,9 @@
       <div class="app-sidebar__user">
         <div>
 
-          {{-- <img src="" width="50px;" height="50px;" style="margin-left: 60px;"> --}}
+          {{-- <img src="{{asset(Auth::user()->photo)}}" class="avatar-img rounded-circle"> --}}
           <p class="app-sidebar__user-name" style="text-align: center; margin-left: 20px;">Admin</p>
-          <p class="app-sidebar__user-designation"style="text-align: center; margin-left: 20px;">Frontend Developer</p>
+          {{-- <p class="app-sidebar__user-designation"style="text-align: center; margin-left: 20px;"><h6>{{Auth::user()->name}}</h6></p> --}}
 
         </div>
       </div>

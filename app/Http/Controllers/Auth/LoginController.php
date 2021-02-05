@@ -50,9 +50,17 @@ class LoginController extends Controller
         // dd($roles);
         //checking user roles
         switch ($roles) {
-            case 'admin':
+            case 'superadmin':
                 return '/photocontest';
                 break;
+
+            case 'admin':
+                return '/user';
+                break; 
+
+            case 'siteadmin':
+                return '/image';
+                break;    
 
             case 'player':
                 return '/upload';
@@ -63,7 +71,7 @@ class LoginController extends Controller
                 break;
 
             default:
-                return '/';
+                return '/vote';
         }
     }
 }

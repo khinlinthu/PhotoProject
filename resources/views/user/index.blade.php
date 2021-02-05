@@ -43,7 +43,8 @@
                         </td>
                         <td>{{ $user->phone }}</td>
                         <td>
-                            <span class="badge badge-dark">{{ $user->getRoleNames()[0] }}</span>
+                            {{-- <span class="badge badge-dark">{{ $user->getRoleNames()[0] }}</span> --}}
+                            <span class="badge badge-dark">{{ $user->role }}</span>
                         </td>
                         <td>
                             <div class="btn-group btn-group-sm" role="group" aria-label="...">

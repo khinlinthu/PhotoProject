@@ -108,7 +108,7 @@ class ImageController extends Controller
         ->paginate(30);
 
         $query = Image::find($img_id);
-        // dd($query);
+        // dd($images);
 
         return view('frontend.userdetail',compact('test','images','query'));
     }
