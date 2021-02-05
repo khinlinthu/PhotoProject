@@ -85,7 +85,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="section-title">
                             <h2>Our <span>Contests</span></h2>
-                            <p>An opportunity for of prefessional photographers to introduce of the best beautiful of the landscape and other valuable natures of Myanmar to the world. We will be donate of the members fees to medical organizations and other organizations working to prevent COVID-19. All of the contestants must be use our service such as transportation and accomandation. Above that our company will also offer a 50% discount on individual trips of this contest. All of the contestants must be tested for covid-19. </p>
+                            <p>ပြည်နယ်/တိုင်း (၁၅)ခုမှ မိမိတို့နှစ်သစ်ရာ (၃)ခုသို့ သွားရောက်ကာ ရိုက်ကူးယှဉ်ပြိုင်ရမည်။ သဘာဝ (nature)၊ အထင်ကရ (landmark)၊ ယဉ်ကျေးမှု (culture) ဖြင့် ပုံမှန် သမာရိုးကျမဟုတ်ဘဲ လွတ်လပ်စွာ ဖန်တီးရိုက်ကူးကာ တစ်မျိုးလျှင် (၃)ပုံ၊ စုစုပေါင်း (၉)ပုံ ပေးပို့ကာ ယှဉ်ပြိုင်ရမည်။ စမှတ်ကို ကြိုတင်မသတ်မှတ်ထားသောကြောင့် မိမိတို့နေထိုင်ရာပြည်နယ်/တိုင်းမှ စတင်ကာ စာရင်းပေးသွင်းပြီး ပြိုင်ပွဲကို စတင်ယှဉ်ပြိုင်နိုင်ပါမည်။ ပြိုင်ပွဲကာလအား Season တစ်ခုလျှင် ကနဦး (၉၀)ရက် သတ်မှတ်ထားပြီး ပြည်နယ်/တိုင်း (၁၅)ခုတွင် မိမိတို့နှစ်သက်ရာ (၃)ခုကို ရွေးချယ်ကာ ပြည်နယ်(သို့)တိုင်း တစ်ခုစီတိုင်းအတွက် (၃၀)ရက်ရရှိမည်။ ထိုအချိန်ရက် (၃၀)အတွင်း မိမိတို့နှစ်သက်ရာ ရက်/အချိန်တွင် သွားရောက်ရိုက်ကူးနီုင်ပြီး သတ်မှတ်ရက်ထက် နောက်မကျဘဲပေးပို့နိုင်သည်။ မိမိတို့စမှတ်ကို အတည်ပြုပြီးသည်နှင့်တစ်ပြိုင်နှက် ခရီးလမ်းကြောင်းအား ရေးဆွဲပေးမည်ဖြစ်ပီး ပြိုင်ပွဲအတွင်း ခရီးသွားကုန်ကျစရိတ်အား S.C.W TRAVEL မှ ၅၀% ကျခံပေးသွားမည်ဖြစ်ပါသည်။</p>
                         </div>
                     </div>
                 </div>
