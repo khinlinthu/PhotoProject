@@ -32,6 +32,8 @@
 </style>
  <div class="inner-page-header bgcolour">
   <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
    <table class="table table-striped pt-90 pb-100 tlive ">
   <thead>
     @php
@@ -42,7 +44,6 @@
       <th scope="col">Player Name</th>
       <th scope="col">Photo</th>
       <th scope="col">Counts</th>
-      <th scope="col">Score</th>
     </tr>
   </thead>
   <tbody>
@@ -52,13 +53,38 @@
       <td>{{$lives->name}}</td>
       <td><img src="{{$lives->image}} " style="width: 100px; height: 100px;"></td>
       <td>{{$lives->user_count}}</td>
-      <td></td>
      
     </tr>
     
    @endforeach
   </tbody>
 </table>
+</div>
+  <div class="col-lg-6 col-md-6 col-sm-12">
+   <table class="table table-striped pt-90 pb-100">
+  <thead>
+    {{-- @php
+       $num = 1;
+    @endphp --}}
+    <tr class="colname">
+      <th scope="col">No</th>
+      <th scope="col">Player Name</th>
+      <th scope="col">Result</th>
+      <th scope="col">Remark</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mg Ye</td>
+      <td>QQQQQ</td>
+      <td>200</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
 </div>
 </div>
 

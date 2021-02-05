@@ -10,13 +10,19 @@
         height: 300px;
 	}
 
-	.btn{
+	/*.btn{
 		padding: 15px 40px;
 		border-radius: 50px;
 		color: #000000;
-	}
+	}*/
 
-	.btn:hover {
+    .safaribtn{
+        background-color: #ffffff;
+        padding: 15px 40px;
+        border-radius: 50px;
+    }
+
+	.safaribtn:hover {
 		padding: 15px 40px;
 		border-radius: 50px;
 		color: #ffffff;
@@ -154,9 +160,9 @@
                                             <li>ပြိုင်ပွဲအတွင်း ကိစ္စ တစုံတရာရှိလာပါက SCW Travel ၏ ဆုံးဖြတ်ချက်များသာ အတည်ဖြစ်ပါသည်။</li>
                                         </ul>
                                         @if(Auth::check())
-                                        <a href="{{route('vote')}}"><button type="button" class="btn mt-4">ဝင်ရောက်ရန်</button></a>
+                                        <a href="{{route('vote')}}"><button type="button" class="btn mt-4 safaribtn">ဝင်ရောက်ရန်</button></a>
                                         @else
-                                        <a href="/signin"><button type="button" class="btn mt-4">ဝင်ရောက်ရန်</button></a>
+                                        <a href="/signin"><button type="button" class="btn mt-4 safaribtn">ဝင်ရောက်ရန်</button></a>
                                         @endif
 
                                     </div>
