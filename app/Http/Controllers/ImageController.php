@@ -103,7 +103,7 @@ class ImageController extends Controller
 
         $images=DB::table('images')
         ->join('users','users.id','=','images.user_id')
-        ->select('images.*','users.name')
+        ->select('images.*')
         ->where('images.user_id','=',$id)
         ->paginate(30);
          
