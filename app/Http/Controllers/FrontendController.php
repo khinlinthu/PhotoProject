@@ -17,8 +17,11 @@ class FrontendController extends Controller
     {
         $photoconests = PhotoContest::all();
         $aboutphotos = Aboutphoto::take(3)->get();
+        // dd($aboutphotos);
         return view('frontend.photo_contest',compact('photoconests','aboutphotos'));
     }
+
+
 
 
     public function photodetail($id)

@@ -140,8 +140,11 @@
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <div class="single-footer footer-one">
-                        <h3>About Company</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum repellat, maxime vel alias impedit veritatis temporibus, sequi quos veniam eius optio corporis modi dicta molestias at inventore culpa, natus explicabo.</p>
+                        <h3>ပြိုင်ပွဲဝင်များ</h3>
+                        <p>ပြိုင်ပွဲဝင်များ ရိုက်ထားသောပုံများအား ပရိတ်သတ်များမှနေ၍ ကြိုက်နှစ်သက်ရာ ပုံများကို မဲပေး၍ ရွေးချယ်နိုင်ပါသည်။</p>
+                        
+                        <h3>အသင်းဝင်များ</h3>
+                        <p>မိမိတို့ကြိုက်နှစ်သက်သောပြိုင်ပွဲဝင်များ၏ပုံများကို မိမိတို့စိတ်ကြိုက် အသင်းဝင်များမှ မဲပေးရွေးချယ်နိုင်ပါသည်။</p>
                         <div class="footer-social-media-area">
                             <nav>
                                 <ul>
@@ -158,17 +161,8 @@
                 </div>
                 <div class="col-lg-3 col-md-4 hidden-sm">
                     <div class="single-footer footer-two">
-                        <h3>Twitter Feed</h3>
-                        <nav>
-                            <ul>
-                                <li><i class="fa fa-twitter"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">https://twitter.com/?lang=en</a>
-                                    <br/> 3 days ago
-                                </li>
-                                <li><i class="fa fa-twitter"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">https://twitter.com/?lang=en</a>
-                                    <br/> 3 days ago
-                                </li>
-                            </ul>
-                        </nav>
+                        <h3>အကဲဖြတ်ဒိုင်လူကြီးများ</h3>
+                        <p>ပြိုင်ပွဲဝင်များ ရိုက်ကူးထားသောပုံများကို လအလိုက်၊ နေရာအလိုက် အချိန်နှင့်တစ်ပြေးညီ ဖော်ပြထားပေးမှာဖြစ်ပြီး အကဲဖြတ်ဒိုင်များမှလည်း သေချာစီစစ်၍ အမှတ်ပေးသွားမည် ဖြစ်ပါသည်။</p>
                     </div>
                 </div>
                 <div class="col-lg-3 hidden-md col-sm-12">
@@ -198,12 +192,12 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <div class="single-footer footer-four margin-0">
-                        <h3>Corporate Office</h3>
+                        <h3>ဆက်သွယ်ရန်</h3>
                         <nav>
                             <ul>
-                                <li><i class="fa fa-paper-plane-o"></i> No.25, Ivory Court Villa Pun Hlaing Goft Estate, Haling Thar Yar Tsp, Yangon. (Head Office) </li>
-                                <li><i class="fa fa-paper-plane-o"></i> No.22/B. 1st Floor, Thiri Myaing 4th Street, Hlaing Tsp, Yangon. (Branch Office) </li>
-                                <li><i class="fa fa-phone"></i> <a href="tel:+959-899 3333 87">+959-799 3333 87</a></li>
+                                <li><i class="fa fa-paper-plane-o"></i>အမှတ် ၂၅၊ ဆင်စွယ် လမ်း၊ ပန်းလှိုင်ဂေါက်ကွင်းအိမ်ရာ၊ လှိုင်သာယာမြို့နယ်၊ ရန်ကုန်တိုင်းဒေသကြီး (ရုံးချုပ်)</li>
+                                <li><i class="fa fa-paper-plane-o"></i>အမှတ် ၂၂ (ဘီ-ပထမထပ်)၊ သီရိမြိုင်(၄)လမ်း၊ လှိုင်မြို့နယ်၊ ရန်ကုန်တိုင်းဒေသကြီး (ရုံးခွဲ)</li>
+                                <li><i class="fa fa-phone"></i> <a href="tel:+959-899 3333 87">၀၉ ၈၉၉ ၃၃၃ ၃၈၇</a></li>
                                 <li><i class="fa fa-envelope-o"></i> <a href="mailto:yourmail@gmail.com">zinlinn@scwmyanmar.com.mm</a></li>
                                 {{-- <li><i class="fa fa-fax"></i> Fax: (123) 4589761</li> --}}
                             </ul>
