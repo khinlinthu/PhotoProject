@@ -15,7 +15,14 @@ class UserController extends Controller
 {
     public function index()
     {
-       $users = User::all();
+       // $users = User::all();
+        $users = DB::table('model_has_roles')
+        ->join('users','users.id','=','model_has_roles.model_id')
+        ->join('roles','roles.id','=','model_has_roles.role_id')
+        ->select('users.*','roles.name AS role')
+        ->where('model_has_roles.role_id','!=',1)
+        ->get();
+         
         return view('user.index', compact('users'));
     }
 
@@ -169,7 +176,9 @@ class UserController extends Controller
     public function role($id)
     {
         $user = User::find($id);
-        $roles = Role::all();
+        // $roles = Role::all();
+        $roles = DB::table('roles')->where('roles.id','!=' ,1)->get();
+
         return view('user.role', compact('user', 'roles'));
     }
 

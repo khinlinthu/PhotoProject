@@ -53,7 +53,7 @@
     .button:hover {
         background-color: red;
         border: none;
-        color: #000;
+        color: black;
         padding: 7px 25px;
         text-align: center;
         text-decoration: none;

@@ -10,77 +10,77 @@
         background: #463E3F;
       }
       .heart {
-  color: white;
-  background-color: currentColor;
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px;
-  position: relative;
-  top: 0;
-  transform: rotate(-45deg);
-  position: absolute; 
-  left: 45%; top: 45%;
-  width: 50px;
-}
+      color: white;
+      background-color: currentColor;
+      display: inline-block;
+      height: 50px;
+      margin: 0 10px;
+      position: relative;
+      top: 0;
+      transform: rotate(-45deg);
+      position: absolute; 
+      left: 45%; top: 45%;
+      width: 50px;
+    }
 
-.heart::before,
-.heart::after {
-  content: "";
-  background-color: currentColor;
-  border-radius: 50%;
-  height: 50px;
-  position: absolute;
-  width: 50px;
-}
+    .heart::before,
+    .heart::after {
+      content: "";
+      background-color: currentColor;
+      border-radius: 50%;
+      height: 50px;
+      position: absolute;
+      width: 50px;
+    }
 
-.heart:before {
-  top: -25px;
-  left: 0;
-}
+    .heart:before {
+      top: -25px;
+      left: 0;
+    }
 
-.heart:after {
-  left: 25px;
-  top: 0;
-}
+    .heart:after {
+      left: 25px;
+      top: 0;
+    }
 
-.heart:focus {
-  color: red;
-}
-.heart_two{
-  color: black;
-  background-color: currentColor;
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px;
-  position: relative;
-  top: 0;
-  transform: rotate(-45deg);
-  position: absolute; 
-  left: 45%; top: 45%;
-  width: 50px;
-}
-.heart_two::before,
-.heart_two::after {
-  content: "";
-  background-color: currentColor;
-  border-radius: 50%;
-  height: 50px;
-  position: absolute;
-  width: 50px;
-}
+    .heart:focus {
+      color: red;
+    }
+    .heart_two{
+      color: black;
+      background-color: currentColor;
+      display: inline-block;
+      height: 50px;
+      margin: 0 10px;
+      position: relative;
+      top: 0;
+      transform: rotate(-45deg);
+      position: absolute; 
+      left: 45%; top: 45%;
+      width: 50px;
+    }
+    .heart_two::before,
+    .heart_two::after {
+      content: "";
+      background-color: currentColor;
+      border-radius: 50%;
+      height: 50px;
+      position: absolute;
+      width: 50px;
+    }
 
-.heart_two:before {
-  top: -25px;
-  left: 0;
-}
+    .heart_two:before {
+      top: -25px;
+      left: 0;
+    }
 
-.heart_two:after {
-  left: 25px;
-  top: 0;
-}
-.heart_two:focus {
-  color: black;
-}
+    .heart_two:after {
+      left: 25px;
+      top: 0;
+    }
+    .heart_two:focus {
+      color: black;
+    }
   </style>
   
 

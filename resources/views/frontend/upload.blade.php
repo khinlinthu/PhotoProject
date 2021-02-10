@@ -153,7 +153,7 @@ body {
                                         @csrf
 
                                             <div class="form-group row mt-5">
-                                              <label for="text" style="font-size: 20px;" class="col-sm-3 col-form-label">Image name :</label>
+                                              <label for="text" style="font-size: 20px;" class="col-sm-3 col-form-label">IMAGE NAME :</label>
                                               <div class="col-sm-9">
                                                 <input type="text" name="imagename" class="form-control form-control-lg" placeholder="IMAGE NAME..." required>
                                               </div>
