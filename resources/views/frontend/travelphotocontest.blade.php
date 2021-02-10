@@ -54,7 +54,7 @@
                                 <ul>
                                     <li><a href="#headerone1">အထင်ကရနေရာများ</a></li>
                                     <li class="acitve"><a href="#headerone2">ယဥ်ကျေးမှုများ</a></li>
-                                    <li><a href="#headerone3">ကိုယ်ပိုင်စိတ်ကြိုက်ဖန်တီးမှုများ</a></li>
+                                    <li><a href="#headerone3">သဘာဝဓာတ်ပုံများ</a></li>
                                     <li class="acitve"><a href="#headertwo">စည်းကမ်းချက်များ</a></li>
                                 </ul>
                             </div>
@@ -107,9 +107,9 @@
                         </section>
                         <section id="headerone3">
                             <div class="single-business">
-                                <h3><a href="#">ကိုယ်ပိုင်စိတ်ကြိုက်ဖန်တီးမှုများ</a></h3>
+                                <h3><a href="#">သဘာဝဓာတ်ပုံများ</a></h3>
                                 <ul>
-                                	<li style="color: #ffffff;">မိမိတို့ ကြိုက်နှစ်ရာမြို့များမှ ပြိုင်ပွဲဝင်များအနေဖြင့် ကြိုက်နှစ်သက်ရာ ပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
+                                	<li style="color: #ffffff;">မိမိတို့ကြိုက်နှစ်သက်ရာ မြို့များမှ သဘာဝဆန်သောပုံများဖြင့် ပြိုင်ပွဲဝင်ရန်</li>
                                 </ul>
                                 <img src="{{asset('frontend_asset/images/it1.jpg')}}" class="mt-3 img">
                             </div>
@@ -189,8 +189,8 @@
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <div class="single-footer footer-one">
-                        <h3>About Company</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum repellat, maxime vel alias impedit veritatis temporibus, sequi quos veniam eius optio corporis modi dicta molestias at inventore culpa, natus explicabo.</p>
+                        <h3>About Contest</h3>
+                        <p>ပြိုင်ပွဲဝင်များသည် သဘာဝ(nature)၊ အထင်ကရ(landmarks)၊ ယဉ်ကျေးမှု(culture) စသည်ဖြင့် မိမိတို့၏ ကိုယ်ပိုင် အရည်အချင်း များဖြင့် လွတ်လပ်စွာ ဖန်တီးရိုက်ကူးထားသော ဂုဏ်ယူဝင့်ကြွားစွာလှပနေသည့် မြန်မာ့အလှအပဓါတ်ပုံများကို နိုင်ငံတကာသို့ ထိုးဖောက်နိုင်ရန်…</p>
                         <div class="footer-social-media-area">
                             <nav>
                                 <ul>
@@ -222,37 +222,37 @@
                 </div>
                 <div class="col-lg-3 hidden-md col-sm-12">
                     <div class="single-footer footer-three">
-                        <h3>Flickr Photos</h3>
+                        <h3>Awarded Winners</h3>
                         <ul>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/images/flicker/1.png')}}" alt="flicker photo"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/winnerimages/w1.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px;border-width: 1px; border-color: #F1C40F; border-style: solid;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/images/flicker/2.png')}}" alt="flicker photo"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/winnerimages/w2.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px; border-width: 1px; border-color: #F1C40F; border-style: solid;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/images/flicker/3.png')}}" alt="flicker photo"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/winnerimages/w3.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px; border-width: 1px; border-color: #F1C40F; border-style: solid;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/images/flicker/4.png')}}" alt="flicker photo"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/winnerimages/w4.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px; border-width: 1px; border-color: #F1C40F; border-style: solid;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/images/flicker/5.png')}}" alt="flicker photo"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/winnerimages/w3.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px; border-width: 1px; border-color: #F1C40F; border-style: solid;"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{asset('frontend_asset/images/flicker/6.png')}}" alt="flicker photo"></a>
+                                <a href="#"><img src="{{asset('frontend_asset/winnerimages/w1.jpg')}}" alt="flicker photo" style="width: 100px; height: 80px; border-width: 1px; border-color: #F1C40F; border-style: solid;"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <div class="single-footer footer-four margin-0">
-                        <h3>Corporate Office</h3>
+                        <h3>ဆက်သွယ်ရန်</h3>
                         <nav>
                             <ul>
-                                <li><i class="fa fa-paper-plane-o"></i> No.25, Ivory Court Villa Pun Hlaing Goft Estate, Haling Thar Yar Tsp, Yangon. (Head Office) </li>
-                                <li><i class="fa fa-paper-plane-o"></i> No.22/B. 1st Floor, Thiri Myaing 4th Street, Hlaing Tsp, Yangon. (Branch Office) </li>
-                                <li><i class="fa fa-phone"></i> <a href="tel:+959-899 3333 87">+959-799 3333 87</a></li>
+                                <li><i class="fa fa-paper-plane-o"></i>အမှတ် ၂၅၊ ဆင်စွယ် လမ်း၊ ပန်းလှိုင်ဂေါက်ကွင်းအိမ်ရာ၊ လှိုင်သာယာမြို့နယ်၊ ရန်ကုန်တိုင်းဒေသကြီး (ရုံးချုပ်)</li>
+                                <li><i class="fa fa-paper-plane-o"></i>အမှတ် ၂၂ (ဘီ-ပထမထပ်)၊ သီရိမြိုင်(၄)လမ်း၊ လှိုင်မြို့နယ်၊ ရန်ကုန်တိုင်းဒေသကြီး (ရုံးခွဲ)</li>
+                                <li><i class="fa fa-phone"></i> <a href="tel:+959-899 3333 87">၀၉ ၈၉၉ ၃၃၃ ၃၈၇</a></li>
                                 <li><i class="fa fa-envelope-o"></i> <a href="mailto:yourmail@gmail.com">zinlinn@scwmyanmar.com.mm</a></li>
                                 {{-- <li><i class="fa fa-fax"></i> Fax: (123) 4589761</li> --}}
                             </ul>
