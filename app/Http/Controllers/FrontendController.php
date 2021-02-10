@@ -61,27 +61,16 @@ class FrontendController extends Controller
     public function photo()
     {
         $image=DB::table('images')
-        /*->join('images','images.id','=','votes.image_id')*/
         ->join('users','users.id','=','images.user_id')
         ->join('model_has_roles','model_has_roles.model_id','=','users.id')
         ->join('roles','roles.id','=','model_has_roles.role_id')
-        
-        /*->select('images.*','votes.count')
-        ->join('images','images.id','=','votes.image_id')*/
-        ->where('roles.id','=',4)
-        
-        /*->where('votes.image_id','=',NULL)*/
-        
+        ->where('roles.id','=',4)       
         ->select('images.*')
-        
-        /*sss*/
         ->get();
          
          
         $back_image=DB::table('votes')
-        /*->join('images','images.id','=','votes.image_id')*/
-        ->select('votes.image_id','votes.user_id')
-        
+        ->select('votes.image_id','votes.user_id')       
         ->get();
         
         return view('frontend.vote',compact('image','back_image'));
@@ -97,21 +86,12 @@ class FrontendController extends Controller
         
         $vote=DB::table('votes')->increment('count',5);
 
-    }
-    
-        
+            }
+            
     }
 
     public function live()
     {
-    
-        /*$live=DB::table('votes')
-        ->select('users.name','images.image',DB::raw('sum(votes.count)as user_count'))
-        ->join('users','users.id','=','images.user_id')
-        ->join('images','images.id','=','votes.image_id')
-        ->groupBy('images.id')
-        ->orderBy('votes.count','DESC')
-        ->get();*/
         $live=DB::table('images')
         ->select('users.name','images.image',DB::raw('sum(votes.count)as user_count'))
         ->join('users','users.id','=','images.user_id')
@@ -127,5 +107,12 @@ class FrontendController extends Controller
     public function travelphoto(){
         return view('frontend.travelphotocontest');
     }
-    
+    public function uploadddd($value='')
+    {
+        return view ('frontend.upload1');
+    }
 }
+
+
+
+

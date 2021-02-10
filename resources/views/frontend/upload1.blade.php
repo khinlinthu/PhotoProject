@@ -1,98 +1,104 @@
 @extends('frontend')
 
 @section('content')
-<style >
-  .tlive{
-    background-color: #696C6D;
-    color: #ffffff;
-    border-radius: 15px;
-    border-collapse: collapse;
-    color: #000000;
-    font-size: 20px;
-  }
+        
 
-  th {
-  background-color: #1F1B0D;
-  color: white;
-}
+        <!-- Inner Page Header serction start here -->
+        <div class="inner-page-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="header-page-title">
+                            <h2>Upload Your Photo</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="header-page-locator">
+                            <ul>
+                                <li><a href="index.html">Home /</a> Upload Photo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Page Header serction end here -->
 
-  .colname{
-    color: #000000;
-    font-weight: bolder;
-    font-size: 20px;
-  }
+        <!-- Multistep Form Start Here -->
+        <div class="multistep-form pt-100 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <!-- multistep form -->
+                        <form class="regform">
+                            <!-- progressbar -->
+                            <ul id="progressbar">
+                                <li class="active">Upload Photo Informations</li>
+                                <li>Preview Details Again</li>
+                                <li>Terms and Conditions</li>
+                                <li>Status </li>
+                            </ul>
+                            <!-- fieldsets -->
+                            
+                            <fieldset id="first">
 
-  .bgcolour{
-        background: #d3d3d3;
-  }
+                                <form action="/image1" enctype="multipart/form-data" method="POST">
+                                    @csrf
+                                <h2 class="title">Upload Photo Informations</h2>
+                                <select class="options">
+                                    <option>--Select Category--</option>
+                                    <option>Photo Contest</option>
+                                </select>
+                                <br/>
+                                <input type="text" class="text_field" name="name" placeholder="Your Photo Name" />
+                                <br/>
+                                <input type="text" class="text_field" name="size" placeholder="Photo Size" />
+                                <br/>
+                                <input type="text" class="text_field" name="color" placeholder="Photo Color" />
+                                <br/>
+                                <input type="file" class="text_field" name="image[]" multiple accept="image/*" />
+                                <br/>
+                                <textarea name="textarea" cols="30" rows="10" placeholder="Photo Upload"></textarea>
+                                <input type="button" name="previous" class="pre_btn" value="< Back" />
+                                <input type="button" name="next" class="next_btn" value="Next >" />
+                            </fieldset>
+                            <fieldset>
+                                <h2 class="title">Preview Details Again</h2>
+                                <ul id="preview">
+                                    <li><img src="images/preview.jpg" alt=""></li>
+                                    <li><span>Name :</span> John Deo</li>
+                                    <li><span>E-mail :</span> johndeo@gmail</li>
+                                    <li><span>Photo Name :</span> Natural Photo for Photo Grapher</li>
+                                    <li><span>Photo Category :</span> Natural Photo</li>
+                                    <li><span>Photo Size :</span> 1920x7000</li>
+                                    <li><span>Photo Nature :</span> HD</li>
+                                    <li><span>Photo Color :</span> Dark</li>
+                                    <li><span>Photo Status :</span> Publish</li>
+                                </ul>
+                                <input type="button" name="previous" class="pre_btn" value="< Back" />
+                                <input type="button" name="next" class="next_btn" value="Next >" />
+                            </fieldset>
+                            <fieldset>
+                                <h2 class="title">Terms and Conditions</h2>
+                                <div class="term-and-conditions">
+                                    <input type="checkbox"> I have read and accept Official contest rules
+                                </div>
+                                <input type="button" name="previous" class="pre_btn" value="< Back" />
+                                <input type="button" name="next" class="next_btn" value="Submit >" />
+                            </fieldset>
+                            </form>
+                            <fieldset>
+                                <h2 class="title">Status Sucess</h2>
+                                <p>Thanks for your submitting Photo , we will inform you soon.</p>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Multistep Form End Here -->
 
-</style>
- <div class="inner-page-header bgcolour">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12">
-   <table class="table table-striped table-bordered table-hover table-dark pt-90 pb-100 tlive ">
-  <thead>
-    @php
-       $num = 1;
-    @endphp
-    <tr class="colname">
-      <th scope="col">No</th>
-      <th scope="col">Player Name</th>
-      <th scope="col">Photo</th>
-      <th scope="col">Counts</th>
-    </tr>
-  </thead>
-  <tbody>
-  	@foreach($live as $lives)
-    <tr>
-      <td scope="row">{{ $num++ }}</td>
-      <td>{{$lives->name}}</td>
-      <td><img src="{{$lives->image}} " style="width: 100px; height: 100px;"></td>
-      <td>{{$lives->user_count}}</td>
-     
-    </tr>
-    
-   @endforeach
-  </tbody>
-</table>
-</div>
-  <div class="col-lg-6 col-md-6 col-sm-12">
-   <table class="table table-striped table-bordered table-hover table-dark pt-90 pb-100">
-  <thead>
-    {{-- @php
-       $num = 1;
-    @endphp --}}
-    <tr class="colname">
-      <th scope="col">No</th>
-      <th scope="col">Player Name</th>
-      <th scope="col">Result</th>
-      <th scope="col">Remark</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Mg Ye</td>
-      <td>QQQQQ</td>
-      <td>200</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Mg Ye</td>
-      <td>QQQQQ</td>
-      <td>200</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-</div>
-</div>
-</div>
-
-
-@endsection
+        @endsection
 
 
 @section('content1')

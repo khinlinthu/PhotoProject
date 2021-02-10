@@ -63,3 +63,9 @@ Route::get('/role/{id}', 'UserController@role')->name('user.role');
 Route::put('/role/{id}', 'UserController@roleUpdate')->name('user.roleUpdate');
 
 });
+
+
+
+// Route::get('upload1', 'FrontendController@uploadddd')->name('uploadpage1');
+
+// Route::post('/image1', 'ImageController@upload');
